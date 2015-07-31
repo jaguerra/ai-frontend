@@ -1,7 +1,7 @@
 .btn--input {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -46,7 +46,7 @@
 .btn-primary--sm {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -78,7 +78,7 @@
 .btn-primary--sm--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -114,7 +114,7 @@
 .btn-primary--md {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -146,7 +146,7 @@
 .btn-primary--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -182,7 +182,7 @@
 .btn-primary--lg {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -214,7 +214,7 @@
 .btn-primary--lg--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -250,7 +250,7 @@
 .btn-secondary--sm {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -281,7 +281,7 @@
 .btn-secondary--sm--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -316,7 +316,7 @@
 .btn-secondary--md {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -347,7 +347,7 @@
 .btn-secondary--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -382,7 +382,7 @@
 .btn-secondary--lg {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -413,7 +413,7 @@
 .btn-secondary--lg--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -448,7 +448,7 @@
 .btn-secondary--alt--sm {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -481,7 +481,7 @@
 .btn-secondary--alt--sm--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -518,7 +518,7 @@
 .btn-secondary--alt--md {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -551,7 +551,7 @@
 .btn-secondary--alt--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -588,7 +588,7 @@
 .btn-secondary--alt--lg {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -621,7 +621,7 @@
 .btn-secondary--alt--lg--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -658,7 +658,7 @@
 .btn-secondary--on-black--sm {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -690,7 +690,7 @@
 .btn-secondary--on-black--sm--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -726,7 +726,7 @@
 .btn-secondary--on-black--md {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -758,7 +758,7 @@
 .btn-secondary--on-black--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -794,7 +794,7 @@
 .btn-secondary--on-black--lg {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -826,7 +826,7 @@
 .btn-secondary--on-black--lg--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -862,7 +862,7 @@
 .btn-tertiary--sm {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -895,7 +895,7 @@
 .btn-tertiary--sm--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -932,7 +932,7 @@
 .btn-tertiary--md {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -965,7 +965,7 @@
 .btn-tertiary--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1002,7 +1002,7 @@
 .btn-tertiary--lg {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1035,7 +1035,7 @@
 .btn-tertiary--lg--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1072,7 +1072,7 @@
 .btn-transparent--sm {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1105,7 +1105,7 @@
 .btn-transparent--sm--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1142,7 +1142,7 @@
 .btn-transparent--md {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1175,7 +1175,7 @@
 .btn-transparent--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1212,7 +1212,7 @@
 .btn-transparent--lg {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1245,7 +1245,7 @@
 .btn-transparent--lg--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1282,7 +1282,7 @@
 .btn--header {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1336,7 +1336,7 @@
 .btn--header--video {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -1403,7 +1403,7 @@
 .btn--join {
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;

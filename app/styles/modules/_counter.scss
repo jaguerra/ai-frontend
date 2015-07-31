@@ -29,7 +29,7 @@
   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
@@ -58,7 +58,7 @@
   font-size: 6.71429rem;
   letter-spacing: -6px;
   line-height: 1.2;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
 }
 
 @media screen and (min-width: 40em) {

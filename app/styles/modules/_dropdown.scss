@@ -18,7 +18,7 @@
   background-color: #e5e5e5;
   border-top: 1px solid #b6b6b6;
   cursor: pointer;
-  font-family: sans-serif;
+  font-family: $f-default;
   font-size: 14px;
   font-size: 1rem;
   font-weight: 700;
@@ -168,7 +168,7 @@
   letter-spacing: .02rem;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;

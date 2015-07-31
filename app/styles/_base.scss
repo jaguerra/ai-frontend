@@ -13,7 +13,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   text-size-adjust: none;
-  font-family: sans-serif;
+  font-family: $f-default;
 }
 
 @media print {
@@ -481,7 +481,7 @@ time {
     font-size: 23px;
     font-size: 1.7rem;
     font-weight: 400;
-    font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+    font-family: $f-title;
     -webkit-font-feature-settings: 'kern';
     font-feature-settings: 'kern';
     -webkit-font-kerning: normal;
@@ -492,7 +492,7 @@ time {
     font-size: 21px;
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+    font-family: $f-title;
     -webkit-font-feature-settings: 'kern';
     font-feature-settings: 'kern';
     -webkit-font-kerning: normal;
@@ -505,7 +505,7 @@ time {
     letter-spacing: 0;
     letter-spacing: .02rem;
     font-weight: 400;
-    font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+    font-family: $f-title;
     -webkit-font-feature-settings: 'kern';
     font-feature-settings: 'kern';
     -webkit-font-kerning: normal;
