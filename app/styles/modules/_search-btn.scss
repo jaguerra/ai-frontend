@@ -1,0 +1,100 @@
+.search-btn {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  letter-spacing: .02rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  background-color: #fff;
+  cursor: pointer;
+  display: table-cell;
+  float: right;
+  height: 100%;
+  line-height: 72px;
+  line-height: 5.14286rem;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: background-color .25s,color .25s,border-color .25s;
+  transition: background-color .25s,color .25s,border-color .25s;
+  width: 72px;
+  width: 5.14286rem;
+  z-index: 2;
+  border-right: 1px solid #e5e5e5;
+  display: block;
+  font-size: 14px;
+  font-size: 1rem;
+  position: absolute;
+  right: 143px;
+  right: 10.28571rem;
+  top: 0;
+  border-left: 1px solid #e5e5e5;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &.is-active {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  &:before {
+    margin: 24px auto;
+    margin: 1.71429rem auto;
+    padding: 1px;
+    padding: .07143rem;
+    position: relative;
+    top: 2px;
+    top: .14286rem;
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: block;
+    background-position: -17.57143em -12.14286em;
+    height: 1.28571em;
+    width: 1.28571em;
+  }
+  &.is-active {
+    &:before {
+      background-position: -.35714em -17.14286em;
+      font-size: 16px;
+      font-size: 1.14286rem;
+    }
+    + .nav-search {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 64.9375em) {
+  .search-btn {
+    z-index: 1002;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .search-btn {
+    right: 72px;
+    right: 5.14286rem;
+  }
+}
+
+@media screen and (max-width: 64.9375em) {
+  .search-btn.is-active + .nav-search {
+    left: 0;
+  }
+}
+
+

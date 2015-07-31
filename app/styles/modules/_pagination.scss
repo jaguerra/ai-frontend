@@ -1,0 +1,187 @@
+.pagination {
+  border-bottom: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+  margin: 24px auto;
+  margin: 1.71429rem auto;
+  max-width: 605px;
+  max-width: 43.21429rem;
+  text-align: center;
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+  &.is-disabled {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .pagination {
+    margin-left: 11px;
+    margin-left: .85714rem;
+    margin-right: 11px;
+    margin-right: .85714rem;
+  }
+}
+
+.pagination__link, .pagination__spacer {
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  letter-spacing: .02rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  line-height: .75;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination__btn--prev {
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  letter-spacing: .02rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  line-height: .75;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 24px 0;
+  margin: 1.71429rem 0;
+  padding: 16px;
+  padding: 1.14286rem;
+  position: relative;
+  float: left;
+  padding-left: 24px;
+  padding-left: 1.71429rem;
+  &:after, &:before {
+    position: absolute;
+    top: 12px;
+    top: .92857rem;
+  }
+  &.is-disabled {
+    opacity: .25;
+  }
+  &:before {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: inline-block;
+    background-position: -12.35714em -11.35714em;
+    height: 1.14286em;
+    width: 1.14286em;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 29.9375em) {
+  .pagination__btn--prev {
+    display: inline-block;
+    margin: 8px 0;
+    margin: .57143rem 0;
+  }
+}
+
+.pagination__btn--next {
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  letter-spacing: .02rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  line-height: .75;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 24px 0;
+  margin: 1.71429rem 0;
+  padding: 16px;
+  padding: 1.14286rem;
+  position: relative;
+  float: right;
+  padding-right: 24px;
+  padding-right: 1.71429rem;
+  &:after, &:before {
+    position: absolute;
+    top: 12px;
+    top: .92857rem;
+  }
+  &.is-disabled {
+    opacity: .25;
+  }
+  &:after {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: inline-block;
+    background-position: -12.35714em -17.14286em;
+    height: 1.14286em;
+    width: 1.14286em;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 29.9375em) {
+  .pagination__btn--next {
+    display: inline-block;
+    margin: 8px 0;
+    margin: .57143rem 0;
+  }
+}
+
+.pagination__list {
+  font-size: 0;
+  margin: 24px 0;
+  margin: 1.71429rem 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 29.9375em) {
+  .pagination__list {
+    clear: both;
+    margin-top: 0;
+  }
+}
+
+.pagination__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.pagination__link {
+  display: block;
+  margin: 0 1px;
+  padding: 16px;
+  padding: 1.14286rem;
+  &:hover {
+    background: #f7f7f7;
+  }
+  &.is-current {
+    background: #000;
+    color: #fff;
+    &:hover {
+      background: #000;
+    }
+  }
+}
+
+

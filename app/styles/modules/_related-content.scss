@@ -1,0 +1,66 @@
+.related-content {
+  margin: 0 auto;
+  max-width: 1223px;
+  max-width: 87.42857rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 40em) {
+  .related-content {
+    margin-bottom: 14px;
+    margin-bottom: 1rem;
+    padding: 24px 24px 0 24px;
+    padding: 1.71429rem 1.71429rem 0 1.71429rem;
+  }
+}
+
+.related-content__title {
+  font-size: 28px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  border-top: 1px solid #dadada;
+  margin-left: -24px;
+  margin-left: -1.71429rem;
+  margin-right: -24px;
+  margin-right: -1.71429rem;
+  padding-top: 24px;
+  padding-top: 1.71429rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 40em) {
+  .related-content__title {
+    font-size: 38px;
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .related-content__title {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 47px;
+    padding-top: 3.42857rem;
+  }
+}
+
+.related-content__more {
+  padding: 24px;
+  padding: 1.71429rem;
+}
+
+@media screen and (min-width: 40em) {
+  .related-content__more {
+    padding: 24px 0;
+    padding: 1.71429rem 0;
+  }
+}
+
+

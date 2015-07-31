@@ -1,0 +1,110 @@
+.content-panels-container {
+  padding-bottom: 10px;
+  padding-bottom: .71429rem;
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .content-panels-container {
+    padding-right: 10px;
+    padding-right: .71429rem;
+  }
+}
+
+.content-panels-container__heading {
+  font-size: 38px;
+  font-size: 2.75rem;
+  font-size: 28px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 40em) {
+  .content-panels-container__heading {
+    text-align: center;
+  }
+}
+
+.content-panel {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  min-height: .07143rem;
+  padding-left: 10px;
+  padding-left: .71429rem;
+  margin-bottom: 10px;
+  margin-bottom: .71429rem;
+  width: 100%;
+  height: 369px;
+  height: 26.42857rem;
+  padding-right: 10px;
+  padding-right: .71429rem;
+}
+
+@media screen and (min-width: 40em) {
+  .content-panel {
+    height: 420px;
+    height: 30rem;
+    width: 33.33333%;
+    padding-right: 0;
+  }
+}
+
+@media print {
+  .content-panel {
+    height: 179px;
+    height: 12.85714rem;
+  }
+}
+
+.content-panel__content {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.content-panel__content-bottom {
+  bottom: 11px;
+  bottom: .85714rem;
+  left: 11px;
+  left: .85714rem;
+  position: absolute;
+  right: 11px;
+  right: .85714rem;
+}
+
+.content-panel__heading {
+  font-size: 28px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  margin: 0 8px;
+  margin: 0 .57143rem;
+  position: relative;
+  text-transform: uppercase;
+  top: 1px;
+  top: .07143rem;
+}
+
+

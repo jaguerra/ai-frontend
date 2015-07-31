@@ -1,0 +1,123 @@
+.cookies {
+  background: #e5e5e5;
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+
+@media screen and (max-width: 65em) {
+  .cookies {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+  }
+}
+
+.cookies--accepted {
+  font-size: 0;
+  height: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.cookies__btn {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 10px 17px;
+  padding: .71429rem 1.28571rem;
+  text-decoration: none;
+  -webkit-transition: background-color .25s,border-color .25s,color .25s;
+  transition: background-color .25s,border-color .25s,color .25s;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  letter-spacing: .02rem;
+  float: right;
+  &:hover {
+    background-color: #dadada;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .cookies__btn {
+    float: none;
+  }
+}
+
+.cookies__form {
+  display: inline-block;
+  margin-bottom: 0;
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+
+@media screen and (min-width: 41.25em) {
+  .cookies__form {
+    clear: right;
+    float: right;
+    position: relative;
+    top: 50%;
+  }
+}
+
+.cookies__container {
+  margin: 0 auto;
+  max-width: 1223px;
+  max-width: 87.42857rem;
+  padding: 24px;
+  padding: 1.71429rem;
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+
+@media screen and (max-width: 65em) {
+  .cookies__container {
+    text-align: center;
+  }
+}
+
+.cookies__message {
+  margin: 0 0 11px 0;
+  margin: 0 0 .85714rem 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 41.25em) {
+  .cookies__message {
+    float: left;
+    margin: 8px 0 0 0;
+    margin: .57143rem 0 0 0;
+    text-align: left;
+  }
+}
+
+

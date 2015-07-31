@@ -1,0 +1,1752 @@
+
+<!DOCTYPE html dir="ltr" lang="en">
+<!--[if lt IE 7]>      <html dir="ltr" lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html dir="ltr" lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html dir="ltr" lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html dir="ltr" lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>Amnesty Style Guide | Amnesty International</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="/cdn/styles/main-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!--<![endif]-->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script>!function(){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(a){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===a}function d(){if(window.localStorage&&window.XMLHttpRequest)if(c(a))e(localStorage.font_css_cache);else{var d=new XMLHttpRequest;d.open("GET",a,!0),d.onreadystatechange=function(){4===d.readyState&&(e(d.responseText),localStorage.font_css_cache=d.responseText,localStorage.font_css_cache_file=a)},d.send()}else{var b=document.createElement("link");b.href=a,b.rel="stylesheet",b.type="text/css",document.getElementsByTagName("head")[0].appendChild(b),document.cookie="font_css_cache"}}function e(a){var b=document.createElement("style");b.setAttribute("type","text/css"),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a,document.getElementsByTagName("head")[0].appendChild(b)}var a="/cdn/styles/webfonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?d():b(window,"load",d)}();</script>
+    <script>!function(){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(a){return window.localStorage&&localStorage.font_css_cache_rtl&&localStorage.font_css_cache_file_rtl===a}function d(){if(window.localStorage&&window.XMLHttpRequest)if(c(a))e(localStorage.font_css_cache_rtl);else{var d=new XMLHttpRequest;d.open("GET",a,!0),d.onreadystatechange=function(){4===d.readyState&&(e(d.responseText),localStorage.font_css_cache_rtl=d.responseText,localStorage.font_css_cache_file_rtl=a)},d.send()}else{var b=document.createElement("link");b.href=a,b.rel="stylesheet",b.type="text/css",document.getElementsByTagName("head")[0].appendChild(b),document.cookie="font_css_cache_rtl"}}function e(a){var b=document.createElement("style");b.setAttribute("type","text/css"),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a,document.getElementsByTagName("head")[0].appendChild(b)}var a="/cdn/styles/webfonts--rtl.css";window.localStorage&&localStorage.font_css_cache_rtl||document.cookie.indexOf("font_css_cache_rtl")>-1?d():b(window,"load",d)}();</script>
+
+</head>
+<body class="en">
+    
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h1 class="h1--caps ltr">Amnesty International Pattern Library</h1>
+
+                <h2 class="h2 ltr">Colours</h2>
+                <div class="grid">
+                    <div class="col col--1/2 col--1/3--md colours__yellow">
+                        <code>$c-yellow: #FF0;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__black">
+                        <code>$c-black: #000;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__grey--darkest">
+                        <code>$c-grey--darkest: #1A1A1A;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__grey--darker">
+                        <code>$c-grey--darker: #262626;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__grey--dark">
+                        <code>$c-grey--dark: #363636;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__grey--mid">
+                        <code>$c-grey--mid: #B6B6B6;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__grey--light">
+                        <code>$c-grey--light: #DADADA;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__grey--lighter">
+                        <code>$c-grey--lighter: #E5E5E5;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__grey--lightest">
+                        <code>$c-grey--lightest: #F7F7F7;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__white">
+                        <code>$c-white: #FFF;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__twitter">
+                        <code>$c-twitter: #55ACEE;</code>
+                    </div>
+                    <div class="col col--1/2 col--1/3--md colours__error">
+                        <code>$c-error: #CB5757;</code>
+                    </div>
+                </div>
+
+                <h2 class="h2 ltr">Fonts</h2>
+                <p>
+                    <code>$f-default: sans-serif;</code><br>
+                    <span class="f-default ltr-display">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </p>
+                <p>
+                    <code>$f-default--rtl: Tahoma, sans-serif;</code><br>
+                    <span class="f-default">دارت وباءت مقاومة هذه مع, يعبأ تعديل ترتيب قهر هو, أي وتردي مسؤولية الغازية أخر.</span>
+                </p>
+                <p>
+                    <code>$f-title: 'TradeGothicLT-BoldCondTwenty', 'HelveticaNeue-CondensedBold', 'Franklin Gothic Medium', sans-serif;</code><br>
+                    <span class="f-title ltr-display">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </p>
+                <p>
+                    <code>$f-title--rtl: 'FrutigerLTArabic-77BlackCn', 'HelveticaNeue-CondensedBold', 'Franklin Gothic Medium', Tahoma, sans-serif;</code><br>
+                    <span class="f-title--rtl">دارت وباءت مقاومة هذه مع, يعبأ تعديل ترتيب قهر هو, أي وتردي مسؤولية الغازية أخر.</span>
+                </p>
+
+                <h2 class="h2 ltr">Transitions</h2>
+                <p class="hover"><strong>Fade:</strong> Duration: 0.25s</p>
+
+                <h2 class="h2 ltr">Headings</h2>
+                <p>Note: Heading levels are not the same as header elements. E.g. A <code>&lt;h2&gt;</code> element may not always have a font size of 38px.</p>
+                <div class="en">
+                    <p class="h1">Heading level 1 <span class="h-size">3.5rem / 49px</span></p>
+                    <p class="h2">Heading level 2 <span class="h-size">2.75rem / 38px</span></p>
+                    <p class="h3">Heading level 3 <span class="h-size">2rem / 28px</span></p>
+                    <p class="h4">Heading level 4 <span class="h-size">1.7rem / 24px</span></p>
+                    <p class="h5">Heading level 5 <span class="h-size">1.5rem / 21px</span></p>
+                    <p class="h6">Heading level 6 <span class="h-size">1rem / 14px</span></p>
+                </div>
+                <div class="ar">
+                    <p class="h1 f-title--rtl">تتجه مستوى 1 <span class="h-size">3.5rem / 49px</span></p>
+                    <p class="h2 f-title--rtl">تتجه مستوى 2 <span class="h-size">2.75rem / 38px</span></p>
+                    <p class="h3 f-title--rtl">تتجه مستوى 3 <span class="h-size">2rem / 28px</span></p>
+                    <p class="h4 f-title--rtl">تتجه مستوى 4 <span class="h-size">1.7rem / 24px</span></p>
+                    <p class="h5 f-title--rtl">تتجه مستوى 5 <span class="h-size">1.5rem / 21px</span></p>
+                    <p class="h6 f-title--rtl">تتجه مستوى 6 <span class="h-size">1rem / 14px</span></p>
+                </div>
+
+                <h2 class="h2 ltr">Paragraph</h2>
+                <p class="en">A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+                <p class="ar">
+                    تتلقى منظمة العفو الدولية دعمها المالي بشكل رئيسي من الأفراد والأشخاص العاديين من مختلف مناطق العالم.
+
+                    وتتيح هذه المساهمات المالية الشخصية والتبرعات غير المشروطة للمنظمة الحفاظ على استقلاليتها الكاملة عن الحكومات والأيديولوجيات السياسية، والمصالح الاقتصادية والدينية.
+
+                    يتم تمويلنا من قبل الأعضاء وأناس مثلكم. فنحن مستقلون عن أي أيديولوجية سياسية، أو مصالح اقتصادية أو دينية. وليس هناك حالة خارج إطار الأمل.
+                </p>
+
+                <h2 class="h2 ltr">Buttons</h2>
+
+                <div class="grid">
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-primary--sm--fullwidth"><span class="en">small</span><span class="ar">صغير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-secondary--sm--fullwidth"><span class="en">small</span><span class="ar">صغير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-secondary--alt--sm--fullwidth"><span class="en">small</span><span class="ar">صغير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-secondary--on-black--sm--fullwidth"><span class="en">small</span><span class="ar">صغير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-tertiary--sm--fullwidth"><span class="en">small</span><span class="ar">صغير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <div class="transparent--bg">
+                            <button class="btn-transparent--sm--fullwidth dark-bg"><span class="en">small</span><span class="ar">صغير</span></button>
+                        </div>
+                    </div>
+
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-primary--md--fullwidth"><span class="en">medium</span><span class="ar">متوسط</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-secondary--md--fullwidth"><span class="en">medium</span><span class="ar">متوسط</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-secondary--alt--md--fullwidth"><span class="en">medium</span><span class="ar">متوسط</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-secondary--on-black--md--fullwidth"><span class="en">medium</span><span class="ar">متوسط</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <button class="btn-tertiary--md--fullwidth"><span class="en">medium</span><span class="ar">متوسط</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--md">
+                        <div class="transparent--bg">
+                            <button class="btn-transparent--md--fullwidth dark-bg"><span class="en">medium</span><span class="ar">متوسط</span></button>
+                        </div>
+                    </div>
+
+                    <div class="col--stacked col--1/6--lg">
+                        <button class="btn-primary--lg--fullwidth"><span class="en">large</span><span class="ar">كبير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--lg">
+                        <button class="btn-secondary--lg--fullwidth"><span class="en">large</span><span class="ar">كبير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--lg">
+                        <button class="btn-secondary--alt--lg--fullwidth"><span class="en">large</span><span class="ar">كبير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--lg">
+                        <button class="btn-secondary--on-black--lg--fullwidth"><span class="en">large</span><span class="ar">كبير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--lg">
+                        <button class="btn-tertiary--lg--fullwidth"><span class="en">large</span><span class="ar">كبير</span></button>
+                    </div>
+                    <div class="col--stacked col--1/6--lg">
+                        <div class="transparent--bg">
+                            <button class="btn-transparent--lg--fullwidth dark-bg"><span class="en">large</span><span class="ar">كبير</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="h2 ltr">Blockquote</h2>
+                <blockquote class="en">
+                    A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.
+                </blockquote>
+                <blockquote class="ar">
+                    منظمة العفو الدولية حركة عالمية تضم ما يربو على 7 مليون شخص يأخذون الظلم على محمل شخصي. ونحن نناضل من أجل عالم يتمتع فيه الجميع بحقوق الإنسان.
+                </blockquote>
+
+                <h2 class="h2 ltr">Inline elements</h2>
+                <p><a href="#">This is a text link</a></p>
+                <p><strong>Strong is used to indicate strong importance</strong></p>
+                <p><em>This text has added emphasis</em></p>
+                <p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+                <p>The <i>i element</i> is text that is set off from the normal text</p>
+                <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+                <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+                <p><s>This text has a strikethrough</s></p>
+                <p>Superscript<sup>&reg;</sup></p>
+                <p>Subscript for things like H<sub>2</sub>O</p>
+                <p><small>This small text is small for for fine print, etc.</small></p>
+                <p>
+                    Abbreviation:
+                    <abbr title="HyperText Markup Language">HTML</abbr>
+                </p>
+                <p>Keybord input: <kbd>Cmd</kbd></p>
+                <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+                <p><cite>This is a citation</cite></p>
+                <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+                <p>The <mark>mark element</mark> indicates a highlight</p>
+                <p><code>This is what inline code looks like.</code></p>
+                <p>
+                    <samp>This is sample output from a computer program</samp>
+                </p>
+                <p>
+                    The
+                    <var>variable element</var>, such as
+                    <var>x</var>
+                    =
+                    <var>y</var>
+                </p>
+
+                <h2 class="h2 ltr">Horizontal rule</h2>
+                <hr>
+
+                <h2 class="h2 ltr">Unordered list</h2>
+                <ul>
+                    <li>This is a list item in an unordered list</li>
+                    <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+                    <li>
+                        Lists can be nested inside of each other
+                        <ul>
+                            <li>This is a nested list item</li>
+                            <li>This is another nested list item in an unordered list</li>
+                        </ul>
+                    </li>
+                    <li>This is the last list item</li>
+                </ul>
+
+                <h2 class="h2 ltr">Ordered list</h2>
+                <ol>
+                    <li>This is a list item in an ordered list</li>
+                    <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+                    <li>
+                        Lists can be nested inside of each other
+                        <ol>
+                            <li>This is a nested list item</li>
+                            <li>This is another nested list item in an ordered list</li>
+                        </ol>
+                    </li>
+                    <li>This is the last list item</li>
+                </ol>
+
+                <h2 class="h2 ltr">Logo</h2>
+                <div class="clearfix">
+                    <p class="logo" style="position: relative;"><span class="logo__link">Amnesty International</span></p>
+                </div>
+
+                <h2 class="h2 ltr">Components</h2>
+
+                <h3 class="h3 ltr">Article meta</h3>
+                <div class="grid">
+                    <div class="col col--5/12--lg">
+<p class="meta">
+ <strong>Peter Benenson</strong>,
+			 England
+ <time datetime="2015-02-27T11:37:01">27 February 2015, 00:00 UTC</time>
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Header image (rich media)</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="image-header image-header--has-credits-sm">
+  <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42, /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42, /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52, /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52, /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72, /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102, /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102_hi 2x [(min-width: 346px)] | /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102, /media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102_hi 2x"></div>
+  <noscript>
+    <img src="/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;amp;preset=fixed_1472_42" alt="" class="responsive__img">
+  </noscript>
+  <div class="image-header__content--headline">
+    <div class="image-headline--right">
+      <div class="image-headline__table">
+        <div class="image-headline__cell">
+          <div class="image-headline__aligned">
+              <h1 class="image-headline__title">A Label</h1>
+            <h2 class="image-headline__subtitle">              <span class="heading--tape">Bombing in Gaza</span>
+</h2>
+<div class="image-headline__text"><p class="image-headline__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>                          <div>
+                <a class="btn--header" href="#">Read More</a>
+              </div>
+            </div>          </div>
+        </div>
+      </div>
+    </div>
+      <ul class="tags--header--md">
+        <li class="tags__item--bold"><span class="tags__icon--bold--news">Story</span></li>
+      </ul>
+  </div>
+
+    <span class="credits credits--header credits--overlay">&#169;2015</span>
+
+</div>
+
+	<div class="container">
+		<div class="grid">
+			<div class="col col--1/12--md not--sm"></div>
+			<div class="col col--5/6--md">
+				<div class="col__content">
+					<ul class="tags--discrete--md">
+						<li class="tags__item--bold--sm"><span class="tags__icon--bold--news">Issue</span></li>
+							<li class="tags__item--discrete"><a class="tags__link--discrete--md" href="#" rel="tag">Nigeria</a></li>
+													<li class="tags__item--discrete"><a class="tags__link--discrete--md" href="#" rel="tag">Armed Conflict</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Header image (rich media w/ video)</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="image-header image-header--has-credits-sm">
+  <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1472_42, /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1224_42, /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1039_52, /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1039_52_hi 2x [(min-width: 840px)] | /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_839_52, /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_839_52_hi 2x [(min-width: 640px)] | /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_639_72, /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_639_72_hi 2x [(min-width: 480px)] | /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_479_102, /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_479_102_hi 2x [(min-width: 346px)] | /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_345_102, /media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_345_102_hi 2x"></div>
+  <noscript>
+    <img src="/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+  </noscript>
+  <div class="video__cover" data-video-cover></div>
+  <div class="image-header__content" data-video>
+    <div class="image-headline--left image-headline--fill--sm">
+      <div class="image-headline__table image-headline__table--sm">
+        <div class="image-headline__cell image-headline__cell--bottom--sm">
+          <div class="image-headline__aligned">
+              <h1 class="image-headline__subtitle--top--sm"><span class="heading--tape">Armed Torture</span></h1>
+
+              <div>
+                <a href="//www.youtube.com/watch?v=dkl44sAEC6c" class="btn--header--video" data-video-link="//www.youtube.com/embed/dkl44sAEC6c&amp;autoplay=1">Watch video</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <ul class="tags--header--md">
+        <li class="tags__item--bold"><span class="tags__icon--bold--news">Issue</span></li>
+      </ul>
+  </div>
+
+    <span class="credits credits--header">&#169;2015</span>
+</div>
+
+<script type="text/template" data-video-template>
+  <div class="image-header__content--video" data-video>
+    <iframe class="video__iframe" src="{{url}}" frameborder="0" allowfullscreen></iframe>
+    <button class="video__close" type="button" data-video-close>Close</button>
+  </div>
+</script>
+	<div class="container">
+		<div class="grid">
+			<div class="col col--1/12--md not--sm"></div>
+			<div class="col col--5/6--md">
+				<div class="col__content">
+					<ul class="tags--discrete--md">
+						<li class="tags__item--bold--sm"><span class="tags__icon--bold--news">Issue</span></li>
+							<li class="tags__item--discrete"><a class="tags__link--discrete--md" href="#" rel="tag">Nigeria</a></li>
+													<li class="tags__item--discrete"><a class="tags__link--discrete--md" href="#" rel="tag">Armed Conflict</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Header image (landing)</h3>
+            </div>
+        </div>
+    </div>
+
+  <div class="image-header--sunken image-header-sunken-spaced image-header--has-credits-sm">
+    <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/landingpagecountries.jpg?preset=fixed_1472_42, /media/patternlibrary/landingpagecountries.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/landingpagecountries.jpg?preset=fixed_1224_42, /media/patternlibrary/landingpagecountries.jpg?preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | /media/patternlibrary/landingpagecountries.jpg?preset=fixed_1039_52, /media/patternlibrary/landingpagecountries.jpg?preset=fixed_1039_52_hi 2x [(min-width: 840px)] | /media/patternlibrary/landingpagecountries.jpg?preset=fixed_839_52, /media/patternlibrary/landingpagecountries.jpg?preset=fixed_839_52_hi 2x [(min-width: 640px)] | /media/patternlibrary/landingpagecountries.jpg?preset=fixed_639_72, /media/patternlibrary/landingpagecountries.jpg?preset=fixed_639_72_hi 2x [(min-width: 480px)] | /media/patternlibrary/landingpagecountries.jpg?preset=fixed_479_102, /media/patternlibrary/landingpagecountries.jpg?preset=fixed_479_102_hi 2x [(min-width: 346px)] | /media/patternlibrary/landingpagecountries.jpg?preset=fixed_345_102, /media/patternlibrary/landingpagecountries.jpg?preset=fixed_345_102_hi 2x"></div>
+    <noscript>
+      <img src="/media/patternlibrary/landingpagecountries.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+    </noscript>
+    <div class="image-header__content">
+        <h1 class="image-headline__sunken-title"><span class="heading--tape--dark">Countries</span></h1>
+    </div>
+        <span class="credits credits--header credits--sunken-header">&#169;2015</span>
+  </div>
+
+
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Header image (content)</h3>
+            </div>
+        </div>
+    </div>
+
+  <div class="image-header--sunken image-header-sunken-spaced image-header--has-credits-sm">
+    <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_1472_42, /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_1224_42, /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_1039_52, /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_1039_52_hi 2x [(min-width: 840px)] | /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_839_52, /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_839_52_hi 2x [(min-width: 640px)] | /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_639_72, /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_639_72_hi 2x [(min-width: 480px)] | /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_479_102, /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_479_102_hi 2x [(min-width: 346px)] | /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_345_102, /media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_345_102_hi 2x"></div>
+    <noscript>
+      <img src="/media/patternlibrary/nigeria_2944x1224px.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+    </noscript>
+    <div class="image-header__content">
+        <h1 class="image-headline__sunken-title"><span class="heading--tape--mid">Nigeria</span></h1>
+    </div>
+        <span class="credits credits--header credits--sunken-header">&#169;2015</span>
+  </div>
+
+
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Header image (article)</h3>
+            </div>
+        </div>
+    </div>
+
+  <div class="image-header image-header--has-credits-sm print-hidden">
+    <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_7.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_7.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_7.jpg?preset=fixed_1224_42, /media/patternlibrary/air_2014_7.jpg?preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_7.jpg?preset=fixed_1039_52, /media/patternlibrary/air_2014_7.jpg?preset=fixed_1039_52_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_7.jpg?preset=fixed_839_52, /media/patternlibrary/air_2014_7.jpg?preset=fixed_839_52_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_7.jpg?preset=fixed_639_72, /media/patternlibrary/air_2014_7.jpg?preset=fixed_639_72_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_7.jpg?preset=fixed_479_102, /media/patternlibrary/air_2014_7.jpg?preset=fixed_479_102_hi 2x [(min-width: 346px)] | /media/patternlibrary/air_2014_7.jpg?preset=fixed_345_102, /media/patternlibrary/air_2014_7.jpg?preset=fixed_345_102_hi 2x"></div>
+    <noscript>
+      <img src="/media/patternlibrary/air_2014_7.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+    </noscript>
+    <div class="image-header__content">
+        <ul class="tags--header--md">
+          <li class="tags__item--bold"><span class="tags__icon--bold--news">Article</span></li>
+        </ul>
+    </div>
+      <span class="credits credits--header">&#169;2015</span>
+  </div>
+
+	<div class="container">
+		<div class="grid">
+			<div class="col col--1/12--md not--sm"></div>
+			<div class="col col--5/6--md">
+				<div class="col__content">
+					<ul class="tags--discrete--md">
+						<li class="tags__item--bold--sm"><span class="tags__icon--bold--news">Issue</span></li>
+							<li class="tags__item--discrete"><a class="tags__link--discrete--md" href="#" rel="tag">Nigeria</a></li>
+													<li class="tags__item--discrete"><a class="tags__link--discrete--md" href="#" rel="tag">Armed Conflict</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Image Gallery</h3>
+            </div>
+        </div>
+    </div>
+<div class="container--full-bleed print-hidden">
+        <h2 class="carousel__headline">Annual Report</h2>
+    <div class="image-block--plain" data-carousel>
+        <div class="carousel--fullwidth image-block__content--tall-ghost">
+            <ul class="carousel__slider" data-carousel-slider>
+
+                    <li class="carousel__slide" data-carousel-slide data-carousel-slide-caption="February - Amnesty International researchers in the Central African Republic found evidence of ethnic cleansing of Muslim civilians in the western part of the country. Thousands of people were killed during the conflict in 2014" data-carousel-slide-credits="Camille Lepage/REUTERS/Corbis &#169;">
+                        <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+                        <noscript>
+                            <img src="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+                        </noscript>
+                        <div class="carousel__slide-inner">
+
+                        </div>
+                    </li>
+                    <li class="carousel__slide" data-carousel-slide data-carousel-slide-caption="March - Egypt sentenced 529 supporters of former President Mohamed Morsi to death for their alleged role in violence following his ousting in July 2013." data-carousel-slide-credits="STRINGER/Reuters/Corbis &#169;">
+                        <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_15.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_15.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_15.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_15.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+                        <noscript>
+                            <img src="/media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+                        </noscript>
+                        <div class="carousel__slide-inner">
+
+                        </div>
+                    </li>
+            </ul>
+        </div>
+        <button class="carousel__next--inline--center" data-carousel-next></button>
+        <button class="carousel__prev--inline--center" data-carousel-prev></button>
+    </div>
+    <div class="carousel__caption" data-carousel-caption></div>
+</div>
+
+
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Carousel</h3>
+            </div>
+        </div>
+    </div>
+<div class="image-block--plain print-hidden" data-carousel data-gallery-fullscreen>
+  <div class="carousel image-block__content--tall-ghost print-hidden">
+    <ul class="carousel__slider" data-carousel-slider>
+
+        <li class="carousel__slide" data-carousel-slide>
+          <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+          <noscript>
+            <img src="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+          </noscript>
+          <div class="carousel__slide-inner">
+                <div class="carousel-slide__caption">
+                  February - Amnesty International researchers in the Central African Republic found evidence of ethnic cleansing of Muslim civilians in the western part of the country. Thousands of people were killed during the conflict in 2014
+                    <span class="credits"> - Camille Lepage/REUTERS/Corbis &#169;</span>
+                </div>
+          </div>
+        </li>
+        <li class="carousel__slide" data-carousel-slide>
+          <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_15.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_15.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_15.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_15.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+          <noscript>
+            <img src="/media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+          </noscript>
+          <div class="carousel__slide-inner">
+                <div class="carousel-slide__caption">
+                  March - Egypt sentenced 529 supporters of former President Mohamed Morsi to death for their alleged role in violence following his ousting in July 2013.
+                    <span class="credits"> - STRINGER/Reuters/Corbis &#169;</span>
+                </div>
+          </div>
+        </li>
+    </ul>
+  </div>
+    <div class="carousel__header" data-carousel-title>
+      <h2 class="carousel__title">Annual Report</h2>
+    </div>
+  <button class="carousel__next--inline" data-carousel-next></button>
+  <button class="carousel__prev--inline" data-carousel-prev></button>
+
+
+  <div class="carousel-pagination" data-carousel-pagination>
+    <ul class="carousel-pagination__list">
+    </ul>
+    <div class="carousel-pagination__label__wrapper">
+      <div class="carousel-pagination__label" data-carousel-pagination-label></div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Carousel with slide titles</h3>
+            </div>
+        </div>
+    </div>
+<div class="image-block--plain print-hidden" data-carousel data-gallery-fullscreen>
+  <div class="carousel image-block__content--tall-ghost print-hidden">
+    <ul class="carousel__slider" data-carousel-slider>
+
+        <li class="carousel__slide" data-carousel-slide>
+          <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+          <noscript>
+            <img src="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+          </noscript>
+          <div class="carousel__slide-inner">
+                <div class="carousel-slide__caption">
+                  February - Amnesty International researchers in the Central African Republic found evidence of ethnic cleansing of Muslim civilians in the western part of the country. Thousands of people were killed during the conflict in 2014
+                    <span class="credits"> - Camille Lepage/REUTERS/Corbis &#169;</span>
+                </div>
+          </div>
+        </li>
+        <li class="carousel__slide" data-carousel-slide>
+          <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_15.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_15.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_15.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_15.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_15.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_15.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+          <noscript>
+            <img src="/media/patternlibrary/air_2014_15.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+          </noscript>
+          <div class="carousel__slide-inner">
+                <div class="carousel-slide__caption">
+                  March - Egypt sentenced 529 supporters of former President Mohamed Morsi to death for their alleged role in violence following his ousting in July 2013.
+                    <span class="credits"> - STRINGER/Reuters/Corbis &#169;</span>
+                </div>
+          </div>
+        </li>
+    </ul>
+  </div>
+    <div class="carousel__header" data-carousel-title>
+      <h2 class="carousel__title">Annual Report</h2>
+    </div>
+  <button class="carousel__next--inline" data-carousel-next></button>
+  <button class="carousel__prev--inline" data-carousel-prev></button>
+
+
+  <div class="carousel-pagination" data-carousel-pagination>
+    <ul class="carousel-pagination__list">
+          <li class="carousel-pagination__item" data-carousel-pagination-item>Title 1</li>
+          <li class="carousel-pagination__item" data-carousel-pagination-item>Title 2</li>
+    </ul>
+    <div class="carousel-pagination__label__wrapper">
+      <div class="carousel-pagination__label" data-carousel-pagination-label></div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Featured carousel with autoscroll</h3>
+            </div>
+        </div>
+    </div>
+
+
+<div class="image-block--plain image-block--spaced-bottom print-hidden featured-carousel" data-carousel data-gallery-fullscreen data-carousel-auto-scroll>
+    <div class="carousel image-block__content--medium image-block__content--wide">
+        <ul class="carousel__slider" data-carousel-slider>
+
+                <li class="carousel__slide" data-carousel-slide>
+                    <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+                    <noscript>
+                        <img src="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+                    </noscript>
+                    <div class="carousel-slide__header-content">
+                        <ul class="tags">
+                            <li class="tags__item--solo">
+                                <span class="tags__icon--news">News</span>
+                            </li>
+                        </ul>
+                        <div class="carousel-header__text-container">
+                            <span class="carousel-header__text">
+                                Amnesty International researchers in the Central African Republic found evidence of ethnic cleansing of Muslim civilians in the western part of the country. Thousands of people were killed during the conflict in 2014
+                            </span>
+                        </div>
+                        <div>
+                            <a class="btn-transparent--md btn--spaced-top" href="#">View Now</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel__slide" data-carousel-slide>
+                    <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+                    <noscript>
+                        <img src="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+                    </noscript>
+                    <div class="carousel-slide__header-content">
+                        <ul class="tags">
+                            <li class="tags__item--solo">
+                                <span class="tags__icon--news">News</span>
+                            </li>
+                        </ul>
+                        <div class="carousel-header__text-container">
+                            <span class="carousel-header__text">
+                                March - Egypt sentenced 529 supporters of former President Mohamed Morsi to death for their alleged role in violence following his ousting in July 2013.
+                            </span>
+                        </div>
+                        <div>
+                            <a class="btn-transparent--md btn--spaced-top" href="#">View Now</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel__slide" data-carousel-slide>
+                    <div class="responsive--bg " data-bgset="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62, /media/patternlibrary/air_2014_16.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72, /media/patternlibrary/air_2014_16.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82, /media/patternlibrary/air_2014_16.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122, /media/patternlibrary/air_2014_16.jpg?preset=fixed_479_122_hi 2x [(min-width: 390px)] | /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152, /media/patternlibrary/air_2014_16.jpg?preset=fixed_389_152_hi 2x" data-bg-slide></div>
+                    <noscript>
+                        <img src="/media/patternlibrary/air_2014_16.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+                    </noscript>
+                    <div class="carousel-slide__header-content">
+                        <ul class="tags">
+                            <li class="tags__item--solo">
+                                <span class="tags__icon--news">News</span>
+                            </li>
+                        </ul>
+                        <div class="carousel-header__text-container">
+                            <span class="carousel-header__text">
+                                March - Egypt sentenced 529 supporters of former President Mohamed Morsi to death for their alleged role in violence following his ousting in July 2013.
+                            </span>
+                        </div>
+                        <div>
+                            <a class="btn-transparent--md btn--spaced-top" href="#">View Now</a>
+                        </div>
+                    </div>
+                </li>
+
+        </ul>
+    </div>
+    <button class="carousel__next--inline" data-carousel-next>Next</button>
+    <button class="carousel__prev--inline" data-carousel-prev>Previous</button>
+
+    <div class="carousel-pagination" data-carousel-pagination>
+        <ul class="carousel-pagination__list">
+                <li class="carousel-pagination__item" data-carousel-pagination-item>
+                        <time class="hidden-large-up carousel-pagination-item__date" datetime="1/26/2014 12:00:00 AM">26 January 2014</time>
+                    Africa, Armed Conflict
+                </li>
+                <li class="carousel-pagination__item" data-carousel-pagination-item>
+                        <time class="hidden-large-up carousel-pagination-item__date" datetime="1/26/2014 12:00:00 AM">26 January 2014</time>
+                    Egypt, Death Sentence
+                </li>
+                <li class="carousel-pagination__item" data-carousel-pagination-item>
+                        <time class="hidden-large-up carousel-pagination-item__date" datetime="1/26/2014 12:00:00 AM">26 January 2014</time>
+                    Egypt, Death Sentence
+                </li>
+        </ul>
+
+        <div class="carousel-pagination__label__wrapper">
+            <div class="carousel-pagination__label" data-carousel-pagination-label></div>
+        </div>
+    </div>
+</div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Tweet this now</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/12--md">
+            <div class="col__content">
+<aside class="tweet">
+    <blockquote class="tweet__quote">This is a tweet component, this text forms the tweet when the button is pressed.</blockquote>
+    <h2 class="tweet__cta"><a class="tweet__link" target="_blank" href="#">Tweet this now</a></h2>
+</aside>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Quote</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/12--md">
+            <div class="col__content">
+<blockquote data-scenario="quote_text" class="quote">
+	<div class="quote__text">It is during our darkest moments that we must focus to see the light</div>
+		<footer data-scenario="quote_author" class="quote__source">Aristotle Onassis</footer>
+</blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Locations A-Z</h3>
+<div class="col col--1/12--md not--sm"></div>
+<div class="col col--5/6--md">
+    <div class="col__content">
+        <ul class="alphabet-list print-hidden">
+        			<li class="alphabet-list__item"><a class="alphabet-list__link" href="#A" data-locations-link><span class="alphabet-list__inner">A</span></a></li>
+        			<li class="alphabet-list__item"><a class="alphabet-list__link" href="#B" data-locations-link><span class="alphabet-list__inner">B</span></a></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">C</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">D</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">E</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">F</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">G</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">H</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">I</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">J</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">K</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">L</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">M</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">N</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">O</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">P</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">Q</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">R</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">S</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">T</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">U</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">V</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">W</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">X</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">Y</span></li>
+        			<li class="alphabet-list__item--blank"><span class="alphabet-list__inner">Z</span></li>
+        	        		<li class="alphabet-list__item--empty"><span class="alphabet-list__inner">&nbsp;</span></li>
+        		<li class="alphabet-list__item--empty"><span class="alphabet-list__inner">&nbsp;</span></li>
+        		<li class="alphabet-list__item--empty"><span class="alphabet-list__inner">&nbsp;</span></li>
+        		<li class="alphabet-list__item--empty"><span class="alphabet-list__inner">&nbsp;</span></li>
+        </ul>
+    </div>
+</div>
+<div class="col col--1/12--md not--sm"></div>
+</div>
+<div class="grid">
+<div class="col col--1/12--md not--sm"></div>
+<div class="col col--5/6--md">
+    <div class="col__content">
+            <div id="A" class="grid" data-alphabet-location>
+                <h3 class="locations__title">A</h3>
+                <div class="locations__container">
+                    <ul class="locations__list--region">
+                        <li class="locations__item"><a class="locations__item-link" href="#">Africa Region</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Australasia Region</a></li>
+                    </ul>
+
+
+                    <ul class="locations__list--country">
+                        <li class="locations__item"><a class="locations__item-link" href="#">Afghanistan</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Albania</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Algeria</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">American Samoa</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Andorra</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Angola</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Anguilla</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Antigua and Barbuda</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Antilles</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Argentina</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Armenia</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Australia</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Austria</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Azerbaijan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="B" class="grid" data-alphabet-location>
+                <h3 class="locations__title">B</h3>
+                <div class="locations__container">
+
+
+                    <ul class="locations__list--country">
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bahamas</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bahrain</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bangladesh</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Barbados</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Belarus</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Belgium</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Belize</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Benin</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bermuda</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bhutan</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bolivia</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bosnia and Herzegovina</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Botswana</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Brazil</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Brunei Darussalam</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Bulgaria</a></li>
+                        <li class="locations__item"><a class="locations__item-link" href="#">Burkina Faso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Block Navigation</h3>
+  <div class="blocknav">
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Living In Dignity" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Living In Dignity" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Living In Dignity" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">Living In Dignity</div>
+        </a>
+      </div>
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Freedom of Expression" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Freedom of Expression" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Freedom of Expression" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">Freedom of Expression</div>
+        </a>
+      </div>
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Detention" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Detention" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Detention" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">Detention</div>
+        </a>
+      </div>
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Indigenous Peoples" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Indigenous Peoples" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Indigenous Peoples" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">Indigenous Peoples</div>
+        </a>
+      </div>
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="United Nations (UN)" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="United Nations (UN)" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="United Nations (UN)" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">United Nations (UN)</div>
+        </a>
+      </div>
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="People on the Move" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="People on the Move" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="People on the Move" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">People on the Move</div>
+        </a>
+      </div>
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Torture" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Torture" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Torture" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">Torture</div>
+        </a>
+      </div>
+      <div class="blocknav__item">
+        <a class="blocknav__box" href="#">
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_112, /media/patternlibrary/people-on-the-move.png?preset=proportional_112_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Discrimination" class="blocknav__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Discrimination" class="blocknav__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_112" alt="Discrimination" class="blocknav__img print-shown">
+          <div class="blocknav__boxtitle">Discrimination</div>
+        </a>
+      </div>
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Location office</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--1/3--md">
+            <div class="col__content">
+<h1 class="heading--sub heading--uppercase"><span class="visually-hidden">Contact Information: </span>Amnesty International in Algeria</h1>
+    <p data-ga="event,Navigation,click,Address"><strong>Address:</strong><br />10, rue Mouloud ZADI (face au 113 rue Didouche Mourad) Alger Centre, 16004 ALGER; Mail: BP 377 RP 16004 ALGER</p>
+	<p>
+			<strong>Phone:</strong>
+0021321738738<br />
+					<strong>Fax:</strong>
+00000000000	</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Key country facts</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--1/3--md">
+            <div class="col__content">
+<div class="grid--bg">
+  <div class="col">
+    <div class="col__content--padded border--bottom">
+      <h2 class="heading--sub heading--in-padded centered--sm heading--uppercase">Key Country Facts</h2>
+      <dl class="in-padded">
+          <dt>Head of State:</dt>
+          <dd>Abdelaziz Bouteflika</dd>
+          <dd class="dd__break" aria-hidden="true"></dd>
+                  <dt>Head of Government:</dt>
+          <dd>Abdelmalek Sellal</dd>
+          <dd class="dd__break" aria-hidden="true"></dd>
+                                          <dt>Population:</dt>
+          <dd>39,500,000</dd>
+          <dd class="dd__break" aria-hidden="true"></dd>
+              </dl>
+    </div>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Regional overview</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--1/3--md">
+            <div class="col__content">
+<h3 class="h3 heading--uppercase"></h3>
+<h3 class="h3 heading--uppercase">Middle East and North Africa</h3>
+<p>Millions of people continue to suffer the effects of armed conflict and horrendous abuses in Syria, Iraq and Gaza.</p>
+<a href="#" class="btn-secondary--md--fullwidth">View Region</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Recently Added</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--1/3--md">
+            <div class="col__content">
+<div class="col__content--right print-hidden">
+    <div class="recently-added-container">
+        <h2 class="heading--sub heading--uppercase heading--in-padded centered--sm">Recently Added</h2>
+        <ul class="recently-added">
+                <li class="recently-added__item">
+                    <ul class="tags">
+                        <li class="tags__item tags__item--close">
+                            <span class="tags__icon--report">Research</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="recently-added-item__title">Further information: China: Activists remain in detention in China</a>
+                </li>
+                <li class="recently-added__item">
+                    <ul class="tags">
+                        <li class="tags__item tags__item--close">
+                            <span class="tags__icon--report">Research</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="recently-added-item__title">Singapore: Free 16-year-old prisoner of conscience Amos Yee</a>
+                </li>
+                <li class="recently-added__item">
+                    <ul class="tags">
+                        <li class="tags__item tags__item--close">
+                            <span class="tags__icon--report">Research</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="recently-added-item__title">Iraq: Sentence completed, but not released</a>
+                </li>
+        </ul>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Action (default)</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container--padded">
+<div class="container--padded">
+    <div class="action action--default">
+<h2 class="action__subheading">JOIN AMNESTY. PROTECT HUMAN RIGHTS </h2>                    <h2 class="action__heading">Have your say in our work and help us be there for people at risk – become a member today.</h2>
+                    <a href="#" class="action__btn" >HOW DO I JOIN?</a>
+    </div>
+</div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Action (alternate)</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container--padded">
+<div class="container--padded">
+    <div class="action action--alternate">
+<h2 class="action__subheading">JOIN AMNESTY. PROTECT HUMAN RIGHTS </h2>                    <h2 class="action__heading">Have your say in our work and help us be there for people at risk – become a member today.</h2>
+                    <a href="#" class="action__btn" data-overlay-show="join">HOW DO I JOIN?</a>
+    </div>
+</div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Cookie Message</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container--wide">
+        <div class="grid">
+            <div class="col">
+                <div class="col__content">
+<div class="cookies print-hidden" data-cookies>
+	<div class="cookies__container">
+		<p class="cookies__message">We use cookies! <a href="#">Learn More</a></p>
+		<form action="/cookiemessage/hide" class="cookies__form" method="POST" data-cookie-form>
+			<input type="submit" class="cookies__btn" value="Okay, got it" />
+		</form>
+	</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Three Call To Action</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+<div class="container">
+  <div class="grid cta__cols">
+      <div class="col col--1/3--md">
+        <div class="col__content">
+          <h3 class="cta__subtitle">Heading</h3>
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Lorem ipsum" class="cta__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_150" alt="Lorem ipsum" class="cta__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_150" alt="Lorem ipsum" class="cta__img print-shown">
+          <p class="cta__exlplain">Lorem ipsum dolar sit amet</p>
+          <a class="visually-hidden" href="#">See more</a>
+        </div>
+      </div>
+      <div class="col col--1/3--md">
+        <div class="col__content">
+          <h3 class="cta__subtitle">Heading</h3>
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Lorem ipsum" class="cta__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_150" alt="Lorem ipsum" class="cta__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_150" alt="Lorem ipsum" class="cta__img print-shown">
+          <p class="cta__exlplain">Lorem ipsum dolar sit amet</p>
+          <a class="visually-hidden" href="#">See more</a>
+        </div>
+      </div>
+      <div class="col col--1/3--md">
+        <div class="col__content">
+          <h3 class="cta__subtitle">Heading</h3>
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Lorem ipsum" class="cta__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_150" alt="Lorem ipsum" class="cta__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_150" alt="Lorem ipsum" class="cta__img print-shown">
+          <p class="cta__exlplain">Lorem ipsum dolar sit amet</p>
+          <a class="visually-hidden" href="#">See more</a>
+        </div>
+      </div>
+  </div>
+  <div class="grid cta__cols--bottom">
+      <div class="col col--1/3--md">
+        <div class="col__content">
+          <a class="cta__button" href="#" aria-hidden="true">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_30, /media/patternlibrary/people-on-the-move.png?preset=proportional_30_hi 2x">
+              <!--[if IE 9]></video><![endif]-->
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Lorem ipsum" class="cta__icon lazyload">
+            </picture>
+            See more
+          </a>
+        </div>
+      </div>
+      <div class="col col--1/3--md">
+        <div class="col__content">
+          <a class="cta__button" href="#" aria-hidden="true">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_30, /media/patternlibrary/people-on-the-move.png?preset=proportional_30_hi 2x">
+              <!--[if IE 9]></video><![endif]-->
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Lorem ipsum" class="cta__icon lazyload">
+            </picture>
+            See more
+          </a>
+        </div>
+      </div>
+      <div class="col col--1/3--md">
+        <div class="col__content">
+          <a class="cta__button" href="#" aria-hidden="true">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_30, /media/patternlibrary/people-on-the-move.png?preset=proportional_30_hi 2x">
+              <!--[if IE 9]></video><![endif]-->
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Lorem ipsum" class="cta__icon lazyload">
+            </picture>
+            See more
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Full Screen Image</h3>
+            </div>
+        </div>
+    </div>
+
+<div class="image-block--shaded">
+    <div class="responsive--bg lazyload" data-bgset="/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42, /media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_1224_52, /media/patternlibrary/mediacentre2.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_1039_62, /media/patternlibrary/mediacentre2.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_839_72, /media/patternlibrary/mediacentre2.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_639_82, /media/patternlibrary/mediacentre2.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_479_122, /media/patternlibrary/mediacentre2.jpg?preset=fixed_479_122_hi 2x [(min-width: 346px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_345_152, /media/patternlibrary/mediacentre2.jpg?preset=fixed_345_152_hi 2x"></div>
+    <noscript>
+      <img src="/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+    </noscript>
+  <div class="image-block__content--tall">
+    <div class="image-block__text">
+      <div class="image-headline__table">
+        <div class="image-headline__cell">
+          <h2 class="image-headline__subtitle--sm">Visit our multimedia newsroom</h2>
+          <p class="image-headline__text--center">
+            View the latest news footage and recent video clips in our video newsroom. Content is updated in real time by our global corresponddents, lorem ipsum cognito ergo sum. Phasellus venenatis, nulla in finibus lacinia, urna odio imperdiet ligula, ac tempus dolor turpis eu elit. Etiam dignissim fermentum nibh, rhoncus mattis risus vestibulum eget.
+          </p>
+
+            <a href="#" class="image-headline__btn">Go to video newsroom</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Full Screen Content</h3>
+            </div>
+        </div>
+    </div>
+
+<div class="image-block">
+    <div class="responsive--bg lazyload print-hidden" data-bgset="/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42, /media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_1224_52, /media/patternlibrary/mediacentre2.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_1039_62, /media/patternlibrary/mediacentre2.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_839_72, /media/patternlibrary/mediacentre2.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_639_82, /media/patternlibrary/mediacentre2.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_479_122, /media/patternlibrary/mediacentre2.jpg?preset=fixed_479_122_hi 2x [(min-width: 346px)] | /media/patternlibrary/mediacentre2.jpg?preset=fixed_345_152, /media/patternlibrary/mediacentre2.jpg?preset=fixed_345_152_hi 2x"></div>
+    <noscript>
+      <img src="/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42" alt="" class="responsive__img print-hidden">
+    </noscript>
+  <div class="image-block__content--tall">
+    <div class="image-block__text--left">
+      <div class="image-headline__table">
+        <div class="image-headline__cell">
+          <h2 class="image-headline__subtitle--no-tape">Visit our multimedia newsroom</h2>
+          <div class="image-header__copy">
+            View the latest news footage and recent video clips in our video newsroom. Content is updated in real time by our global corresponddents, lorem ipsum cognito ergo sum. Phasellus venenatis, nulla in finibus lacinia, urna odio imperdiet ligula, ac tempus dolor turpis eu elit. Etiam dignissim fermentum nibh, rhoncus mattis risus vestibulum eget.
+                <p class="credits">&#169;2015</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="grid patternlibrary">
+
+        <div class="col col--1/12--md not--sm"></div>
+        <div class="col col--5/6--md">
+            <div class="col__content">
+                <h3 class="h3 ltr">Counter</h3>
+            </div>
+        </div>
+    </div>
+
+<div class="container--full-bleed">
+    <div class="grid">
+        <div class="counter">
+            <div class="col col--1/2--md">
+                <div class="counter-panel">
+                    <header class="counter-panel__heading"> We are a global movement</header>
+                    <div class="counter-panel__number" data-counter data-counter-culture="" data-counter-start="2000000" data-counter-stop="3052712"></div>
+                    <div class="counter-panel__text">With more than 3 million supporters, members and activists in over 150 countries - you will be in good company.</div>
+                </div>
+            </div>
+            <div class="col col--1/2--md">
+                    <blockquote class="counter-panel">
+                        <header class="quote__source--stacked">Moses Akatugba</header>
+                        <div class="quote__text--stacked">When he was 16, Moses was arrested and tortured.</div>
+                    </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="container--wide">
+        <div class="grid">
+            <div class="col">
+                <div class="col__content">
+                    <h3 class="h3 ltr">Facts and Figures (Default)</h3>
+<div class="key-facts--horizontal">
+	<h2 class="key-facts__title">Default</h2>
+		<p class="key-facts__intro">The below is a default facts and figures component with no images</p>
+	<div class="key-facts__grid">
+			<div class="key-facts__col">
+                <p class="key-facts__heading">100</p>
+                <p class="key-facts__description">Description 1</p>
+            </div>
+			<div class="key-facts__col">
+                <p class="key-facts__heading">50%</p>
+                <p class="key-facts__description">Description 2</p>
+            </div>
+			<div class="key-facts__col">
+                <p class="key-facts__heading">19.4</p>
+                <p class="key-facts__description">Description 3</p>
+            </div>
+	</div>
+</div>
+
+                    <h3 class="h3 ltr">Facts and Figures (Image)</h3>
+<div class="key-facts--horizontal">
+  <h2 class="key-facts__title">Image</h2>
+    <p class="key-facts__intro">The below is a comparison facts and figures component with no images</p>
+  <div class="key-facts__grid">
+
+      <div class="key-facts__col--1/4">
+        <div class="key-facts__item">
+          <picture class="key-facts__figure">
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_200, /media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 1" class="key-facts__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 1" class="key-facts__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 1" class="key-facts__img print-shown">
+          <div class="key-facts__label">
+              <p class="key-facts__heading--sm">Heading 1</p>
+            <p class="key-facts__figure-text">Description 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="key-facts__col--1/4">
+        <div class="key-facts__item">
+          <picture class="key-facts__figure">
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_200, /media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 2" class="key-facts__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 2" class="key-facts__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 2" class="key-facts__img print-shown">
+          <div class="key-facts__label">
+              <p class="key-facts__heading--sm">Heading 2</p>
+            <p class="key-facts__figure-text">Description 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="key-facts__col--1/4">
+        <div class="key-facts__item">
+          <picture class="key-facts__figure">
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_200, /media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 3" class="key-facts__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 3" class="key-facts__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 3" class="key-facts__img print-shown">
+          <div class="key-facts__label">
+              <p class="key-facts__heading--sm">Heading 3</p>
+            <p class="key-facts__figure-text">Description 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="key-facts__col--1/4">
+        <div class="key-facts__item">
+          <picture class="key-facts__figure">
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_200, /media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+            <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 4" class="key-facts__img lazyload print-hidden">
+          </picture>
+          <noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 4" class="key-facts__img">
+          </noscript>
+          <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 4" class="key-facts__img print-shown">
+          <div class="key-facts__label">
+              <p class="key-facts__heading--sm">Heading 4</p>
+            <p class="key-facts__figure-text">Description 4</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+                    <h3 class="h3 ltr">Facts and Figures (Progressive)</h3>
+<div class="key-facts--horizontal">
+  <h2 class="key-facts__title">Progressive</h2>
+    <p class="key-facts__intro">The below is a progressive facts and figures component with no images</p>
+  <div class="key-facts__grid--progressive">
+
+      <div class="key-facts__col--progressive">
+        <div class="key-facts__item">
+            <picture class="key-facts__figure--progressive">
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_200, /media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+              <!--[if IE 9]></video><![endif]-->
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 1" class="key-facts__img lazyload print-hidden">
+            </picture>
+            <noscript>
+              <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 1" class="key-facts__img">
+            </noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 1" class="key-facts__img print-shown">
+                      <p class="key-facts__heading--progressive">Heading 1</p>
+                      <p class="key-facts__description--progressive">Description 1</p>
+                      <span class="key-facts__progressor"></span>
+        </div>
+      </div>
+      <div class="key-facts__col--progressive">
+        <div class="key-facts__item">
+            <picture class="key-facts__figure--progressive">
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_200, /media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+              <!--[if IE 9]></video><![endif]-->
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 2" class="key-facts__img lazyload print-hidden">
+            </picture>
+            <noscript>
+              <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 2" class="key-facts__img">
+            </noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 2" class="key-facts__img print-shown">
+                      <p class="key-facts__heading--progressive">Heading 2</p>
+                      <p class="key-facts__description--progressive">Description 2</p>
+                      <span class="key-facts__progressor"></span>
+        </div>
+      </div>
+      <div class="key-facts__col--progressive">
+        <div class="key-facts__item">
+            <picture class="key-facts__figure--progressive">
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_200, /media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+              <source data-srcset="/media/patternlibrary/people-on-the-move.png?preset=proportional_150, /media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+              <!--[if IE 9]></video><![endif]-->
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 3" class="key-facts__img lazyload print-hidden">
+            </picture>
+            <noscript>
+              <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 3" class="key-facts__img">
+            </noscript>
+            <img src="/media/patternlibrary/people-on-the-move.png?preset=proportional_200" alt="Heading 3" class="key-facts__img print-shown">
+                      <p class="key-facts__heading--progressive">Heading 3</p>
+                      <p class="key-facts__description--progressive">Description 3</p>
+                  </div>
+      </div>
+  </div>
+</div>
+
+                    <h3 class="h3 ltr">Facts and Figures (Ampersand)</h3>
+
+
+<div class="key-facts--horizontal">
+  <div class="key-facts__grid">
+
+      <div class="key-facts__col--1/2">
+        <div class="key-facts__item key-facts__item--ampersand">
+            <p class="key-facts__heading--ampersand">Good news</p>
+                      <p class="key-facts__description--ampersand">Yara Faris was recently released from detention in Syria following an urgent action campaign from Amnesty.</p>
+                      <span class="key-facts__progressor--ampersand print-hidden"></span>
+        </div>
+      </div>
+      <div class="key-facts__col--1/2">
+        <div class="key-facts__item key-facts__item--ampersand">
+            <p class="key-facts__heading--ampersand">Bad news</p>
+                      <p class="key-facts__description--ampersand">Syria&#39;s 2012 Anti-terrorism Law still stands. Find out more.</p>
+                  </div>
+      </div>
+  </div>
+</div>
+
+
+                    <h3 class="h3 ltr">Search results</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container--wide">
+        <div class="grid--bg search-results">
+<article class="search-item--bordered">
+	<a class="search-item__content" href="#">
+	    <ul class="tags">
+	        <li class="tags__item"><span class="tags__icon--news">Press Release</span></li>
+	    </ul>
+            <p class="tags__item--faux">Iraq</p>
+                    <time class="search-item__date">8th August 2014</time>
+		<h1 class="search-item__title">Lorem ipsum dolar sit amet, consectetur adipiscing.</h1>
+	</a>
+</article>
+
+<article class="search-item">
+    <a href="#" class="search-item__link">
+        <div class="search-item__image">
+            <div class="responsive--bg lazyload search-item__image-block" data-bgset="/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228, /media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208, /media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208_hi 2x [(min-width: 346px)] | /media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208, /media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208_hi 2x"></div>
+            <noscript>
+              <img src="/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228" alt="" class="responsive__img" />
+            </noscript>
+            <ul class="tags--bottom">
+                <li class="tags__item--solo"><span class="tags__icon--blog">Blog</span></li>
+            </ul>
+        </div>
+        <div class="search-item__content--half">
+                <p class="tags__item--faux">Nigeria</p>
+                            <time class="search-item__date">23rd August 2014</time>
+            <h1 class="search-item__title">Ethnic cleansing in East Africa</h1>
+        </div>
+    </a>
+</article>
+
+
+<article class="search-item">
+  <a class="search-item__content--bottom" href="#">
+    <div class="responsive--bg lazyload search-item__image-block" data-bgset="/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415, /media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415_hi 2x [(min-width: 640px)] | /media/patternlibrary/air_2014_5.jpg?preset=fixed_615_415, /media/patternlibrary/air_2014_5.jpg?preset=fixed_615_415_hi 2x [(min-width: 346px)] | /media/patternlibrary/air_2014_5.jpg?preset=fixed_321_455, /media/patternlibrary/air_2014_5.jpg?preset=fixed_321_455_hi 2x"></div>
+    <noscript>
+      <img src="/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415" alt="" class="responsive__img" />
+    </noscript>
+    <div class="search-item__cell--bottom">
+      <ul class="tags--cell">
+        <li class="tags__item--solo"><span class="tags__icon--news">Campaign</span></li>
+      </ul>
+      <h1 class="search-item__title--tape"><span class="heading--tape--small">Stop torture</span></h1>
+    </div>
+  </a>
+</article>
+
+        </div>
+    </div>
+
+    <div class="grid patternlibrary">
+        <div class="col col--1/4--md col--1/3--lg not--sm"></div>
+        <div class="col col--1/2--md col--1/3--lg">
+<div class="pagination print-hidden" data-pagination>
+
+        <a class="pagination__btn--next" href="https://www.amnesty.org/about-us/style-guide/?p=6" rel="next" data-pagination-next>Next</a>
+
+        <a class="pagination__btn--prev" href="https://www.amnesty.org/about-us/style-guide/?p=4" rel="prev" data-pagination-previous>Previous</a>
+
+	<ul class="pagination__list">
+
+				<li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=1" data-pagination-page="1">1</a></li>
+				<li class="pagination__item"><span class="pagination__spacer">&hellip;</span></li>
+				<li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=4" data-pagination-page="4">4</a></li>
+				<li class="pagination__item"><span class="pagination__link is-current">5</span></li>
+				<li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=6" data-pagination-page="6">6</a></li>
+				<li class="pagination__item"><span class="pagination__spacer">&hellip;</span></li>
+				<li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=30" data-pagination-page="30">30</a></li>
+
+	</ul>
+
+</div>
+
+<script type="text/template" data-pagination-template>
+
+		{{#hasNextPage}}
+	        <a class="pagination__btn--next" href="{{nextUrl}}" rel="next" data-pagination-next>Next</a>
+	    {{/hasNextPage}}
+	    {{^hasNextPage}}
+	        <span class="pagination__btn--next is-disabled">Next</span>
+	    {{/hasNextPage}}
+
+	    {{#hasPreviousPage}}
+	        <a class="pagination__btn--prev" href="{{previousUrl}}" rel="prev" data-pagination-previous>Previous</a>
+	    {{/hasPreviousPage}}
+	    {{^hasPreviousPage}}
+	        <span class="pagination__btn--prev is-disabled">Previous</span>
+	    {{/hasPreviousPage}}
+
+
+		<ul class="pagination__list print-hidden">
+
+			{{#pages}}
+				<li class="pagination__item">
+				{{#spacer}}
+					<span class="pagination__spacer">&hellip;</span>
+				{{/spacer}}
+
+				{{^spacer}}
+					{{#currentPage}}
+						<span class="pagination__link is-current">{{number}}</span>
+					{{/currentPage}}
+					{{^currentPage}}
+						<a class="pagination__link" href="{{url}}" data-pagination-page="{{number}}">{{number}}</a>
+					{{/currentPage}}
+				{{/spacer}}
+
+				</li>
+
+			{{/pages}}
+
+		</ul>
+
+</script>
+
+        </div>
+        <div class="col col--1/3--md not--sm"></div>
+    </div>
+
+    <script src="/cdn/scripts/main.js"></script>
+</body>
+</html>

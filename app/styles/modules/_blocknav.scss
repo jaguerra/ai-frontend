@@ -1,0 +1,135 @@
+.blocknav {
+  margin-left: -10px;
+  margin-left: -.71429rem;
+  padding-bottom: 14px;
+  padding-bottom: 1rem;
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .blocknav {
+    padding: 24px 0 38px 0;
+    padding: 1.71429rem 0 2.71429rem 0;
+  }
+}
+
+.blocknav__item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  min-height: .07143rem;
+  padding-left: 10px;
+  padding-left: .71429rem;
+  margin-bottom: 10px;
+  margin-bottom: .71429rem;
+  width: 50%;
+}
+
+@media screen and (min-width: 40em) {
+  .blocknav__item {
+    width: 33.33333%;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .blocknav__item {
+    width: 25%;
+  }
+}
+
+@media print {
+  .blocknav__item {
+    width: 25%;
+  }
+}
+
+.blocknav__box {
+  font-size: 28px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  background-color: #fff;
+  border: 1px solid #363636;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  min-height: 232px;
+  min-height: 16.57143rem;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color .25s;
+  transition: background-color .25s;
+  &:after {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: inline-block;
+    background-position: -19.35714em -17.78571em;
+    height: .5em;
+    width: .92857em;
+  }
+  &:focus, &:hover {
+    background-color: #e5e5e5;
+    outline: 0;
+  }
+  &:active {
+    background: #dadada;
+  }
+  &:after {
+    bottom: 24px;
+    bottom: 1.71429rem;
+    display: block;
+    left: 50%;
+    margin-left: -.46429em;
+    position: absolute;
+  }
+}
+
+.blocknav__img {
+  border: 0;
+  height: 64px;
+  height: 4.57143rem;
+  margin: 0;
+  padding: 24px;
+  padding: 1.71429rem;
+  width: 64px;
+  width: 4.57143rem;
+}
+
+.blocknav__boxtitle {
+  font-size: 38px;
+  font-size: 2.75rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  margin: 0;
+  padding: 0 11px;
+  padding: 0 .85714rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+

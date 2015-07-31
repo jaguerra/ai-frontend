@@ -1,0 +1,64 @@
+.error-page--container {
+  background: #fff;
+  min-height: 420px;
+  min-height: 30rem;
+  padding-top: 159px;
+  padding-top: 11.42857rem;
+  text-align: center;
+  width: 100%;
+}
+
+.error-page--text, .error-page--text--rtl, .error-page--title, .error-page--title--rtl {
+  color: #262626;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  font-size: 31px;
+  font-size: 2.28571rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.error-page--text--rtl, .error-page--title--rtl {
+  font-family: FrutigerLTArabic-77BlackCn,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',Tahoma,sans-serif;
+}
+
+.error-page--text--rtl, .error-page--text {
+  font-size: 17px;
+  font-size: 1.28571rem;
+  margin-top: -17px;
+  margin-top: -1.28571rem;
+  text-transform: none;
+}
+
+.error-page--button {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  display: inline-block;
+  margin-top: 24px;
+  margin-top: 1.71429rem;
+  position: relative;
+  text-align: center;
+  &:hover {
+    background-color: #dadada;
+  }
+}
+
+.col--error {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  min-height: .07143rem;
+  padding-left: 10px;
+  padding-left: .71429rem;
+  width: 100%;
+  height: 295px;
+  height: 21.07143rem;
+  padding-left: 11px;
+  padding-left: .85714rem;
+  padding-right: 11px;
+  padding-right: .85714rem;
+}
+
+

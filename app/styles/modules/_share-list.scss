@@ -1,0 +1,107 @@
+.share-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  padding-left: 15px;
+  padding-left: 1.07143rem;
+  &:after, &:before {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+
+.share-list__item {
+  margin: 0;
+  padding: 0;
+  float: left;
+  height: 58px;
+  height: 4.14286rem;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: background-color .25s;
+  transition: background-color .25s;
+  width: 58px;
+  width: 4.14286rem;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+
+.share-list__link--facebook {
+  display: block;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  &:before {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: inline-block;
+    background-position: -13.57143em -13em;
+    height: 1.42857em;
+    width: 1.42857em;
+    display: block;
+    margin: 18px auto;
+    margin: 1.35714rem auto;
+    padding: 1px;
+    padding: .07143rem;
+  }
+}
+
+.share-list__link--twitter {
+  display: block;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  &:before {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: inline-block;
+    background-position: -11.78571em -13em;
+    height: 1.42857em;
+    width: 1.42857em;
+    display: block;
+    margin: 18px auto;
+    margin: 1.35714rem auto;
+    padding: 1px;
+    padding: .07143rem;
+  }
+}
+
+.share-list__link--email {
+  display: block;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  &:before {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: inline-block;
+    background-position: -17.57143em -2.14286em;
+    height: 1.42857em;
+    width: 1.42857em;
+    display: block;
+    margin: 18px auto;
+    margin: 1.35714rem auto;
+    padding: 1px;
+    padding: .07143rem;
+  }
+}
+
+

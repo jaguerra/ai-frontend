@@ -1,0 +1,198 @@
+@media screen and (min-width: 65em) {
+  .featured-carousel .carousel {
+    position: relative;
+  }
+}
+
+.featured-carousel {
+  .carousel__slide:before {
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .carousel-pagination {
+    bottom: 0;
+    left: 59px;
+    left: 4.28571rem;
+    right: 59px;
+    right: 4.28571rem;
+  }
+  .carousel-pagination__list {
+    max-width: none;
+    bottom: 80px;
+    bottom: 5.71429rem;
+    > li {
+      &:first-of-type {
+        -webkit-box-shadow: inset 1px 0 #e5e5e5;
+        box-shadow: inset 1px 0 #e5e5e5;
+        &:after, &:before {
+          -webkit-box-shadow: inset 1px 0 #e5e5e5;
+          box-shadow: inset 1px 0 #e5e5e5;
+        }
+      }
+      &:last-of-type {
+        -webkit-box-shadow: inset -1px 0 #e5e5e5;
+        box-shadow: inset -1px 0 #e5e5e5;
+        &:after, &:before {
+          -webkit-box-shadow: inset -1px 0 #e5e5e5;
+          box-shadow: inset -1px 0 #e5e5e5;
+        }
+      }
+    }
+  }
+  .carousel-pagination__item {
+    background: #e5e5e5;
+    color: #000;
+    font-size: 16px;
+    font-size: 1.14286rem;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 11px;
+    padding: .85714rem;
+    &:hover {
+      background: #dadada;
+    }
+  }
+  .carousel-pagination__label__wrapper {
+    height: 80px;
+    height: 5.71429rem;
+  }
+  .carousel-pagination__label {
+    background: #fff;
+    border-bottom: 5px solid #ff0;
+    font-size: 16px;
+    font-size: 1.14286rem;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 17px;
+    padding: 0 1.28571rem;
+  }
+  .carousel-pagination-item__date {
+    margin-bottom: 3px;
+    margin-bottom: .28571rem;
+  }
+  .carousel-pagination__item--selected {
+    background: #fff;
+    &:hover {
+      background: #fff;
+    }
+  }
+  .carousel__next--inline, .carousel__prev--inline {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .featured-carousel .carousel__slide:before {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .featured-carousel .carousel-pagination {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .featured-carousel .carousel-pagination__list {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .featured-carousel .carousel-pagination__item {
+    width: 33.33333%;
+    padding: 0 17px;
+    padding: 0 1.28571rem;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .featured-carousel .carousel-pagination__label__wrapper {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .featured-carousel .carousel-pagination__item--selected {
+    border-top: 0;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      height: .35714rem;
+      top: -4px;
+      top: -.35714rem;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 1;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      height: .35714rem;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #ff0;
+    }
+  }
+}
+
+@media screen and (max-width: 64.9375em) {
+  .featured-carousel {
+    .carousel__next--inline, .carousel__prev--inline {
+      bottom: 0;
+      background: #e5e5e5;
+      height: 74px;
+      height: 5.35714rem;
+    }
+    .carousel__next--inline:hover, .carousel__prev--inline:hover {
+      background: #b6b6b6;
+    }
+    .carousel__next--inline:before, .carousel__prev--inline:before {
+      margin: 31px auto;
+      margin: 2.21429rem auto;
+    }
+  }
+}
+
+@media screen and (max-width: 64.9375em) {
+  .featured-carousel .carousel__next--inline {
+    right: 0;
+    &:before {
+      background-position: -12.35714em -17.14286em;
+    }
+  }
+  @media screen and (min-width: 65em) {
+    .featured-carousel .carousel__next--inline {
+      background-position: -10.85714em -17.14286em;
+    }
+  }
+}
+
+@media screen and (max-width: 64.9375em) {
+  .featured-carousel .carousel__prev--inline {
+    left: 0;
+    &:before {
+      background-position: -12.35714em -11.35714em;
+    }
+  }
+  @media screen and (min-width: 65em) {
+    .featured-carousel .carousel__prev--inline {
+      background-position: -19.35714em -9.35714em;
+    }
+  }
+}
+
+

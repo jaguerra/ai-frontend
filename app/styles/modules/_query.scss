@@ -1,0 +1,103 @@
+.query {
+  border: 1px solid #b6b6b6;
+  position: relative;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .query {
+    margin: 10px 0 0 0;
+    margin: .71429rem 0 0 0;
+  }
+}
+
+.query__input {
+  font-size: 14px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  letter-spacing: .02rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  background-color: #fff;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 11px 11px 10px 11px;
+  padding: .85714rem .85714rem .71429rem .85714rem;
+  position: relative;
+  width: 100%;
+  &:focus {
+    outline: 0;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .query__input {
+    font-size: 14px;
+    font-size: 1rem;
+  }
+}
+
+.query__submit {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 10px 17px;
+  padding: .71429rem 1.28571rem;
+  text-decoration: none;
+  -webkit-transition: background-color .25s,border-color .25s,color .25s;
+  transition: background-color .25s,border-color .25s,color .25s;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1.143rem;
+  padding: 14px 24px;
+  padding: 1rem 1.71429rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-top: .71429rem;
+  &:hover {
+    background-color: #363636;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .query__submit {
+    font-size: 14px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 52.5em) {
+  .query__submit {
+    margin-top: 0;
+  }
+}
+
+

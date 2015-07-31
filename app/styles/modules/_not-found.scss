@@ -1,0 +1,82 @@
+.not-found {
+  -webkit-font-smoothing: antialiased;
+  background: #262626;
+  color: #fff;
+  display: table;
+  min-height: 420px;
+  min-height: 30rem;
+  text-align: center;
+  width: 100%;
+}
+
+.not-found__cell {
+  display: table-cell;
+  padding: 24px;
+  padding: 1.71429rem;
+  vertical-align: middle;
+}
+
+.not-found__heading {
+  font-size: 38px;
+  font-size: 2.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  margin: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .not-found__heading {
+    font-size: 49px;
+    font-size: 3.5rem;
+  }
+}
+
+.not-found__subheading {
+  margin: 19px auto;
+  margin: 1.42857rem auto;
+  max-width: 800px;
+  max-width: 57.14286rem;
+}
+
+.not-found__button {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 10px 17px;
+  padding: .71429rem 1.28571rem;
+  text-decoration: none;
+  -webkit-transition: background-color .25s,border-color .25s,color .25s;
+  transition: background-color .25s,border-color .25s,color .25s;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.286rem;
+  padding: 22px 42px;
+  padding: 1.57143rem 3rem;
+  margin-top: 47px;
+  margin-top: 3.42857rem;
+  &:hover {
+    background-color: #363636;
+  }
+}
+
+

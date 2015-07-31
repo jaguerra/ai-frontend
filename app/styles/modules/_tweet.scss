@@ -1,0 +1,199 @@
+.tweet {
+  background-color: #55acee;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 24px auto;
+  margin: 1.71429rem auto;
+  padding: 24px;
+  padding: 1.71429rem;
+  text-align: center;
+  &:before {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: inline-block;
+    background-position: -15.35714em -13em;
+    height: 1.42857em;
+    width: 1.42857em;
+    display: block;
+    font-size: 10px;
+    font-size: .71429rem;
+    margin: 0 auto 24px auto;
+    margin: 0 auto 1.71429rem auto;
+    padding: 1px;
+    padding: .07143rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .tweet {
+    max-width: 400px;
+    max-width: 28.57143rem;
+    padding: 24px 47px;
+    padding: 1.71429rem 3.42857rem;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .tweet {
+    margin-left: -24px;
+    margin-left: -1.71429rem;
+    margin-right: -24px;
+    margin-right: -1.71429rem;
+  }
+}
+
+.tweet__cta {
+  margin: 0;
+}
+
+.tweet__link {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  -webkit-appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 10px 17px;
+  padding: .71429rem 1.28571rem;
+  text-decoration: none;
+  -webkit-transition: background-color .25s,border-color .25s,color .25s;
+  transition: background-color .25s,border-color .25s,color .25s;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-size: 1.143rem;
+  padding: 14px 24px;
+  padding: 1rem 1.71429rem;
+  margin: 24px 0 0 0;
+  margin: 1.71429rem 0 0 0;
+  &:hover {
+    background-color: #dadada;
+  }
+}
+
+.tweet__quote {
+  font-size: 23px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  line-height: 1.1;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  &:after {
+    content: '\201D';
+    left: 3px;
+    left: .25rem;
+    position: relative;
+  }
+  &:before {
+    content: '\201C';
+    position: relative;
+    right: 3px;
+    right: .25rem;
+  }
+}
+
+.tweet--alt {
+  background: 0 0;
+  margin: 0;
+  padding: 0;
+  &:before {
+    content: none;
+  }
+  .tweet__heading {
+    font-size: 23px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: TradeGothicLT-BoldCondTwenty,HelveticaNeue-CondensedBold,'Franklin Gothic Medium',sans-serif;
+    -webkit-font-feature-settings: 'kern';
+    font-feature-settings: 'kern';
+    -webkit-font-kerning: normal;
+    font-kerning: normal;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .tweet__icon:before {
+    background-image: url(/images/sprite.png);
+    background-image: url(/images/sprite.svg), none;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    display: block;
+    background-position: -14.85714em -15em;
+    height: 1.42857em;
+    width: 1.42857em;
+    font-size: 36px;
+    font-size: 2.57143rem;
+    display: block;
+    margin: 22px auto 42px auto;
+    margin: 1.57143rem auto 3rem auto;
+  }
+  .tweet__quote {
+    color: #000;
+    padding-bottom: 24px;
+    padding-bottom: 1.71429rem;
+    padding-top: 0;
+    &:after {
+      left: -5px;
+      left: -.42857rem;
+    }
+    &:before {
+      right: -5px;
+      right: -.42857rem;
+    }
+  }
+  .tweet__link {
+    background: #55acee;
+    color: #fff;
+    border: 0;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    margin: 0;
+    width: 68%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    &:active, &:hover {
+      background: #55b9ee;
+    }
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .tweet--alt {
+    max-width: 100%;
+    padding: 24px;
+    padding: 1.71429rem;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .tweet--alt .tweet-container {
+    height: 299px;
+    height: 21.42857rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .tweet--alt .tweet__link {
+    width: 214px;
+    width: 15.35714rem;
+  }
+}
+
