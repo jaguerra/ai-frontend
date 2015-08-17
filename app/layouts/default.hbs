@@ -8,12 +8,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
     <!--[if lte IE 8]>
         <link rel="stylesheet" type="text/css" href="/cdn/styles/main-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- endbuild -->
     <!--<![endif]-->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -26,6 +32,12 @@
 	{{partial 'g-header'}}
 	{% body %}
 	{{partial 'g-footer'}}
-    <script src="/cdn/scripts/main.js"></script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <script src="https://www.amnesty.org/cdn/scripts/main.js"></script>
 </body>
 </html>
