@@ -9,16 +9,16 @@ import assemble from 'assemble';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-assemble.partials('app/partials/*.hbs');
-assemble.pages('app/pages/*.hbs');
-assemble.layouts('app/layouts/*.hbs');
 
 gulp.task('assemble', () => {
-	assemble.src('app/pages/*.hbs')
-	.pipe($.rename( function(path) {
-		path.extname = '.html';
-	}))
-	.pipe(assemble.dest('app'));
+  assemble.partials('app/partials/*.hbs');
+  assemble.pages('app/pages/*.hbs');
+  assemble.layouts('app/layouts/*.hbs');
+  assemble.src('app/pages/*.hbs')
+  .pipe($.rename( function(path) {
+    path.extname = '.html';
+  }))
+  .pipe(assemble.dest('.tmp'));
 });
 
 gulp.task('styles', () => {
@@ -57,7 +57,7 @@ gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 gulp.task('html', ['assemble', 'styles'], () => {
   const assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src('app/*.html')
+  return gulp.src('.tmp/*.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
@@ -115,7 +115,7 @@ gulp.task('serve', ['styles', 'fonts', 'assemble'], () => {
   });
 
   gulp.watch([
-    'app/*.html',
+    '.tmp/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
@@ -123,9 +123,12 @@ gulp.task('serve', ['styles', 'fonts', 'assemble'], () => {
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
-  gulp.watch('app/partials/*', ['assemble']);
-  gulp.watch('app/pages/*', ['assemble']);
-  gulp.watch('app/layouts/*', ['assemble']);
+  gulp.watch([
+    'app/layouts/*',
+    'app/partials/*',
+    'app/pages/*'
+  ],
+  ['assemble']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
@@ -164,7 +167,7 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/*.html')
+  gulp.src('.tmp/*.html')
     .pipe(wiredep({
       exclude: ['bootstrap-sass'],
       ignorePath: /^(\.\.\/)*\.\./
