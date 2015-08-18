@@ -2,8 +2,8 @@
   background-color: #262626;
   color: #fff;
   overflow: hidden;
-  padding: 24px;
-  padding: 1.71429rem;
+  padding: rem(24px);
+//   padding: 1.71429rem;
   position: relative;
 }
 
@@ -21,22 +21,22 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
-  margin-right: 10px;
-  margin-right: .71429rem;
-  margin-top: 10px;
-  margin-top: .71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
+  margin-right: rem(10px);
+//   margin-right: .71429rem;
+  margin-top: rem(10px);
+//   margin-top: .71429rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -57,22 +57,22 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
-  margin-right: 10px;
-  margin-right: .71429rem;
-  margin-top: 10px;
-  margin-top: .71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
+  margin-right: rem(10px);
+//   margin-right: .71429rem;
+  margin-top: rem(10px);
+//   margin-top: .71429rem;
   &:hover {
     background-color: #dadada;
     border-color: #dadada;
@@ -85,8 +85,8 @@
 }
 
 .annual-report__heading {
-  font-size: 28px;
-  font-size: 2rem;
+  font-size: rem(28px);
+//   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -95,16 +95,16 @@
   -webkit-font-kerning: normal;
   font-kerning: normal;
   line-height: 1.1;
-  margin: 0 0 10px 0;
-  margin: 0 0 .71429rem 0;
+  margin: 0 0 rem(10px) 0;
+//   margin: 0 0 .71429rem 0;
 }
 
 @media screen and (min-width: 40em) {
   .annual-report__heading {
-    font-size: 49px;
-    font-size: 3.5rem;
-    margin: 10px 0 15px 0;
-    margin: .71429rem 0 1.07143rem 0;
+    font-size: rem(49px);
+//     font-size: 3.5rem;
+    margin: rem(10px) 0 rem(15px) 0;
+//     margin: .71429rem 0 1.07143rem 0;
   }
 }
 
@@ -117,23 +117,23 @@
   font-kerning: normal;
   line-height: 1.1;
   color: #404040;
-  font-size: 260px;
-  font-size: 18.57143rem;
-  letter-spacing: -24px;
-  letter-spacing: -1.71429rem;
+  font-size: rem(260px);
+//   font-size: 18.57143rem;
+  letter-spacing: rem(-24px);
+//   letter-spacing: -1.71429rem;
   line-height: .7;
   position: absolute;
   z-index: 0;
   bottom: 0;
-  right: 14px;
-  right: 1rem;
+  right: rem(14px);
+//   right: 1rem;
 }
 
 .annual-report__sub-heading {
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -141,14 +141,14 @@
   -webkit-font-kerning: normal;
   font-kerning: normal;
   line-height: 1.1;
-  margin: 0 0 24px 0;
-  margin: 0 0 1.71429rem 0;
+  margin: 0 0 rem(24px) 0;
+//   margin: 0 0 1.71429rem 0;
 }
 
 @media screen and (min-width: 40em) {
   .annual-report__sub-heading {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
   }
 }
 

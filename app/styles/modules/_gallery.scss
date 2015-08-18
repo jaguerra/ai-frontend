@@ -1,19 +1,19 @@
 .gallery__item {
-  margin-bottom: 47px;
-  margin-bottom: 3.42857rem;
+  margin-bottom: rem(47px);
+//   margin-bottom: 3.42857rem;
   position: relative;
   &:after {
     background-color: #fff;
-    bottom: -24px;
-    bottom: -1.71429rem;
+    bottom: rem(-24px);
+//     bottom: -1.71429rem;
     content: ' ';
     display: block;
     height: 1px;
-    left: -24px;
-    left: -1.71429rem;
+    left: rem(-24px);
+//     left: -1.71429rem;
     position: absolute;
-    right: -24px;
-    right: -1.71429rem;
+    right: rem(-24px);
+//     right: -1.71429rem;
   }
 }
 
@@ -31,18 +31,18 @@
   padding: 0;
   cursor: pointer;
   display: block;
-  font-size: 14px;
-  font-size: 1rem;
-  height: 58px;
-  height: 4.14286rem;
-  line-height: 58px;
-  line-height: 4.14286rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
+  height: rem(58px);
+//   height: 4.14286rem;
+  line-height: rem(58px);
+//   line-height: 4.14286rem;
   opacity: 1;
   overflow: hidden;
   -webkit-transition: background-color .25s,opacity .25s;
   transition: background-color .25s,opacity .25s;
-  width: 58px;
-  width: 4.14286rem;
+  width: rem(58px);
+//   width: 4.14286rem;
   background-color: rgba(0, 0, 0, 0.75);
   display: none;
   position: absolute;
@@ -50,10 +50,10 @@
   right: 0;
   &:before {
     display: block;
-    margin: 19px auto;
-    margin: 1.42857rem auto;
-    padding: 1px;
-    padding: .07143rem;
+    margin: rem(19px) auto;
+//     margin: 1.42857rem auto;
+    padding: rem(1px);
+//     padding: .07143rem;
     background-image: url(/images/sprite.png);
     background-image: url(/images/sprite.svg), none;
     background-repeat: no-repeat;

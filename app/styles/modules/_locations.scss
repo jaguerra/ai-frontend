@@ -2,10 +2,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  min-height: 1px;
-  min-height: .07143rem;
-  padding-left: 10px;
-  padding-left: .71429rem;
+  min-height: rem(1px);
+//   min-height: .07143rem;
+  padding-left: rem(10px);
+//   padding-left: .71429rem;
   width: 80%;
 }
 
@@ -23,16 +23,16 @@
 
 @media screen and (min-width: 40em) {
   .locations__container {
-    padding-left: 11px;
-    padding-left: .85714rem;
+    padding-left: rem(11px);
+//     padding-left: .85714rem;
     width: 78%;
   }
 }
 
 @media screen and (min-width: 52.5em) {
   .locations__container {
-    padding-left: 8px;
-    padding-left: .57143rem;
+    padding-left: rem(8px);
+//     padding-left: .57143rem;
   }
 }
 
@@ -43,8 +43,8 @@
 }
 
 .locations__title {
-  font-size: 49px;
-  font-size: 3.5rem;
+  font-size: rem(49px);
+//   font-size: 3.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -55,14 +55,14 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  min-height: 1px;
-  min-height: .07143rem;
-  padding-left: 10px;
-  padding-left: .71429rem;
+  min-height: rem(1px);
+//   min-height: .07143rem;
+  padding-left: rem(10px);
+//   padding-left: .71429rem;
   width: 20%;
   line-height: .75;
-  margin: 0 0 47px 0;
-  margin: 0 0 3.42857rem 0;
+  margin: 0 0 rem(47px) 0;
+//   margin: 0 0 3.42857rem 0;
 }
 
 @media screen and (min-width: 24.375em) {
@@ -79,8 +79,8 @@
 
 @media screen and (min-width: 40em) {
   .locations__title {
-    font-size: 80px;
-    font-size: 5.71429rem;
+    font-size: rem(80px);
+//     font-size: 5.71429rem;
     width: 22%;
   }
 }
@@ -95,8 +95,8 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.71429rem;
+  margin-bottom: rem(24px);
+//   margin-bottom: 1.71429rem;
   &:after, &:before {
     clear: both;
     content: ' ';
@@ -108,8 +108,8 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.71429rem;
+  margin-bottom: rem(24px);
+//   margin-bottom: 1.71429rem;
   border-bottom: 1px #dadada solid;
   font-weight: 700;
   &:after, &:before {
@@ -123,8 +123,8 @@
   margin: 0;
   padding: 0;
   float: left;
-  margin-bottom: 19px;
-  margin-bottom: 1.42857rem;
+  margin-bottom: rem(19px);
+//   margin-bottom: 1.42857rem;
   width: 100%;
 }
 

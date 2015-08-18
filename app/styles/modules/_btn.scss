@@ -12,20 +12,20 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
-  padding: 10px 24px;
-  padding: .71429rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
+  padding: rem(10px) rem(24px);
+//   padding: .71429rem 1.71429rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -57,18 +57,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -89,18 +89,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -125,18 +125,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -157,18 +157,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -193,18 +193,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -225,18 +225,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -261,18 +261,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   &:hover {
     background-color: #dadada;
   }
@@ -292,18 +292,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -327,18 +327,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #dadada;
   }
@@ -358,18 +358,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -393,18 +393,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   &:hover {
     background-color: #dadada;
   }
@@ -424,18 +424,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -459,8 +459,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -469,10 +469,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   &:hover {
     background-color: #363636;
   }
@@ -492,8 +492,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -502,10 +502,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -529,8 +529,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -539,10 +539,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #363636;
   }
@@ -562,8 +562,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -572,10 +572,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -599,8 +599,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -609,10 +609,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   &:hover {
     background-color: #363636;
   }
@@ -632,8 +632,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -642,10 +642,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -669,18 +669,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   &:hover {
     background-color: #dadada;
     border-color: #dadada;
@@ -701,18 +701,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -737,18 +737,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #dadada;
     border-color: #dadada;
@@ -769,18 +769,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -805,18 +805,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   &:hover {
     background-color: #dadada;
     border-color: #dadada;
@@ -837,18 +837,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -873,8 +873,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -883,10 +883,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   &:hover {
     background-color: #363636;
   }
@@ -906,8 +906,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -916,10 +916,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -943,8 +943,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -953,10 +953,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #363636;
   }
@@ -976,8 +976,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -986,10 +986,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -1013,8 +1013,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1023,10 +1023,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   &:hover {
     background-color: #363636;
   }
@@ -1046,8 +1046,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1056,10 +1056,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -1083,8 +1083,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1093,10 +1093,10 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   &:hover {
     background-color: #363636;
   }
@@ -1116,8 +1116,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1126,10 +1126,10 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -1153,8 +1153,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1163,10 +1163,10 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #363636;
   }
@@ -1186,8 +1186,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1196,10 +1196,10 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -1223,8 +1223,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1233,10 +1233,10 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   &:hover {
     background-color: #363636;
   }
@@ -1256,8 +1256,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -1266,10 +1266,10 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 18px;
-  font-size: 1.286rem;
-  padding: 22px 42px;
-  padding: 1.57143rem 3rem;
+  font-size: rem(18px);
+//   font-size: 1.286rem;
+  padding: rem(22px) rem(42px);
+//   padding: 1.57143rem 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -1293,18 +1293,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -1319,18 +1319,18 @@
 
 @media screen and (max-width: 39.9375em) {
   .btn--header {
-    margin-bottom: 24px;
-    margin-bottom: 1.71429rem;
+    margin-bottom: rem(24px);
+//     margin-bottom: 1.71429rem;
   }
   .image-headline__text .btn--header {
-    margin: 15px 0;
-    margin: 1.07143rem 0;
+    margin: rem(15px) 0;
+//     margin: 1.07143rem 0;
   }
 }
 
 .btn--spaced-top {
-  margin-top: 24px;
-  margin-top: 1.71429rem;
+  margin-top: rem(24px);
+//   margin-top: 1.71429rem;
 }
 
 .btn--header--video {
@@ -1347,18 +1347,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -1373,13 +1373,13 @@
     background-position: -17.57143em -15.21429em;
     height: 1.14286em;
     width: 1.21429em;
-    font-size: 10px;
-    font-size: .78571rem;
-    margin-right: 24px;
-    margin-right: 1.71429rem;
+    font-size: rem(10px);
+//     font-size: .78571rem;
+    margin-right: rem(24px);
+//     margin-right: 1.71429rem;
     position: relative;
-    top: -1px;
-    top: -.07143rem;
+    top: rem(-1px);
+//     top: -.07143rem;
   }
 }
 
@@ -1391,12 +1391,12 @@
 
 @media screen and (max-width: 39.9375em) {
   .btn--header--video {
-    margin-bottom: 24px;
-    margin-bottom: 1.71429rem;
+    margin-bottom: rem(24px);
+//     margin-bottom: 1.71429rem;
   }
   .image-headline__text .btn--header--video {
-    margin: 15px 0;
-    margin: 1.07143rem 0;
+    margin: rem(15px) 0;
+//     margin: 1.07143rem 0;
   }
 }
 
@@ -1414,20 +1414,20 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
-  margin-bottom: 24px;
-  margin-bottom: 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
+  margin-bottom: rem(24px);
+//   margin-bottom: 1.71429rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;

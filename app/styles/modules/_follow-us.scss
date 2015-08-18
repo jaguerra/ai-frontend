@@ -1,33 +1,33 @@
 .follow-us {
-  padding: 24px;
-  padding: 1.71429rem;
+  padding: rem(24px);
+//   padding: 1.71429rem;
   text-align: center;
 }
 
 @media screen and (min-width: 40em) {
   .follow-us {
-    padding: 0 24px;
-    padding: 0 1.71429rem;
+    padding: 0 rem(24px);
+//     padding: 0 1.71429rem;
   }
 }
 
 @media screen and (min-width: 65em) {
   .follow-us {
-    padding: 0 24px 24px 0;
-    padding: 0 1.71429rem 1.71429rem 0;
+    padding: 0 rem(24px) rem(24px) 0;
+//     padding: 0 1.71429rem 1.71429rem 0;
   }
 }
 
 @media screen and (min-width: 40em) {
   .follow-us-container {
-    height: 299px;
-    height: 21.42857rem;
+    height: rem(299px);
+//     height: 21.42857rem;
   }
 }
 
 .follow-us__heading {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -39,13 +39,13 @@
 }
 
 .follow-us__heading--secondary {
-  margin-bottom: 8px;
-  margin-bottom: .57143rem;
+  margin-bottom: rem(8px);
+//   margin-bottom: .57143rem;
 }
 
 .follow-us__text {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -63,32 +63,32 @@
 }
 
 .follow-us-social-item {
-  margin: 8px;
-  margin: .57143rem;
+  margin: rem(8px);
+//   margin: .57143rem;
   overflow: hidden;
-  width: 56px;
-  width: 4rem;
+  width: rem(56px);
+//   width: 4rem;
   padding: 0;
-  font-size: 17px;
-  font-size: 1.21429rem;
+  font-size: rem(17px);
+//   font-size: 1.21429rem;
   &:before {
     display: block;
-    margin: 14px 16px 10px 16px;
-    margin: 1rem 1.14286rem .78571rem 1.14286rem;
+    margin: rem(14px) rem(16px) rem(10px) rem(16px);
+//     margin: 1rem 1.14286rem .78571rem 1.14286rem;
   }
 }
 
 @media screen and (min-width: 65em) {
   .follow-us-social-item {
-    margin: 11px;
-    margin: .85714rem;
+    margin: rem(11px);
+//     margin: .85714rem;
   }
 }
 
 @media screen and (min-width: 40em) {
   .follow-us__social-buttons {
-    margin-bottom: 47px;
-    margin-bottom: 3.42857rem;
+    margin-bottom: rem(47px);
+//     margin-bottom: 3.42857rem;
   }
 }
 
@@ -106,18 +106,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   margin: 0 auto;
   width: 75%;
   -webkit-box-sizing: border-box;
@@ -130,8 +130,8 @@
 
 @media screen and (min-width: 40em) {
   .follow-us__signup-button {
-    width: 214px;
-    width: 15.35714rem;
+    width: rem(214px);
+//     width: 15.35714rem;
   }
 }
 

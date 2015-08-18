@@ -1,8 +1,8 @@
 .counter {
-  padding: 24px 0;
-  padding: 1.71429rem 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.71429rem;
+  padding: rem(24px) 0;
+//   padding: 1.71429rem 0;
+  margin-bottom: rem(24px);
+//   margin-bottom: 1.71429rem;
   background-color: #f7f7f7;
   &:after, &:before {
     clear: both;
@@ -13,20 +13,20 @@
 
 @media screen and (min-width: 79.5em) {
   .counter {
-    padding: 24px 124px;
-    padding: 1.71429rem 8.92857rem;
+    padding: rem(24px) rem(124px);
+//     padding: 1.71429rem 8.92857rem;
   }
 }
 
 .counter-panel {
   text-align: center;
-  margin: 24px 47px;
-  margin: 1.71429rem 3.42857rem;
+  margin: rem(24px) rem(47px);
+//   margin: 1.71429rem 3.42857rem;
 }
 
 .counter-panel__heading {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -46,16 +46,16 @@
     height: 1.78571em;
     width: 1.78571em;
     display: block;
-    font-size: 14px;
-    font-size: 1.01rem;
-    margin: 0 auto 36px auto;
-    margin: 0 auto 2.57143rem auto;
+    font-size: rem(14px);
+//     font-size: 1.01rem;
+    margin: 0 auto rem(36px) auto;
+//     margin: 0 auto 2.57143rem auto;
   }
 }
 
 .counter-panel__number {
-  font-size: 94px;
-  font-size: 6.71429rem;
+  font-size: rem(94px);
+//   font-size: 6.71429rem;
   letter-spacing: -6px;
   line-height: 1.2;
   font-family: $f-title;
@@ -63,14 +63,14 @@
 
 @media screen and (min-width: 40em) {
   .counter-panel__number {
-    font-size: 103px;
-    font-size: 7.42857rem;
+    font-size: rem(103px);
+//     font-size: 7.42857rem;
   }
 }
 
 .counter-panel__text {
-  padding: 0 24px;
-  padding: 0 1.71429rem;
+  padding: 0 rem(24px);
+//   padding: 0 1.71429rem;
 }
 
 

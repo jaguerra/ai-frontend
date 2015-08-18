@@ -1,6 +1,6 @@
 .campaign-action-sticky-promo {
-  height: 70px;
-  height: 5rem;
+  height: rem(70px);
+//   height: 5rem;
   position: fixed;
   background-color: #ff0;
   width: 100%;
@@ -8,17 +8,17 @@
   bottom: 0;
   display: none;
   .btn-tertiary--sm--fullwidth.container {
-    margin-top: 10px;
-    margin-top: .71429rem;
-    height: 37px;
-    height: 2.64286rem;
+    margin-top: rem(10px);
+//     margin-top: .71429rem;
+    height: rem(37px);
+//     height: 2.64286rem;
   }
 }
 
 @media screen and (min-width: 30em) {
   .campaign-action-sticky-promo .btn-tertiary--sm--fullwidth.container {
-    height: 45px;
-    height: 3.21429rem;
+    height: rem(45px);
+//     height: 3.21429rem;
   }
 }
 
@@ -32,8 +32,8 @@
   width: auto;
   height: 100%;
   float: left;
-  padding-left: 19px;
-  padding-left: 1.42857rem;
+  padding-left: rem(19px);
+//   padding-left: 1.42857rem;
   max-width: 50%;
 }
 
@@ -41,14 +41,14 @@
   width: auto;
   height: 100%;
   float: left;
-  padding-left: 19px;
-  padding-left: 1.42857rem;
+  padding-left: rem(19px);
+//   padding-left: 1.42857rem;
   max-width: 75%;
 }
 
 .campaign-action-sticky-promo__title {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -62,8 +62,8 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: 0;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   display: block;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -74,14 +74,14 @@
 
 @media screen and (min-width: 30em) {
   .campaign-action-sticky-promo__title {
-    font-size: 17px;
-    font-size: 1.28571rem;
+    font-size: rem(17px);
+//     font-size: 1.28571rem;
   }
 }
 
 .campaign-action-sticky-promo__heading {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -101,22 +101,22 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  font-size: 30px;
-  font-size: 2.14286rem;
-  padding-right: 4px;
-  padding-right: .35714rem;
+  font-size: rem(30px);
+//   font-size: 2.14286rem;
+  padding-right: rem(4px);
+//   padding-right: .35714rem;
 }
 
 .campaign-action-sticky-promo__close-btn {
   display: none;
-  height: 22px;
-  height: 1.57143rem;
-  width: 22px;
-  width: 1.57143rem;
+  height: rem(22px);
+//   height: 1.57143rem;
+  width: rem(22px);
+//   width: 1.57143rem;
   background: #000;
   position: fixed;
-  bottom: 70px;
-  bottom: 5rem;
+  bottom: rem(70px);
+//   bottom: 5rem;
   &:before {
     background-image: url(/images/sprite.png);
     background-image: url(/images/sprite.svg), none;
@@ -127,20 +127,20 @@
     background-position: -12.78571em -15em;
     height: 1.71429em;
     width: 1.71429em;
-    margin: 5px 4px;
-    margin: .42857rem .35714rem;
-    font-size: 4px;
-    font-size: .35714rem;
+    margin: rem(5px) rem(4px);
+//     margin: .42857rem .35714rem;
+    font-size: rem(4px);
+//     font-size: .35714rem;
   }
 }
 
 .campaign-action-sticky-promo__button {
   width: 33%;
-  margin-top: 17px;
-  margin-top: 1.28571rem;
+  margin-top: rem(17px);
+//   margin-top: 1.28571rem;
   float: right;
-  padding-right: 19px;
-  padding-right: 1.42857rem;
+  padding-right: rem(19px);
+//   padding-right: 1.42857rem;
 }
 
 .campaign-action-sticky-promo__button--chevron {
@@ -148,14 +148,14 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 37px;
-  height: 2.64286rem;
-  width: 38px;
-  width: 2.71429rem;
+  height: rem(37px);
+//   height: 2.64286rem;
+  width: rem(38px);
+//   width: 2.71429rem;
   background-color: #000;
   float: right;
-  margin-right: 19px;
-  margin-right: 1.42857rem;
+  margin-right: rem(19px);
+//   margin-right: 1.42857rem;
   &:before {
     background-image: url(/images/sprite.png);
     background-image: url(/images/sprite.svg), none;
@@ -166,8 +166,8 @@
     background-position: -.35714em -11.35714em;
     height: 3.28571em;
     width: 3.57143em;
-    font-size: 10px;
-    font-size: .78571rem;
+    font-size: rem(10px);
+//     font-size: .78571rem;
   }
 }
 

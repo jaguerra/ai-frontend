@@ -2,10 +2,10 @@
   background-color: #55acee;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 24px auto;
-  margin: 1.71429rem auto;
-  padding: 24px;
-  padding: 1.71429rem;
+  margin: rem(24px) auto;
+//   margin: 1.71429rem auto;
+  padding: rem(24px);
+//   padding: 1.71429rem;
   text-align: center;
   &:before {
     background-image: url(/images/sprite.png);
@@ -18,30 +18,30 @@
     height: 1.42857em;
     width: 1.42857em;
     display: block;
-    font-size: 10px;
-    font-size: .71429rem;
-    margin: 0 auto 24px auto;
-    margin: 0 auto 1.71429rem auto;
-    padding: 1px;
-    padding: .07143rem;
+    font-size: rem(10px);
+//     font-size: .71429rem;
+    margin: 0 auto rem(24px) auto;
+//     margin: 0 auto 1.71429rem auto;
+    padding: rem(1px);
+//     padding: .07143rem;
   }
 }
 
 @media screen and (min-width: 40em) {
   .tweet {
-    max-width: 400px;
-    max-width: 28.57143rem;
-    padding: 24px 47px;
-    padding: 1.71429rem 3.42857rem;
+    max-width: rem(400px);
+//     max-width: 28.57143rem;
+    padding: rem(24px) rem(47px);
+//     padding: 1.71429rem 3.42857rem;
   }
 }
 
 @media screen and (max-width: 39.9375em) {
   .tweet {
-    margin-left: -24px;
-    margin-left: -1.71429rem;
-    margin-right: -24px;
-    margin-right: -1.71429rem;
+    margin-left: rem(-24px);
+//     margin-left: -1.71429rem;
+    margin-right: rem(-24px);
+//     margin-right: -1.71429rem;
   }
 }
 
@@ -63,28 +63,28 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
-  margin: 24px 0 0 0;
-  margin: 1.71429rem 0 0 0;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
+  margin: rem(24px) 0 0 0;
+//   margin: 1.71429rem 0 0 0;
   &:hover {
     background-color: #dadada;
   }
 }
 
 .tweet__quote {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -97,15 +97,15 @@
   position: relative;
   &:after {
     content: '\201D';
-    left: 3px;
-    left: .25rem;
+    left: rem(3px);
+//     left: .25rem;
     position: relative;
   }
   &:before {
     content: '\201C';
     position: relative;
-    right: 3px;
-    right: .25rem;
+    right: rem(3px);
+//     right: .25rem;
   }
 }
 
@@ -117,8 +117,8 @@
     content: none;
   }
   .tweet__heading {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
     font-weight: 400;
     text-transform: uppercase;
     font-family: $f-title;
@@ -139,24 +139,24 @@
     background-position: -14.85714em -15em;
     height: 1.42857em;
     width: 1.42857em;
-    font-size: 36px;
-    font-size: 2.57143rem;
+    font-size: rem(36px);
+//     font-size: 2.57143rem;
     display: block;
-    margin: 22px auto 42px auto;
-    margin: 1.57143rem auto 3rem auto;
+    margin: rem(22px) auto rem(42px) auto;
+//     margin: 1.57143rem auto 3rem auto;
   }
   .tweet__quote {
     color: #000;
-    padding-bottom: 24px;
-    padding-bottom: 1.71429rem;
+    padding-bottom: rem(24px);
+//     padding-bottom: 1.71429rem;
     padding-top: 0;
     &:after {
-      left: -5px;
-      left: -.42857rem;
+      left: rem(-5px);
+//       left: -.42857rem;
     }
     &:before {
-      right: -5px;
-      right: -.42857rem;
+      right: rem(-5px);
+//       right: -.42857rem;
     }
   }
   .tweet__link {
@@ -178,22 +178,22 @@
 @media screen and (min-width: 40em) {
   .tweet--alt {
     max-width: 100%;
-    padding: 24px;
-    padding: 1.71429rem;
+    padding: rem(24px);
+//     padding: 1.71429rem;
   }
 }
 
 @media screen and (min-width: 65em) {
   .tweet--alt .tweet-container {
-    height: 299px;
-    height: 21.42857rem;
+    height: rem(299px);
+//     height: 21.42857rem;
   }
 }
 
 @media screen and (min-width: 40em) {
   .tweet--alt .tweet__link {
-    width: 214px;
-    width: 15.35714rem;
+    width: rem(214px);
+//     width: 15.35714rem;
   }
 }
 

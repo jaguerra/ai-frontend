@@ -6,14 +6,14 @@
 
 .footer__container {
   margin: 0 auto;
-  max-width: 1472px;
-  max-width: 105.14286rem;
+  max-width: rem(1472px);
+//   max-width: 105.14286rem;
 }
 
 @media screen and (min-width: 40em) {
   .footer__container {
-    padding: 0 24px;
-    padding: 0 1.71429rem;
+    padding: 0 rem(24px);
+//     padding: 0 1.71429rem;
   }
 }
 
@@ -24,19 +24,19 @@
 
 @media screen and (min-width: 40em) {
   .footer__bottom {
-    padding-top: 24px;
-    padding-top: 1.71429rem;
+    padding-top: rem(24px);
+//     padding-top: 1.71429rem;
     position: relative;
     &:before {
       background-color: #363636;
       content: ' ';
       display: block;
-      height: 1px;
-      height: .07143rem;
+      height: rem(1px);
+//       height: .07143rem;
       position: absolute;
       top: 0;
-      left: 10px;
-      left: .71429rem;
+      left: rem(10px);
+//       left: .71429rem;
       right: 0;
     }
   }
@@ -46,10 +46,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  min-height: 1px;
-  min-height: .07143rem;
-  padding-left: 10px;
-  padding-left: .71429rem;
+  min-height: rem(1px);
+//   min-height: .07143rem;
+  padding-left: rem(10px);
+//   padding-left: .71429rem;
   width: 100%;
 }
 
@@ -89,12 +89,12 @@
 }
 
 .footer-legal {
-  font-size: 11px;
-  font-size: .85714rem;
-  margin: 0 0 5px;
-  margin: 0 0 .42857rem;
-  padding-top: 24px;
-  padding-top: 1.71429rem;
+  font-size: rem(11px);
+//   font-size: .85714rem;
+  margin: 0 0 rem(5px);
+//   margin: 0 0 .42857rem;
+  padding-top: rem(24px);
+//   padding-top: 1.71429rem;
   text-align: center;
 }
 
@@ -121,8 +121,8 @@
 .footer-copyright {
   color: #b6b6b6;
   display: block;
-  font-size: 11px;
-  font-size: .85714rem;
+  font-size: rem(11px);
+//   font-size: .85714rem;
   margin-top: 0;
   text-align: center;
   text-transform: uppercase;
@@ -150,11 +150,11 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 11px;
-  font-size: .85714rem;
+  font-size: rem(11px);
+//   font-size: .85714rem;
   font-weight: 400;
-  padding: 24px 0 11px;
-  padding: 1.71429rem 0 .85714rem;
+  padding: rem(24px) 0 rem(11px);
+//   padding: 1.71429rem 0 .85714rem;
   &:after, &:before {
     clear: both;
     content: ' ';
@@ -171,8 +171,8 @@
   }
   .footer-list--open .footer-list--sub {
     display: block;
-    padding-bottom: 24px;
-    padding-bottom: 1.71429rem;
+    padding-bottom: rem(24px);
+//     padding-bottom: 1.71429rem;
   }
 }
 
@@ -200,21 +200,21 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
   background-color: #000;
-  border: 1px solid #000;
+  border: rem(1px) solid #000;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
-  border: 1px solid #fff;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
+  border: rem(1px) solid #fff;
   color: #fff;
   &:hover {
     background-color: #363636;
@@ -224,8 +224,8 @@
 
 @media screen and (min-width: 40em) and (max-width: 65em) {
   .footer-list__btn {
-    margin-bottom: 14px;
-    margin-bottom: 1rem;
+    margin-bottom: rem(14px);
+//     margin-bottom: 1rem;
   }
 }
 
@@ -236,8 +236,8 @@
 .footer-list__link {
   color: #fff;
   display: block;
-  margin-bottom: 11px;
-  margin-bottom: .85714rem;
+  margin-bottom: rem(11px);
+//   margin-bottom: .85714rem;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -248,8 +248,8 @@
 }
 
 .footer-list__link--title {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -260,8 +260,8 @@
   border-bottom: 1px solid #363636;
   color: #b6b6b6;
   margin: 0;
-  padding: 24px 0;
-  padding: 1.71429rem 0;
+  padding: rem(24px) 0;
+//   padding: 1.71429rem 0;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -269,8 +269,8 @@
 @media screen and (min-width: 40em) {
   .footer-list__link--title {
     cursor: default;
-    padding-bottom: 11px;
-    padding-bottom: .85714rem;
+    padding-bottom: rem(11px);
+//     padding-bottom: .85714rem;
   }
 }
 

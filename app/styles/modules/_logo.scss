@@ -1,31 +1,31 @@
 .logo {
-  height: 72px;
-  height: 5.14286rem;
+  height: rem(72px);
+//   height: 5.14286rem;
   left: 0;
   margin: 0;
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 72px;
-  width: 5.14286rem;
+  width: rem(72px);
+//   width: 5.14286rem;
   z-index: 2;
 }
 
 @media screen and (min-width: 25.3125em) {
   .logo {
-    width: 169px;
-    width: 12.07143rem;
+    width: rem(169px);
+//     width: 12.07143rem;
   }
 }
 
 .logo-print {
   display: none;
-  height: 72px;
-  height: 5.14286rem;
-  width: 169px;
-  width: 12.07143rem;
-  margin-left: 24px;
-  margin-left: 1.71429rem;
+  height: rem(72px);
+//   height: 5.14286rem;
+  width: rem(169px);
+//   width: 12.07143rem;
+  margin-left: rem(24px);
+//   margin-left: 1.71429rem;
 }
 
 @media print {
@@ -37,8 +37,8 @@
 .logo__link {
   background-color: #ff0;
   display: block;
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   height: 100%;
   position: relative;
   text-indent: -1000%;
@@ -66,8 +66,8 @@
     width: 7.64286em;
   }
   &:after {
-    margin-right: -31px;
-    margin-right: -2.21429rem;
+    margin-right: rem(-31px);
+//     margin-right: -2.21429rem;
     position: absolute;
     right: 50%;
     top: 0;

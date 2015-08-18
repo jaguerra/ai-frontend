@@ -1,7 +1,7 @@
 .cta {
   overflow: hidden;
-  padding: 0 24px;
-  padding: 0 1.71429rem;
+  padding: 0 rem(24px);
+//   padding: 0 1.71429rem;
   text-align: center;
 }
 
@@ -19,8 +19,8 @@
 
 .cta--light {
   overflow: hidden;
-  padding: 0 24px;
-  padding: 0 1.71429rem;
+  padding: 0 rem(24px);
+//   padding: 0 1.71429rem;
   text-align: center;
   background-color: #f7f7f7;
 }
@@ -45,18 +45,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #dadada;
   }
@@ -66,10 +66,10 @@
   .cta__button {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 30px;
-    line-height: 2.14286rem;
-    padding-left: 53px;
-    padding-left: 3.85714rem;
+    line-height: rem(30px);
+//     line-height: 2.14286rem;
+    padding-left: rem(53px);
+//     padding-left: 3.85714rem;
     position: relative;
     text-align: left;
     width: 100%;
@@ -90,18 +90,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #ff0;
   border: 1px solid #ff0;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   &:hover {
     background-color: #ffd500;
     border-color: #ffd500;
@@ -112,10 +112,10 @@
   .cta__button--primary {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 30px;
-    line-height: 2.14286rem;
-    padding-left: 53px;
-    padding-left: 3.85714rem;
+    line-height: rem(30px);
+//     line-height: 2.14286rem;
+    padding-left: rem(53px);
+//     padding-left: 3.85714rem;
     position: relative;
     text-align: left;
     width: 100%;
@@ -124,8 +124,8 @@
 
 .cta__cols {
   display: none;
-  padding-top: 24px;
-  padding-top: 1.71429rem;
+  padding-top: rem(24px);
+//   padding-top: 1.71429rem;
   text-align: center;
 }
 
@@ -143,12 +143,12 @@
 
 .cta__cols--bottom {
   display: none;
-  padding-top: 24px;
-  padding-top: 1.71429rem;
+  padding-top: rem(24px);
+//   padding-top: 1.71429rem;
   text-align: center;
   display: block;
-  padding-bottom: 47px;
-  padding-bottom: 3.42857rem;
+  padding-bottom: rem(47px);
+//   padding-bottom: 3.42857rem;
   padding-top: 0;
 }
 
@@ -216,10 +216,10 @@
 }
 
 .cta__icon {
-  height: 30px;
-  height: 2.14286rem;
-  left: 11px;
-  left: .85714rem;
+  height: rem(30px);
+//   height: 2.14286rem;
+  left: rem(11px);
+//   left: .85714rem;
   margin: 0;
   position: absolute;
 }
@@ -233,8 +233,8 @@
 @media screen and (min-width: 40em) {
   .cta__img {
     display: block;
-    margin: 0 auto 24px auto;
-    margin: 0 auto 1.71429rem auto;
+    margin: 0 auto rem(24px) auto;
+//     margin: 0 auto 1.71429rem auto;
     max-width: 70%;
   }
 }
@@ -258,8 +258,8 @@
 }
 
 .cta__subtitle {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';

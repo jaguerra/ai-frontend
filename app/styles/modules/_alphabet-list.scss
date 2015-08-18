@@ -2,10 +2,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.71429rem;
-  margin-top: 1px;
-  margin-top: .07143rem;
+  margin-bottom: rem(24px);
+//   margin-bottom: 1.71429rem;
+  margin-top: rem(1px);
+//   margin-top: .07143rem;
   padding: 0;
   width: 100%;
   &:after, &:before {
@@ -17,23 +17,23 @@
 
 @media screen and (min-width: 40em) {
   .alphabet-list {
-    margin-bottom: 47px;
-    margin-bottom: 3.42857rem;
+    margin-bottom: rem(47px);
+//     margin-bottom: 3.42857rem;
   }
 }
 
 .alphabet-list__inner {
   left: 0;
-  margin-top: -15px;
-  margin-top: -1.07143rem;
+  margin-top: rem(-15px);
+//   margin-top: -1.07143rem;
   position: absolute;
   top: 50%;
   width: 100%;
 }
 
 .alphabet-list__item {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -66,8 +66,8 @@
 
 @media screen and (min-width: 30em) {
   .alphabet-list__item {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
     padding-bottom: 12.5%;
     width: 12.5%;
   }
@@ -75,8 +75,8 @@
 
 @media screen and (min-width: 40em) {
   .alphabet-list__item {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
     padding-bottom: 11.11111%;
     width: 11.11111%;
   }
@@ -84,8 +84,8 @@
 
 @media screen and (min-width: 52.5em) {
   .alphabet-list__item {
-    font-size: 28px;
-    font-size: 2rem;
+    font-size: rem(28px);
+//     font-size: 2rem;
     padding-bottom: 9.09091%;
     width: 9.09091%;
   }
@@ -106,8 +106,8 @@
 }
 
 .alphabet-list__item--blank, .alphabet-list__item--empty {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -142,8 +142,8 @@
 
 @media screen and (min-width: 30em) {
   .alphabet-list__item--blank {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
     padding-bottom: 12.5%;
     width: 12.5%;
   }
@@ -151,8 +151,8 @@
 
 @media screen and (min-width: 40em) {
   .alphabet-list__item--blank {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
     padding-bottom: 11.11111%;
     width: 11.11111%;
   }
@@ -160,8 +160,8 @@
 
 @media screen and (min-width: 52.5em) {
   .alphabet-list__item--blank {
-    font-size: 28px;
-    font-size: 2rem;
+    font-size: rem(28px);
+//     font-size: 2rem;
     padding-bottom: 9.09091%;
     width: 9.09091%;
   }
@@ -190,8 +190,8 @@
 
 @media screen and (min-width: 30em) {
   .alphabet-list__item--empty {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
     padding-bottom: 12.5%;
     width: 12.5%;
   }
@@ -199,8 +199,8 @@
 
 @media screen and (min-width: 40em) {
   .alphabet-list__item--empty {
-    font-size: 23px;
-    font-size: 1.7rem;
+    font-size: rem(23px);
+//     font-size: 1.7rem;
     padding-bottom: 11.11111%;
     width: 11.11111%;
   }
@@ -208,8 +208,8 @@
 
 @media screen and (min-width: 52.5em) {
   .alphabet-list__item--empty {
-    font-size: 28px;
-    font-size: 2rem;
+    font-size: rem(28px);
+//     font-size: 2rem;
     padding-bottom: 9.09091%;
     width: 9.09091%;
   }

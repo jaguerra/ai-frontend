@@ -1,6 +1,6 @@
 .recently-added-container {
-  padding: 24px;
-  padding: 1.71429rem;
+  padding: rem(24px);
+//   padding: 1.71429rem;
   background: #e5e5e5;
 }
 
@@ -11,8 +11,8 @@
 }
 
 .recently-added__item + .recently-added__item {
-  margin-top: 24px;
-  margin-top: 1.71429rem;
+  margin-top: rem(24px);
+//   margin-top: 1.71429rem;
 }
 
 .recently-added-item__title {
@@ -23,12 +23,12 @@
   -webkit-font-kerning: normal;
   font-kerning: normal;
   line-height: 1.1;
-  font-size: 16px;
-  font-size: 1.14286rem;
+  font-size: rem(16px);
+//   font-size: 1.14286rem;
   background: #fff;
   color: #000;
-  padding: 8px;
-  padding: .57143rem;
+  padding: rem(8px);
+//   padding: .57143rem;
   display: block;
   text-decoration: none;
   -webkit-transition: background .25s ease-in-out,color .25s ease-in-out;

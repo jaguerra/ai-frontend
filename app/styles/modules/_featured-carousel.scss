@@ -19,15 +19,15 @@
   }
   .carousel-pagination {
     bottom: 0;
-    left: 59px;
-    left: 4.28571rem;
-    right: 59px;
-    right: 4.28571rem;
+    left: rem(59px);
+//     left: 4.28571rem;
+    right: rem(59px);
+//     right: 4.28571rem;
   }
   .carousel-pagination__list {
     max-width: none;
-    bottom: 80px;
-    bottom: 5.71429rem;
+    bottom: rem(80px);
+//     bottom: 5.71429rem;
     > li {
       &:first-of-type {
         -webkit-box-shadow: inset 1px 0 #e5e5e5;
@@ -50,33 +50,33 @@
   .carousel-pagination__item {
     background: #e5e5e5;
     color: #000;
-    font-size: 16px;
-    font-size: 1.14286rem;
+    font-size: rem(16px);
+//     font-size: 1.14286rem;
     text-transform: uppercase;
     text-align: left;
-    padding: 11px;
-    padding: .85714rem;
+    padding: rem(11px);
+//     padding: .85714rem;
     &:hover {
       background: #dadada;
     }
   }
   .carousel-pagination__label__wrapper {
-    height: 80px;
-    height: 5.71429rem;
+    height: rem(80px);
+//     height: 5.71429rem;
   }
   .carousel-pagination__label {
     background: #fff;
     border-bottom: 5px solid #ff0;
-    font-size: 16px;
-    font-size: 1.14286rem;
+    font-size: rem(16px);
+//     font-size: 1.14286rem;
     text-transform: uppercase;
     text-align: left;
-    padding: 0 17px;
-    padding: 0 1.28571rem;
+    padding: 0 rem(17px);
+//     padding: 0 1.28571rem;
   }
   .carousel-pagination-item__date {
-    margin-bottom: 3px;
-    margin-bottom: .28571rem;
+    margin-bottom: rem(3px);
+//     margin-bottom: .28571rem;
   }
   .carousel-pagination__item--selected {
     background: #fff;
@@ -111,8 +111,8 @@
 @media screen and (min-width: 65em) {
   .featured-carousel .carousel-pagination__item {
     width: 33.33333%;
-    padding: 0 17px;
-    padding: 0 1.28571rem;
+    padding: 0 rem(17px);
+//     padding: 0 1.28571rem;
   }
 }
 
@@ -129,10 +129,10 @@
     &:before {
       position: absolute;
       content: '';
-      height: 4px;
-      height: .35714rem;
-      top: -4px;
-      top: -.35714rem;
+      height: rem(4px);
+//       height: .35714rem;
+      top: rem(-4px);
+//       top: -.35714rem;
       left: 0;
       width: 100%;
       background: #fff;
@@ -141,8 +141,8 @@
     &:after {
       position: absolute;
       content: '';
-      height: 4px;
-      height: .35714rem;
+      height: rem(4px);
+//       height: .35714rem;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -156,15 +156,15 @@
     .carousel__next--inline, .carousel__prev--inline {
       bottom: 0;
       background: #e5e5e5;
-      height: 74px;
-      height: 5.35714rem;
+      height: rem(74px);
+//       height: 5.35714rem;
     }
     .carousel__next--inline:hover, .carousel__prev--inline:hover {
       background: #b6b6b6;
     }
     .carousel__next--inline:before, .carousel__prev--inline:before {
-      margin: 31px auto;
-      margin: 2.21429rem auto;
+      margin: rem(31px) auto;
+//       margin: 2.21429rem auto;
     }
   }
 }

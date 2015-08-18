@@ -1,26 +1,26 @@
 @media screen and (min-width: 24.375em) {
   .video-share {
-    padding: 0 24px;
-    padding: 0 1.71429rem;
+    padding: 0 rem(24px);
+//     padding: 0 1.71429rem;
   }
 }
 
 .video-share {
   text-align: center;
-  margin-bottom: 24px;
-  margin-bottom: 1.71429rem;
+  margin-bottom: rem(24px);
+//   margin-bottom: 1.71429rem;
 }
 
 @media screen and (min-width: 40em) {
   .video-share-container {
-    height: 299px;
-    height: 21.42857rem;
+    height: rem(299px);
+//     height: 21.42857rem;
   }
 }
 
 .video-share__heading {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -32,8 +32,8 @@
 }
 
 .video-share__video {
-  margin: 0 auto 24px auto;
-  margin: 0 auto 1.71429rem auto;
+  margin: 0 auto rem(24px) auto;
+//   margin: 0 auto 1.71429rem auto;
   position: relative;
   width: 90%;
   padding-top: 50%;
@@ -90,8 +90,8 @@
 
 @media screen and (min-width: 40em) {
   .video-share__button {
-    width: 214px;
-    width: 15.35714rem;
+    width: rem(214px);
+//     width: 15.35714rem;
   }
 }
 
@@ -116,8 +116,8 @@
     background-position: -17.57143em -.35714em;
     height: 1.42857em;
     width: 1.42857em;
-    font-size: 67px;
-    font-size: 4.85714rem;
+    font-size: rem(67px);
+//     font-size: 4.85714rem;
     left: 50%;
     position: absolute;
     top: 50%;
@@ -131,8 +131,8 @@
 
 @media screen and (min-width: 40em) {
   .video-share__link-cover:before {
-    font-size: 36px;
-    font-size: 2.57143rem;
+    font-size: rem(36px);
+//     font-size: 2.57143rem;
   }
 }
 

@@ -1,14 +1,14 @@
 .quote {
   border-left: 10px solid #000;
-  padding-left: 19px;
-  padding-left: 1.42857rem;
+  padding-left: rem(19px);
+//   padding-left: 1.42857rem;
 }
 
 @media screen and (min-width: 40em) {
   .quote {
     border-left: 15px solid #000;
-    padding-left: 47px;
-    padding-left: 3.42857rem;
+    padding-left: rem(47px);
+//     padding-left: 3.42857rem;
   }
 }
 
@@ -20,16 +20,16 @@
 
 .quote--stacked {
   text-align: center;
-  margin-bottom: 47px;
-  margin-bottom: 3.42857rem;
+  margin-bottom: rem(47px);
+//   margin-bottom: 3.42857rem;
 }
 
 .quote--stacked--lg {
   text-align: center;
-  margin-bottom: 47px;
-  margin-bottom: 3.42857rem;
-  margin: 0 24px 24px 24px;
-  margin: 0 1.71429rem 1.71429rem 1.71429rem;
+  margin-bottom: rem(47px);
+//   margin-bottom: 3.42857rem;
+  margin: 0 rem(24px) rem(24px) rem(24px);
+//   margin: 0 1.71429rem 1.71429rem 1.71429rem;
 }
 
 @media screen and (min-width: 40em) {
@@ -54,8 +54,8 @@
 
 .quote__source {
   color: #b6b6b6;
-  padding: 19px 0 0 0;
-  padding: 1.42857rem 0 0 0;
+  padding: rem(19px) 0 0 0;
+//   padding: 1.42857rem 0 0 0;
   font-family: $f-default;
 }
 
@@ -66,8 +66,8 @@
 }
 
 .quote__source--stacked {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -101,10 +101,10 @@
 
 .quote__source--stacked:before {
   display: block;
-  font-size: 14px;
-  font-size: 1rem;
-  margin: 0 auto 36px auto;
-  margin: 0 auto 2.57143rem auto;
+  font-size: rem(14px);
+//   font-size: 1rem;
+  margin: 0 auto rem(36px) auto;
+//   margin: 0 auto 2.57143rem auto;
 }
 
 .image-headline__cell .quote__source--stacked:before {
@@ -113,14 +113,14 @@
 
 @media screen and (min-width: 40em) {
   .quote__source--stacked {
-    font-size: 28px;
-    font-size: 2rem;
+    font-size: rem(28px);
+//     font-size: 2rem;
   }
 }
 
 .quote__text {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -143,14 +143,14 @@
 
 @media screen and (min-width: 40em) {
   .quote__text {
-    font-size: 38px;
-    font-size: 2.75rem;
+    font-size: rem(38px);
+//     font-size: 2.75rem;
   }
 }
 
 .quote__text--stacked {
-  font-size: 38px;
-  font-size: 2.75rem;
+  font-size: rem(38px);
+//   font-size: 2.75rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -159,37 +159,37 @@
   -webkit-font-kerning: normal;
   font-kerning: normal;
   line-height: 1.1;
-  margin: 24px 0;
-  margin: 1.71429rem 0;
+  margin: rem(24px) 0;
+//   margin: 1.71429rem 0;
   &:after {
     background-color: #000;
     content: ' ';
     display: block;
     height: 8px;
-    width: 159px;
-    width: 11.42857rem;
-    margin: 4px auto 0 auto;
-    margin: .35714rem auto 0 auto;
+    width: rem(159px);
+//     width: 11.42857rem;
+    margin: rem(4px) auto 0 auto;
+//     margin: .35714rem auto 0 auto;
   }
 }
 
 @media screen and (min-width: 40em) {
   .quote__text--stacked:after {
-    width: 190px;
-    width: 13.57143rem;
+    width: rem(190px);
+//     width: 13.57143rem;
   }
 }
 
 @media screen and (min-width: 40em) {
   .quote__text--stacked {
-    font-size: 49px;
-    font-size: 3.5rem;
+    font-size: rem(49px);
+//     font-size: 3.5rem;
   }
 }
 
 .quote__text--stacked--lg {
-  font-size: 38px;
-  font-size: 2.75rem;
+  font-size: rem(38px);
+//   font-size: 2.75rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -198,32 +198,32 @@
   -webkit-font-kerning: normal;
   font-kerning: normal;
   line-height: 1.1;
-  margin: 24px 0;
-  margin: 1.71429rem 0;
+  margin: rem(24px) 0;
+//   margin: 1.71429rem 0;
   &:after {
     background-color: #000;
     content: ' ';
     display: block;
     height: 8px;
-    width: 159px;
-    width: 11.42857rem;
-    margin: 4px auto 0 auto;
-    margin: .35714rem auto 0 auto;
+    width: rem(159px);
+//     width: 11.42857rem;
+    margin: rem(4px) auto 0 auto;
+//     margin: .35714rem auto 0 auto;
     display: none;
   }
 }
 
 @media screen and (min-width: 40em) {
   .quote__text--stacked--lg:after {
-    width: 190px;
-    width: 13.57143rem;
+    width: rem(190px);
+//     width: 13.57143rem;
   }
 }
 
 @media screen and (min-width: 40em) {
   .quote__text--stacked--lg {
-    font-size: 49px;
-    font-size: 3.5rem;
+    font-size: rem(49px);
+//     font-size: 3.5rem;
   }
 }
 

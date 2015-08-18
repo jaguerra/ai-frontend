@@ -16,10 +16,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  min-height: 1px;
-  min-height: .07143rem;
-  padding-left: 10px;
-  padding-left: .71429rem;
+  min-height: rem(1px);
+//   min-height: .07143rem;
+  padding-left: rem(10px);
+//   padding-left: .71429rem;
   width: 100%;
   display: none;
 }
@@ -42,8 +42,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -52,16 +52,16 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
-  margin-top: 11px;
-  margin-top: .85714rem;
+  margin-top: rem(11px);
+//   margin-top: .85714rem;
   &:hover {
     background-color: #363636;
   }
@@ -69,51 +69,51 @@
 
 .filters-secondary-container {
   margin: 0 auto;
-  max-width: 1271px;
-  max-width: 90.85714rem;
+  max-width: rem(1271px);
+//   max-width: 90.85714rem;
 }
 
 @media screen and (min-width: 40em) {
   .filters-secondary-container {
-    padding: 0 24px;
-    padding: 0 1.71429rem;
+    padding: 0 rem(24px);
+//     padding: 0 1.71429rem;
   }
 }
 
 @media screen and (min-width: 79.5em) {
   .filters-secondary-container {
-    padding-left: 100px;
-    padding-left: 7.14286rem;
-    padding-right: 100px;
-    padding-right: 7.14286rem;
+    padding-left: rem(100px);
+//     padding-left: 7.14286rem;
+    padding-right: rem(100px);
+//     padding-right: 7.14286rem;
   }
 }
 
 .filters {
   margin: 0 auto;
-  max-width: 1472px;
-  max-width: 105.14286rem;
+  max-width: rem(1472px);
+//   max-width: 105.14286rem;
   background-color: #dadada;
 }
 
 @media screen and (max-width: 64.9375em) {
   .is-searching .filters {
-    padding-top: 72px;
-    padding-top: 5.14286rem;
+    padding-top: rem(72px);
+//     padding-top: 5.14286rem;
   }
 }
 
 .filters__container {
-  padding: 11px;
-  padding: .85714rem;
+  padding: rem(11px);
+//   padding: .85714rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 @media screen and (min-width: 79.5em) {
   .filters__container {
-    padding: 24px 100px;
-    padding: 1.71429rem 7.14286rem;
+    padding: rem(24px) rem(100px);
+//     padding: 1.71429rem 7.14286rem;
   }
 }
 
@@ -140,18 +140,18 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   background-color: #fff;
   border: 1px solid #000;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -181,8 +181,8 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: 10px 17px;
-  padding: .71429rem 1.28571rem;
+  padding: rem(10px) rem(17px);
+//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -191,10 +191,10 @@
   background-color: #000;
   border: 1px solid #000;
   color: #fff;
-  font-size: 16px;
-  font-size: 1.143rem;
-  padding: 14px 24px;
-  padding: 1rem 1.71429rem;
+  font-size: rem(16px);
+//   font-size: 1.143rem;
+  padding: rem(14px) rem(24px);
+//   padding: 1rem 1.71429rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
@@ -209,14 +209,14 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: 11px;
-  padding-top: .85714rem;
+  padding-top: rem(11px);
+//   padding-top: .85714rem;
 }
 
 @media screen and (min-width: 40em) {
   .filter-overlay__buttons {
-    padding-top: 24px;
-    padding-top: 1.71429rem;
+    padding-top: rem(24px);
+//     padding-top: 1.71429rem;
   }
 }
 
@@ -224,29 +224,29 @@
   bottom: 0;
   left: 0;
   margin: 0;
-  padding: 11px;
-  padding: .85714rem;
+  padding: rem(11px);
+//   padding: .85714rem;
   position: fixed;
   right: 0;
 }
 
 @media screen and (min-width: 40em) {
   .is-fixed .filter-overlay__buttons {
-    bottom: 24px;
-    bottom: 1.71429rem;
+    bottom: rem(24px);
+//     bottom: 1.71429rem;
     left: 50%;
-    margin-left: -295px;
-    margin-left: -21.07143rem;
-    padding: 24px;
-    padding: 1.71429rem;
-    width: 590px;
-    width: 42.14286rem;
+    margin-left: rem(-295px);
+//     margin-left: -21.07143rem;
+    padding: rem(24px);
+//     padding: 1.71429rem;
+    width: rem(590px);
+//     width: 42.14286rem;
   }
 }
 
 .filter-overlay__title {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -256,16 +256,16 @@
   line-height: 1.1;
   margin-top: 0;
   position: fixed;
-  top: 17px;
-  top: 1.21429rem;
+  top: rem(17px);
+//   top: 1.21429rem;
 }
 
 @media screen and (min-width: 40em) {
   .filter-overlay__title {
-    font-size: 28px;
-    font-size: 2rem;
-    top: 47px;
-    top: 3.42857rem;
+    font-size: rem(28px);
+//     font-size: 2rem;
+    top: rem(47px);
+//     top: 3.42857rem;
   }
 }
 
@@ -273,8 +273,8 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.71429rem;
+  margin-bottom: rem(24px);
+//   margin-bottom: 1.71429rem;
   &:after, &:before {
     clear: both;
     content: ' ';
@@ -284,8 +284,8 @@
 
 .sub-filter__char {
   display: block;
-  margin-top: -10px;
-  margin-top: -.75rem;
+  margin-top: rem(-10px);
+//   margin-top: -.75rem;
   position: absolute;
   top: 50%;
   width: 100%;
@@ -322,8 +322,8 @@
 }
 
 .sub-filter__link {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';

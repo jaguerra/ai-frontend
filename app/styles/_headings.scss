@@ -1,6 +1,6 @@
 .h1 {
-  font-size: 49px;
-  font-size: 3.5rem;
+  font-size: rem(49px);
+//   font-size: 3.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -11,8 +11,8 @@
 }
 
 .h2 {
-  font-size: 38px;
-  font-size: 2.75rem;
+  font-size: rem(38px);
+//   font-size: 2.75rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -23,8 +23,8 @@
 }
 
 .h3 {
-  font-size: 28px;
-  font-size: 2rem;
+  font-size: rem(28px);
+//   font-size: 2rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -35,8 +35,8 @@
 }
 
 .h4 {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -47,8 +47,8 @@
 }
 
 .h5 {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -59,10 +59,10 @@
 }
 
 .h6 {
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -73,8 +73,8 @@
 }
 
 .h1--caps {
-  font-size: 49px;
-  font-size: 3.5rem;
+  font-size: rem(49px);
+//   font-size: 3.5rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -86,8 +86,8 @@
 }
 
 .h2--caps {
-  font-size: 38px;
-  font-size: 2.75rem;
+  font-size: rem(38px);
+//   font-size: 2.75rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -99,8 +99,8 @@
 }
 
 .h3--caps {
-  font-size: 28px;
-  font-size: 2rem;
+  font-size: rem(28px);
+//   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -112,8 +112,8 @@
 }
 
 .h4--caps {
-  font-size: 23px;
-  font-size: 1.7rem;
+  font-size: rem(23px);
+//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -125,8 +125,8 @@
 }
 
 .h5--caps {
-  font-size: 21px;
-  font-size: 1.5rem;
+  font-size: rem(21px);
+//   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -138,10 +138,10 @@
 }
 
 .h6--caps {
-  font-size: 14px;
-  font-size: 1rem;
+  font-size: rem(14px);
+//   font-size: 1rem;
   letter-spacing: 0;
-  letter-spacing: .02rem;
+//   letter-spacing: .02rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;

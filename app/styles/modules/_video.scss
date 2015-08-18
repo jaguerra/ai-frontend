@@ -11,12 +11,12 @@
   background-color: rgba(255, 255, 255, 0.25);
   cursor: pointer;
   display: block;
-  font-size: 19px;
-  font-size: 1.42857rem;
-  height: 72px;
-  height: 5.14286rem;
-  line-height: 72px;
-  line-height: 5.14286rem;
+  font-size: rem(19px);
+//   font-size: 1.42857rem;
+  height: rem(72px);
+//   height: 5.14286rem;
+  line-height: rem(72px);
+//   line-height: 5.14286rem;
   opacity: 1;
   overflow: hidden;
   position: absolute;
@@ -24,8 +24,8 @@
   top: 0;
   -webkit-transition: background-color .25s,opacity .25s;
   transition: background-color .25s,opacity .25s;
-  width: 72px;
-  width: 5.14286rem;
+  width: rem(72px);
+//   width: 5.14286rem;
   z-index: 1;
   &:before {
     background-image: url(/images/sprite.png);
@@ -38,10 +38,10 @@
     height: 1.14286em;
     width: 1.14286em;
     display: block;
-    margin: 22px auto;
-    margin: 1.57143rem auto;
-    padding: 1px;
-    padding: .07143rem;
+    margin: rem(22px) auto;
+//     margin: 1.57143rem auto;
+    padding: rem(1px);
+//     padding: .07143rem;
   }
 }
 

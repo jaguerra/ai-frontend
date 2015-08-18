@@ -1,8 +1,8 @@
 .blocknav {
-  margin-left: -10px;
-  margin-left: -.71429rem;
-  padding-bottom: 14px;
-  padding-bottom: 1rem;
+  margin-left: rem(-10px);
+//   margin-left: -.71429rem;
+  padding-bottom: rem(14px);
+//   padding-bottom: 1rem;
   &:after, &:before {
     clear: both;
     content: ' ';
@@ -12,8 +12,8 @@
 
 @media screen and (min-width: 40em) {
   .blocknav {
-    padding: 24px 0 38px 0;
-    padding: 1.71429rem 0 2.71429rem 0;
+    padding: rem(24px) 0 rem(38px) 0;
+//     padding: 1.71429rem 0 2.71429rem 0;
   }
 }
 
@@ -21,12 +21,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  min-height: 1px;
-  min-height: .07143rem;
-  padding-left: 10px;
-  padding-left: .71429rem;
-  margin-bottom: 10px;
-  margin-bottom: .71429rem;
+  min-height: rem(1px);
+//   min-height: .07143rem;
+  padding-left: rem(10px);
+//   padding-left: .71429rem;
+  margin-bottom: rem(10px);
+//   margin-bottom: .71429rem;
   width: 50%;
 }
 
@@ -49,8 +49,8 @@
 }
 
 .blocknav__box {
-  font-size: 28px;
-  font-size: 2rem;
+  font-size: rem(28px);
+//   font-size: 2rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -63,8 +63,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  min-height: 232px;
-  min-height: 16.57143rem;
+  min-height: rem(232px);
+//   min-height: 16.57143rem;
   padding: 0;
   position: relative;
   text-align: center;
@@ -90,8 +90,8 @@
     background: #dadada;
   }
   &:after {
-    bottom: 24px;
-    bottom: 1.71429rem;
+    bottom: rem(24px);
+//     bottom: 1.71429rem;
     display: block;
     left: 50%;
     margin-left: -.46429em;
@@ -101,18 +101,18 @@
 
 .blocknav__img {
   border: 0;
-  height: 64px;
-  height: 4.57143rem;
+  height: rem(64px);
+//   height: 4.57143rem;
   margin: 0;
-  padding: 24px;
-  padding: 1.71429rem;
-  width: 64px;
-  width: 4.57143rem;
+  padding: rem(24px);
+//   padding: 1.71429rem;
+  width: rem(64px);
+//   width: 4.57143rem;
 }
 
 .blocknav__boxtitle {
-  font-size: 38px;
-  font-size: 2.75rem;
+  font-size: rem(38px);
+//   font-size: 2.75rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
@@ -122,11 +122,11 @@
   line-height: 1.1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 16px;
-  font-size: 1.14286rem;
+  font-size: rem(16px);
+//   font-size: 1.14286rem;
   margin: 0;
-  padding: 0 11px;
-  padding: 0 .85714rem;
+  padding: 0 rem(11px);
+//   padding: 0 .85714rem;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
