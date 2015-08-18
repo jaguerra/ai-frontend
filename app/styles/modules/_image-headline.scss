@@ -1,3 +1,9 @@
+// Selector depthness is combined with Bem elements which
+// should be a no-no.
+// As it is an inherited element and not clear if it will be used
+// we mute the alerts by now but no further development should be done
+// without correcting this.
+// scss-lint:disable SelectorDepth
 .image-headline, .image-headline--left, .image-headline--right {
   bottom: 0;
   position: absolute;

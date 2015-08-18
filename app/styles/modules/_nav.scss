@@ -364,6 +364,7 @@
       top: 0;
     }
     &.has-subnav ~ .active-subnav {
+      // scss-lint:disable NestingDepth
       .nav-list--sub, .nav-list--sub-container {
         display: none;
         opacity: 0;

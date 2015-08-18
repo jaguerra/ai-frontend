@@ -1,3 +1,5 @@
+// Allow depth up to 2 as file is inherited
+// scss-lint:disable BemDepth
 .carousel__slider {
   list-style-type: none;
   margin: 0;
@@ -387,8 +389,8 @@
   position: absolute;
   right: 11px;
   right: .85714rem;
-  bottom: 50% !important;
-  margin-bottom: (-29px) !important;
+  bottom: 50%;
+  margin-bottom: (-29px);
   &:before {
     display: block;
     margin: 19px auto;
@@ -567,8 +569,8 @@
   position: absolute;
   left: 11px;
   left: .85714rem;
-  bottom: 50% !important;
-  margin-bottom: (-29px) !important;
+  bottom: 50%;
+  margin-bottom: (-29px);
   &:before {
     display: block;
     margin: 19px auto;

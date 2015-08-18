@@ -5,10 +5,20 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
 import assemble from 'assemble';
+import scsslint from 'gulp-scss-lint';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+gulp.task('scss-lint', () => {
+  gulp.src('app/styles/**/*.scss')
+  .pipe(scsslint({
+    'bundleExec': true,
+    'maxBuffer': 10000000,
+    'config': '.scss-lint.yml'
+  }))
+  .pipe(scsslint.failReporter());
+});
 
 gulp.task('assemble', () => {
   assemble.partials('app/partials/*.hbs');
@@ -118,6 +128,7 @@ gulp.task('serve', ['styles', 'fonts', 'assemble'], () => {
     '.tmp/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
+    '.tmp/styles/*.css',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
@@ -175,7 +186,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'scss-lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
