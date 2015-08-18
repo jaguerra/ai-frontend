@@ -1,7 +1,8 @@
 $icon-font-path: '../fonts/';
 
 // bower:scss
-//@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
 @import "variables";
 @import "grid";
