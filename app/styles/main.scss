@@ -1,10 +1,13 @@
 $icon-font-path: '../fonts/';
 
+@import "bootstrap";
+// scss-lint:disable ImportPath
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
+// scss-lint:enable ImportPath
 @import "variables";
+@import "functions";
 @import "grid";
 @import "base";
 @import "headings";

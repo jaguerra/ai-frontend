@@ -77,8 +77,7 @@
   line-height: 1.1;
   position: relative;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -203,7 +202,6 @@
   &:after {
     background-color: #000;
     content: ' ';
-    display: block;
     height: 8px;
     width: rem(159px);
 //     width: 11.42857rem;

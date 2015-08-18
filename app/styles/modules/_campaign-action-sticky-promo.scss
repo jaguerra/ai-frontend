@@ -47,8 +47,6 @@
 }
 
 .campaign-action-sticky-promo__title {
-  font-size: rem(23px);
-//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -80,8 +78,6 @@
 }
 
 .campaign-action-sticky-promo__heading {
-  font-size: rem(23px);
-//   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -118,8 +114,7 @@
   bottom: rem(70px);
 //   bottom: 5rem;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -157,8 +152,7 @@
   margin-right: rem(19px);
 //   margin-right: 1.42857rem;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';

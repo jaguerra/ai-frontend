@@ -120,8 +120,6 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: rem(10px) rem(17px);
-//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -507,7 +505,6 @@
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   background-color: #fff;
   display: inline-block;
   line-height: .9;

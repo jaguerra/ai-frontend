@@ -7,8 +7,10 @@
   border: 0;
   outline: 0;
   padding: 0;
+  // scss-lint:disable DuplicateProperty
   background-color: #000;
   background-color: rgba(255, 255, 255, 0.25);
+  // scss-lint:enable DuplicateProperty
   cursor: pointer;
   display: block;
   font-size: rem(19px);
@@ -28,12 +30,10 @@
 //   width: 5.14286rem;
   z-index: 1;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
-    display: inline-block;
     background-position: -.35714em -17.14286em;
     height: 1.14286em;
     width: 1.14286em;

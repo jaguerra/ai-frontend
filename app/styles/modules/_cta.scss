@@ -45,8 +45,6 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: rem(10px) rem(17px);
-//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -90,8 +88,6 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: rem(10px) rem(17px);
-//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -142,9 +138,6 @@
 }
 
 .cta__cols--bottom {
-  display: none;
-  padding-top: rem(24px);
-//   padding-top: 1.71429rem;
   text-align: center;
   display: block;
   padding-bottom: rem(47px);

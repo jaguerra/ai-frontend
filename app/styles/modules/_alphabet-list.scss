@@ -6,7 +6,6 @@
 //   margin-bottom: 1.71429rem;
   margin-top: rem(1px);
 //   margin-top: .07143rem;
-  padding: 0;
   width: 100%;
   &:after, &:before {
     clear: both;
@@ -40,7 +39,6 @@
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   margin: 0;
   padding: 0;
   float: left;
@@ -114,7 +112,6 @@
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   margin: 0;
   padding: 0;
   float: left;
@@ -129,7 +126,6 @@
   position: relative;
   text-align: center;
   width: 20%;
-  background: #e5e5e5;
   color: #b6b6b6;
 }
 

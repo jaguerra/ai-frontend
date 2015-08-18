@@ -1,7 +1,6 @@
 // Rules with selector depth and dependant on underlying column sets have been
 // commented out
 .key-facts {
-  margin: 0 auto;
   max-width: rem(1472px);
 //   max-width: 105.14286rem;
   background-color: #fff;
@@ -15,7 +14,6 @@
 }
 
 .key-facts--horizontal {
-  margin: 0 auto;
   max-width: rem(1472px);
 //   max-width: 105.14286rem;
   background-color: #fff;
@@ -63,8 +61,6 @@
   float: left;
   min-height: rem(1px);
 //   min-height: .07143rem;
-  padding-left: rem(10px);
-//   padding-left: .71429rem;
   width: 100%;
   margin-bottom: rem(24px);
 //   margin-bottom: 1.71429rem;
@@ -101,8 +97,6 @@
   float: left;
   min-height: rem(1px);
 //   min-height: .07143rem;
-  padding-left: rem(10px);
-//   padding-left: .71429rem;
   width: 100%;
   margin-bottom: rem(24px);
 //   margin-bottom: 1.71429rem;
@@ -151,8 +145,6 @@
   float: left;
   min-height: rem(1px);
 //   min-height: .07143rem;
-  padding-left: rem(10px);
-//   padding-left: .71429rem;
   width: 100%;
   margin-bottom: rem(24px);
 //   margin-bottom: 1.71429rem;
@@ -201,8 +193,6 @@
   float: left;
   min-height: rem(1px);
 //   min-height: .07143rem;
-  padding-left: rem(10px);
-//   padding-left: .71429rem;
   width: 100%;
   margin-bottom: rem(24px);
 //   margin-bottom: 1.71429rem;
@@ -251,11 +241,7 @@
   float: left;
   min-height: rem(1px);
 //   min-height: .07143rem;
-  padding-left: rem(10px);
-//   padding-left: .71429rem;
   width: 100%;
-  margin-bottom: rem(24px);
-//   margin-bottom: 1.71429rem;
   padding-left: rem(24px);
 //   padding-left: 1.71429rem;
   margin-bottom: rem(47px);
@@ -267,7 +253,6 @@
     display: table;
   }
   &:last-child {
-    margin-bottom: 0;
     margin-bottom: 0;
   }
 }
@@ -699,8 +684,7 @@
   position: relative;
   width: 100%;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';

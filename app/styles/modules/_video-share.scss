@@ -59,7 +59,6 @@
   top: 0;
   left: 0;
   height: 100%;
-  position: absolute;
   width: 100%;
 }
 
@@ -72,7 +71,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  position: absolute;
   width: 100%;
 }
 
@@ -107,8 +105,7 @@
   transition: all .25s;
   opacity: .65;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';

@@ -1,10 +1,7 @@
 .search-btn {
-  background-color: transparent;
   border: 0;
   outline: 0;
   padding: 0;
-  font-size: rem(14px);
-//   font-size: 1rem;
   letter-spacing: 0;
 //   letter-spacing: .02rem;
   font-weight: 400;
@@ -14,10 +11,8 @@
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   background-color: #fff;
   cursor: pointer;
-  display: table-cell;
   float: right;
   height: 100%;
   line-height: rem(72px);
@@ -49,6 +44,7 @@
     color: #fff;
   }
   &:before {
+    @include ai-sprite;
     margin: rem(24px) auto;
 //     margin: 1.71429rem auto;
     padding: rem(1px);
@@ -56,8 +52,6 @@
     position: relative;
     top: rem(2px);
 //     top: .14286rem;
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';

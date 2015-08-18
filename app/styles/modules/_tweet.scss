@@ -8,12 +8,10 @@
 //   padding: 1.71429rem;
   text-align: center;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
-    display: inline-block;
     background-position: -15.35714em -13em;
     height: 1.42857em;
     width: 1.42857em;
@@ -63,8 +61,6 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: rem(10px) rem(17px);
-//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -130,8 +126,7 @@
     margin: 0;
   }
   .tweet__icon:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -141,7 +136,6 @@
     width: 1.42857em;
     font-size: rem(36px);
 //     font-size: 2.57143rem;
-    display: block;
     margin: rem(22px) auto rem(42px) auto;
 //     margin: 1.57143rem auto 3rem auto;
   }

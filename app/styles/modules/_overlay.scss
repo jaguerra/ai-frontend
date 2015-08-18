@@ -9,13 +9,13 @@
 }
 
 .overlay {
+  // scss-lint:disable DuplicateProperty
   background-color: #363636;
   background-color: rgba(54, 54, 54, 0.75);
   height: 0;
   left: -1000px;
   opacity: 0;
   overflow: hidden;
-  position: absolute;
   position: fixed;
   top: 0;
   -webkit-transition: opacity .25s;
@@ -45,7 +45,6 @@
   border: 0;
   outline: 0;
   padding: 0;
-  background-color: transparent;
   cursor: pointer;
   display: block;
   font-size: rem(14px);
@@ -65,12 +64,10 @@
 //   width: 4.14286rem;
   z-index: 2;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
-    display: inline-block;
     background-position: -1.85714em -17.14286em;
     height: 1.14286em;
     width: 1.14286em;

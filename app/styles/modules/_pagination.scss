@@ -36,7 +36,6 @@
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   line-height: .75;
   text-decoration: none;
   text-transform: uppercase;
@@ -53,7 +52,6 @@
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   line-height: .75;
   text-decoration: none;
   text-transform: uppercase;
@@ -74,8 +72,7 @@
     opacity: .25;
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -106,7 +103,6 @@
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   line-height: .75;
   text-decoration: none;
   text-transform: uppercase;
@@ -127,8 +123,7 @@
     opacity: .25;
   }
   &:after {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';

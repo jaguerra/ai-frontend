@@ -6,8 +6,7 @@
   padding: 0;
   position: relative;
   &:after {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -15,7 +14,6 @@
     background-position: -19.35714em -1.85714em;
     height: 1.14286em;
     width: 1.14286em;
-    content: ' ';
     margin-top: rem(-8px);
 //     margin-top: -.57143rem;
     pointer-events: none;
@@ -85,7 +83,7 @@ input {
     overflow: hidden;
     select {
       width: 120%;
-      width: calc(100% + em);
+      //width: calc(100% + em);
     }
   }
 }

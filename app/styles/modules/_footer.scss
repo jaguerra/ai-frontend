@@ -149,7 +149,6 @@
 .footer-list--sub {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   font-size: rem(11px);
 //   font-size: .85714rem;
   font-weight: 400;
@@ -200,24 +199,19 @@
   cursor: pointer;
   display: inline-block;
   outline: 0;
-  padding: rem(10px) rem(17px);
-//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
   white-space: nowrap;
   -webkit-font-smoothing: antialiased;
   background-color: #000;
-  border: rem(1px) solid #000;
   color: #fff;
   font-size: rem(16px);
 //   font-size: 1.143rem;
   padding: rem(14px) rem(24px);
 //   padding: 1rem 1.71429rem;
   border: rem(1px) solid #fff;
-  color: #fff;
   &:hover {
-    background-color: #363636;
     background-color: #262626;
   }
 }

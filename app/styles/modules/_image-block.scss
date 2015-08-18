@@ -6,12 +6,9 @@
   max-width: 1472px;
   overflow: hidden;
   position: relative;
-  overflow: hidden;
-  position: relative;
   text-align: center;
   &:before {
-    background: rgba(0, 0, 0, 0.75);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+    //background: rgba(0, 0, 0, 0.75);
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
     bottom: 0;
     content: ' ';
@@ -75,8 +72,6 @@
   max-width: 1472px;
   overflow: hidden;
   position: relative;
-  overflow: hidden;
-  position: relative;
   text-align: center;
 }
 
@@ -113,14 +108,9 @@
   max-width: 1472px;
   overflow: hidden;
   position: relative;
-  overflow: hidden;
-  position: relative;
   text-align: center;
   color: #fff;
   &:before {
-    background: rgba(0, 0, 0, 0.75);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
     bottom: 0;
     content: ' ';
     left: 0;
@@ -134,7 +124,6 @@
 
 @media screen and (min-width: 40em) {
   .image-block--shaded:before {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
     background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
   }
 }

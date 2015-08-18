@@ -72,8 +72,7 @@
   -webkit-transition: background-color .25s;
   transition: background-color .25s;
   &:after {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -111,8 +110,6 @@
 }
 
 .blocknav__boxtitle {
-  font-size: rem(38px);
-//   font-size: 2.75rem;
   font-weight: 400;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';

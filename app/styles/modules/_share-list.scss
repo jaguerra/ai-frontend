@@ -37,12 +37,10 @@
   top: 0;
   width: 100%;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
-    display: inline-block;
     background-position: -13.57143em -13em;
     height: 1.42857em;
     width: 1.42857em;
@@ -62,12 +60,10 @@
   top: 0;
   width: 100%;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
-    display: inline-block;
     background-position: -11.78571em -13em;
     height: 1.42857em;
     width: 1.42857em;
@@ -87,12 +83,10 @@
   top: 0;
   width: 100%;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
-    display: inline-block;
     background-position: -17.57143em -2.14286em;
     height: 1.42857em;
     width: 1.42857em;

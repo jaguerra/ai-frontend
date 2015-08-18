@@ -93,7 +93,7 @@ hr {
 }
 
 html {
-  font-size: $em-base;
+  font-size: .875em;
   -webkit-text-size-adjust: none;
 }
 
@@ -219,8 +219,7 @@ time {
   padding-bottom: rem(24px);
 //   padding-bottom: 1.71429rem;
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -306,8 +305,7 @@ time {
   margin: rem(24px) 0;
 //   margin: 1.71429rem 0;
   &:after {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';

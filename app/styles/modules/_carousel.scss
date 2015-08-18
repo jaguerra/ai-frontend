@@ -86,25 +86,18 @@
 }
 
 .carousel-header__text {
-  font-size: rem(28px);
-//   font-size: 2rem;
   font-weight: 400;
-  text-transform: uppercase;
   font-family: $f-title;
   -webkit-font-feature-settings: 'kern';
   font-feature-settings: 'kern';
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  line-height: 1.1;
   background-color: #fff;
   box-decoration-break: clone;
-  -webkit-box-shadow: rem(10px) 0 0 #fff,rem(-10px) 0 0 #fff;
-//   -webkit-box-shadow: .71429rem 0 0 #fff,-.71429rem 0 0 #fff;
-  box-shadow: rem(10px) 0 0 #fff,rem(-10px) 0 0 #fff;
+  box-shadow: rem(10px) 0 0 #fff, rem(-10px) 0 0 #fff;
 //   box-shadow: .71429rem 0 0 #fff,-.71429rem 0 0 #fff;
   display: inline;
   position: relative;
-  line-height: 2.15;
   padding: rem(10px) 0;
 //   padding: .71429rem 0;
   font-size: rem(21px);
@@ -116,9 +109,7 @@
 
 @media screen and (min-width: 40em) {
   .carousel-header__text {
-    -webkit-box-shadow: rem(19px) 0 0 #fff,rem(-19px) 0 0 #fff;
-//     -webkit-box-shadow: 1.42857rem 0 0 #fff,-1.42857rem 0 0 #fff;
-    box-shadow: rem(19px) 0 0 #fff,rem(-19px) 0 0 #fff;
+    box-shadow: rem(19px) 0 0 #fff, rem(-19px) 0 0 #fff;
 //     box-shadow: 1.42857rem 0 0 #fff,-1.42857rem 0 0 #fff;
     font-size: rem(49px);
 //     font-size: 3.5rem;
@@ -251,7 +242,6 @@
 }
 
 .carousel__next {
-  background-color: transparent;
   border: 0;
   outline: 0;
   padding: 0;
@@ -288,8 +278,7 @@
     }
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -336,8 +325,7 @@
     background-color: #363636;
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -384,8 +372,6 @@
   width: rem(58px);
 //   width: 4.14286rem;
   background: #000;
-  bottom: rem(11px);
-//   bottom: .85714rem;
   position: absolute;
   right: rem(11px);
 //   right: .85714rem;
@@ -402,8 +388,7 @@
     background-color: #363636;
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -431,7 +416,6 @@
 }
 
 .carousel__prev {
-  background-color: transparent;
   border: 0;
   outline: 0;
   padding: 0;
@@ -468,8 +452,7 @@
     }
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -516,8 +499,7 @@
     background-color: #363636;
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -564,8 +546,6 @@
   width: rem(58px);
 //   width: 4.14286rem;
   background: #000;
-  bottom: rem(11px);
-//   bottom: .85714rem;
   position: absolute;
   left: rem(11px);
 //   left: .85714rem;
@@ -582,8 +562,7 @@
     background-color: #363636;
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -681,7 +660,6 @@
 }
 
 .carousel__wrapper {
-  margin: 0 auto;
   max-width: rem(1223px);
 //   max-width: 87.42857rem;
   height: rem(450px);
@@ -743,7 +721,6 @@
 }
 
 .carousel-fullscreen__close {
-  background-color: transparent;
   border: 0;
   outline: 0;
   padding: 0;
@@ -780,8 +757,7 @@
     }
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';
@@ -813,7 +789,6 @@
 }
 
 .carousel-fullscreen__info {
-  background-color: transparent;
   border: 0;
   outline: 0;
   padding: 0;
@@ -853,8 +828,7 @@
     }
   }
   &:before {
-    background-image: url(/images/sprite.png);
-    background-image: url(/images/sprite.svg), none;
+    @include ai-sprite;
     background-repeat: no-repeat;
     background-size: 20.85714em 20em;
     content: ' ';

@@ -24,24 +24,16 @@ linters:
   # Used a lot to support IE8 as fallback for rem units
   # Check if we can get rid of them...
   # - Test https://www.npmjs.com/package/rem-to-px and generate an IE8-only css
-  DuplicateProperty:
-    enabled: false
   EmptyLineBetweenBlocks:
     enabled: false
   HexNotation:
     enabled: false
-  #ImportantRule:
-  #  enabled: false
   LeadingZero:
     enabled: false
   MergeableSelector:
     enabled: false
-  #NestingDepth:
-  #  enabled: false
   PropertySortOrder:
     enabled: false
-  #SelectorFormat:
-  #  enabled: false
   Shorthand:
     enabled: false
   SingleLinePerSelector:
