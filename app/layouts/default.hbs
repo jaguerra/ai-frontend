@@ -21,9 +21,38 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <!-- endbuild -->
     <!--<![endif]-->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <script src="scripts/require.js"></script>
+    <script>
+require.config({
+  baseUrl: 'scripts',
+  paths: {
+    'bootstrap': '/bower_components/bootstrap-sass/assets/javascripts/bootstrap',
+    'magnific-popup': '/bower_components/magnific-popup/dist'
+  },
+  map: {
+    '*': {
+      'magnific-popup': 'magnific-popup/jquery.magnific-popup'
+    }
+  },
+  shim: {
+    'bootstrap/affix':      { deps: ['jquery'], exports: '$.fn.affix' },
+    'bootstrap/alert':      { deps: ['jquery'], exports: '$.fn.alert' },
+    'bootstrap/button':     { deps: ['jquery'], exports: '$.fn.button' },
+    'bootstrap/carousel':   { deps: ['jquery'], exports: '$.fn.carousel' },
+    'bootstrap/collapse':   { deps: ['jquery'], exports: '$.fn.collapse' },
+    'bootstrap/dropdown':   { deps: ['jquery'], exports: '$.fn.dropdown' },
+    'bootstrap/modal':      { deps: ['jquery'], exports: '$.fn.modal' },
+    'bootstrap/popover':    { deps: ['jquery'], exports: '$.fn.popover' },
+    'bootstrap/scrollspy':  { deps: ['jquery'], exports: '$.fn.scrollspy' },
+    'bootstrap/tab':        { deps: ['jquery'], exports: '$.fn.tab'        },
+    'bootstrap/tooltip':    { deps: ['jquery'], exports: '$.fn.tooltip' },
+    'bootstrap/transition': { deps: ['jquery'], exports: '$.fn.transition' }
+  },
+  waitSeconds: 10
+});
+require(['app/bootstrap'], function(app) {
+});
+    </script>
     <script>!function(){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(a){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===a}function d(){if(window.localStorage&&window.XMLHttpRequest)if(c(a))e(localStorage.font_css_cache);else{var d=new XMLHttpRequest;d.open("GET",a,!0),d.onreadystatechange=function(){4===d.readyState&&(e(d.responseText),localStorage.font_css_cache=d.responseText,localStorage.font_css_cache_file=a)},d.send()}else{var b=document.createElement("link");b.href=a,b.rel="stylesheet",b.type="text/css",document.getElementsByTagName("head")[0].appendChild(b),document.cookie="font_css_cache"}}function e(a){var b=document.createElement("style");b.setAttribute("type","text/css"),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a,document.getElementsByTagName("head")[0].appendChild(b)}var a="/styles/webfonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?d():b(window,"load",d)}();</script>
 
 </head>
@@ -37,6 +66,5 @@
   <!-- endbower -->
   <!-- endbuild -->
 
-  <script src="https://www.amnesty.org/cdn/scripts/main.js"></script>
 </body>
 </html>
