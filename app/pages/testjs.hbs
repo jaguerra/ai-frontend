@@ -41,6 +41,17 @@ Scripts de Acciones
   <h1>Lightbox external page</h1>
   <a title="Política de privacidad" class="ai-lightbox ai-lightbox--html" href="https://www.es.amnesty.org/politica-de-privacidad-ventana/">política de privacidad</a>
 
+<div class="container">
+  <h1>Interstitial</h1>
+  <script>
+require(['jqp/interstitial'], function() {
+  $.interstitial('open', {
+    url: 'https://www.es.amnesty.org/'
+  });
+});
+  </script>
+</div>
+
 
 
 </div>
