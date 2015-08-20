@@ -6,6 +6,10 @@ define([
 
 	domReady(function(){
 
+    require(['picturefill', 'lazysizes-plugins/bgset/ls.bgset'], function() {
+           require(['lazysizes']);
+    });
+
 		if (!('placeholder' in document.createElement('input') && 'placeholder' in document.createElement('textarea'))) {
 			require(['jquery', 'jqp/placeholder'], function($) {
 				$('input, textarea').placeholder();

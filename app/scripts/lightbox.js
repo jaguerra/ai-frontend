@@ -51,7 +51,7 @@ define(['jquery', 'magnific-popup'], function($){
 
       var galleries_ids = [],
         galleries_visited = {},
-        $lightbox_elements = $('[rel^=lightbox'),
+        $lightbox_elements = $('[rel^=lightbox]'),
         $lightbox_elements_html = $('.ai-lightbox--html'),
         i = 0;
 

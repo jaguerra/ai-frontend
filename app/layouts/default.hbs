@@ -27,14 +27,20 @@ require.config({
   baseUrl: 'scripts',
   paths: {
     'bootstrap': '/bower_components/bootstrap-sass/assets/javascripts/bootstrap',
+    'lazysizes': '/bower_components/lazysizes',
+    'picturefill': '/bower_components/picturefill/dist',
     'magnific-popup': '/bower_components/magnific-popup/dist'
   },
   map: {
     '*': {
-      'magnific-popup': 'magnific-popup/jquery.magnific-popup'
+      'magnific-popup': 'magnific-popup/jquery.magnific-popup',
+      'lazysizes-plugins': 'lazysizes/plugins',
+      'lazysizes': 'lazysizes/lazysizes',
+      'picturefill': 'picturefill/picturefill'
     }
   },
   shim: {
+    'lazysizes-plugins/bgset/ls.bgset':      { deps: ['lazysizes'] },
     'bootstrap/affix':      { deps: ['jquery'], exports: '$.fn.affix' },
     'bootstrap/alert':      { deps: ['jquery'], exports: '$.fn.alert' },
     'bootstrap/button':     { deps: ['jquery'], exports: '$.fn.button' },

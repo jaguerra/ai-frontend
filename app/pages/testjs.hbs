@@ -4,16 +4,14 @@ layout: default
 ---
 
 <!--
-Lightbox
 Galleria
 CookieBanner
-Interstitial
 SortElements?
 TreeMenu?
 
 Carruseles
-Lazyload / Responsive img...
 Scripts de Acciones
+Elementos de contenido (search, menu, etc...)
 -->
 
 <div class="container">
@@ -53,5 +51,50 @@ require(['jqp/interstitial'], function() {
 </div>
 
 
-
 </div>
+
+
+<div>
+  <h1>Responsive images</h1>
+
+  <h2>Plain responsive image</h2>
+  <img srcset="https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52_hi 2x [(min-width: 840px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72_hi 2x [(min-width: 480px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102_hi 2x" />
+
+  <h2>AI image</h2>
+  <img class="lazyload" data-srcset="https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1224_42, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1039_52, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1039_52_hi 2x [(min-width: 840px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_839_52, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_839_52_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_639_72, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_639_72_hi 2x [(min-width: 480px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_479_102, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_479_102_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_345_102, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_345_102_hi 2x" />
+  <h2>AI picture</h2>
+  <p>
+  <picture>
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  <source data-srcset="https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_200, https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
+  <source data-srcset="https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_150, https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
+  <!--[if IE 9]></video><![endif]-->
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 2" class="key-facts__img lazyload print-hidden">
+  </picture>
+  </p>
+</div>
+<div>
+  <h2>AI image</h2>
+
+  <div class="image-block--shaded">
+    <div class="responsive--bg lazyload" data-bgset="https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1224_52, https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1224_52_hi 2x [(min-width: 1040px)] | https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1039_62, https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1039_62_hi 2x [(min-width: 840px)] | https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_839_72, https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_839_72_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_639_82, https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_639_82_hi 2x [(min-width: 480px)] | https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_479_122, https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_479_122_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_345_152, https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_345_152_hi 2x"></div>
+    <noscript>
+      <img src="https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42" alt="" class="responsive__img">
+    </noscript>
+    <div class="image-block__content--tall">
+      <div class="image-block__text">
+        <div class="image-headline__table">
+          <div class="image-headline__cell">
+            <h2 class="image-headline__subtitle--sm">Visit our multimedia newsroom</h2>
+            <p class="image-headline__text--center">
+            View the latest news footage and recent video clips in our video newsroom. Content is updated in real time by our global corresponddents, lorem ipsum cognito ergo sum. Phasellus venenatis, nulla in finibus lacinia, urna odio imperdiet ligula, ac tempus dolor turpis eu elit. Etiam dignissim fermentum nibh, rhoncus mattis risus vestibulum eget.
+            </p>
+
+            <a href="#" class="image-headline__btn">Go to video newsroom</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
