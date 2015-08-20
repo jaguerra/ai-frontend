@@ -6,6 +6,11 @@ define([
 
 	domReady(function(){
 
+    require([
+      'modules/nav',
+      'modules/header'
+    ]);
+
     require(['picturefill', 'lazysizes-plugins/bgset/ls.bgset'], function() {
            require(['lazysizes']);
     });

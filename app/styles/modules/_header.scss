@@ -54,9 +54,16 @@
 
 .header--fixed {
   position: fixed;
-  margin-top: rem(-72px);
-//   margin-top: -5.14286rem;
+  // margin-top: rem(-72px);
+// //   margin-top: -5.14286rem;
+  top: 0;
   z-index: 1003;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+.header--transparent {
+  opacity: 0;
 }
 
 .header--slide-up {
