@@ -32,22 +32,16 @@ define([
       require(['lightbox']);
 		}
 
-		if (document.getElementById('tx-solr-search')) {
-			require(['jquery'], function($) {
-				window.$ = $;
-				window.jQuery = $;
-			});
-		}
-
 		if (document.querySelector('[rel*="galleria"]') !== null) {
 			require(['jquery'], function (jQuery) {
 				require(['galleria'], function (Galleria) {
 					// Load the classic theme
-					Galleria.loadTheme('/fileadmin/templates/main/vendor/galleria/themes/classic/galleria.classic.js');
+          var theme_url = require.toUrl('galleria-themes/classic/galleria.classic.js');
+					Galleria.loadTheme(theme_url);
 
 					// Initialize Galleria
-					jQuery('[rel*="galleria"]').each(function(index, obj) {
-						Galleria.run(obj);
+					jQuery('[rel*="galleria"]').each(function() {
+						Galleria.run(this);
 					});
 				});
 			});

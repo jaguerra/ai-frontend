@@ -21,14 +21,18 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <!-- endbuild -->
     <!--<![endif]-->
-    <script src="scripts/require.js"></script>
+    <script src="/bower_components/requirejs/require.js"></script>
     <script>
 require.config({
   baseUrl: 'scripts',
   paths: {
+    'jquery': '/bower_components/jquery/dist/jquery',
+    'domReady': '/bower_components/requirejs-domready/domReady',
     'bootstrap': '/bower_components/bootstrap-sass/assets/javascripts/bootstrap',
     'lazysizes': '/bower_components/lazysizes',
     'picturefill': '/bower_components/picturefill/dist',
+    'galleria': '/bower_components/galleria/src/galleria',
+    'galleria-themes': '/bower_components/galleria/src/themes',
     'magnific-popup': '/bower_components/magnific-popup/dist'
   },
   map: {
