@@ -8,6 +8,7 @@ define([
 
     require([
       'modules/nav',
+      'modules/carousel',
       'modules/header'
     ]);
 
