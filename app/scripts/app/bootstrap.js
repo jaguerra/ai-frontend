@@ -36,7 +36,7 @@ define([
 			require(['jquery'], function (jQuery) {
 				require(['galleria'], function (Galleria) {
 					// Load the classic theme
-          var theme_url = require.toUrl('galleria-themes/classic/galleria.classic.js');
+          var theme_url = require.toUrl('galleria-theme.js');
 					Galleria.loadTheme(theme_url);
 
 					// Initialize Galleria

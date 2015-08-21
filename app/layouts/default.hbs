@@ -21,27 +21,20 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <!-- endbuild -->
     <!--<![endif]-->
-    <script src="/bower_components/requirejs/require.js"></script>
+    <script src="scripts/vendor/require.js"></script>
     <script>
 require.config({
   baseUrl: 'scripts',
   paths: {
-    'jquery': '/bower_components/jquery/dist/jquery',
-    'domReady': '/bower_components/requirejs-domready/domReady',
+    'jquery': 'vendor/jquery',
+    'domReady': 'vendor/domReady',
     'bootstrap': '/bower_components/bootstrap-sass/assets/javascripts/bootstrap',
-    'lazysizes': '/bower_components/lazysizes',
-    'picturefill': '/bower_components/picturefill/dist',
-    'galleria': '/bower_components/galleria/src/galleria',
-    'galleria-themes': '/bower_components/galleria/src/themes',
-    'magnific-popup': '/bower_components/magnific-popup/dist'
-  },
-  map: {
-    '*': {
-      'magnific-popup': 'magnific-popup/jquery.magnific-popup',
-      'lazysizes-plugins': 'lazysizes/plugins',
-      'lazysizes': 'lazysizes/lazysizes',
-      'picturefill': 'picturefill/picturefill'
-    }
+    'lazysizes': 'vendor/lazysizes',
+    'lazysizes-plugins/bgset/ls.bgset': 'vendor/ls.bgset',
+    'picturefill': 'vendor/picturefill',
+    'galleria': 'vendor/galleria',
+    'galleria-theme': 'vendor/galleria.classic',
+    'magnific-popup': 'vendor/jquery.magnific-popup'
   },
   shim: {
     'lazysizes-plugins/bgset/ls.bgset':      { deps: ['lazysizes'] },

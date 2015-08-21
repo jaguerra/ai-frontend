@@ -1,4 +1,5 @@
 define(['jquery'], function($){
+  "use strict";
 
   var _carousel = function($this) {
 
@@ -8,7 +9,6 @@ define(['jquery'], function($){
       $prev,
       $next,
       $caption,
-      $pagination,
       $pagination_items,
       $pagination_label,
       autoscroll_interval,
@@ -20,6 +20,9 @@ define(['jquery'], function($){
           $current_slide = $($slides[current_slide]);
           caption = $current_slide.data('carousel-slide-caption');
           credits = $current_slide.data('carousel-slide-credits');
+          if (credits) {
+            caption = caption + '<span class="credits">&nbsp;-&nbsp;' + credits + '</span>';
+          }
           $caption.html('<p>' + caption + '</p>');
         }
       }
@@ -101,7 +104,6 @@ define(['jquery'], function($){
         $prev = $this.find('[data-carousel-prev]');
         $next = $this.find('[data-carousel-next]');
         $caption = $this.find('[data-carousel-caption]');
-        $pagination = $this.find('[data-carousel-pagination]');
         $pagination_items = $this.find('[data-carousel-pagination-item]');
         $pagination_label = $this.find('[data-carousel-pagination-label]');
         num_slides = $slides.length;

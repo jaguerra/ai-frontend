@@ -19,6 +19,23 @@
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
       ]
+    },
+    "galleria": {
+      "main": [
+        "src/galleria.js",
+        "src/themes/classic/*.{js,css,png,gif}"
+      ]
+    },
+    "lazysizes": {
+      "main": [
+        "lazysizes.js",
+        "plugins/bgset/ls.bgset.js"
+      ]
+    },
+    "requirejs-domready": {
+      "main": [
+        "domReady.js"
+      ]
     }
   },
   "devDependencies": {

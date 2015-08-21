@@ -55,13 +55,20 @@ function lint(files, options) {
       .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
   };
 }
+
+const lintOptions = {
+  configFile: '.eslintrc',
+  reset: true
+};
+
+
 const testLintOptions = {
   env: {
     mocha: true
   }
 };
 
-gulp.task('lint', lint('app/scripts/**/*.js'));
+gulp.task('lint', lint('app/scripts/**/*.js', lintOptions));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
 gulp.task('html', ['assemble', 'styles'], () => {
@@ -101,6 +108,15 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('bower-vendor', () => {
+  return gulp.src(require('main-bower-files')({
+    base: '/bower_components',
+    filter: '**/*.{js,css,png,gif}'
+  }))
+    .pipe(gulp.dest('.tmp/scripts/vendor'))
+    .pipe(gulp.dest('dist/scripts/vendor'));
+});
+
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
@@ -110,9 +126,15 @@ gulp.task('extras', () => {
   }).pipe(gulp.dest('dist'));
 });
 
+gulp.task('scripts', () => {
+  return gulp.src([
+    'app/scripts/**/*'
+  ]).pipe(gulp.dest('dist/scripts'));
+});
+
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts', 'assemble'], () => {
+gulp.task('serve', ['styles', 'fonts', 'assemble', 'bower-vendor'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -140,7 +162,7 @@ gulp.task('serve', ['styles', 'fonts', 'assemble'], () => {
     'app/pages/*'
   ],
   ['assemble']);
-  gulp.watch('bower.json', ['wiredep', 'fonts']);
+  gulp.watch('bower.json', ['wiredep', 'fonts', 'bower-vendor']);
 });
 
 gulp.task('serve:dist', () => {
@@ -186,7 +208,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'scss-lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'scss-lint', 'bower-vendor', 'scripts', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
