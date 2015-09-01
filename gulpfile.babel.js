@@ -6,9 +6,42 @@ import del from 'del';
 import {stream as wiredep} from 'wiredep';
 import assemble from 'assemble';
 import scsslint from 'gulp-scss-lint';
+import requirejs from 'requirejs';
+import compression from 'compression';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+
+gulp.task('requirejs-assets', () => {
+  return gulp.src(['app/scripts/**/*'])
+  .pipe(gulp.dest('.tmp/scripts'));
+});
+
+gulp.task("requirejs", ['requirejs-assets', 'bower-vendor'], function (done) {
+
+  requirejs.optimize({
+    "appDir": ".tmp/scripts/",
+    "baseUrl": "./",
+    "dir": "dist/scripts/",
+    "mainConfigFile": "app/scripts/main.js",
+    "generateSourceMaps": false,
+    "modules": [
+      {
+        "name": 'app/bootstrap',
+        "include": [
+          'common-deps'
+        ]
+      }
+    ],
+    "optimize": "uglify2",
+    // for source maps
+    "preserveLicenseComments": false,
+    "wrapShim": false
+  }, function () {
+    done();
+  }, done);
+});
+
 
 gulp.task('scss-lint', () => {
   gulp.src('app/styles/**/*.scss')
@@ -113,8 +146,7 @@ gulp.task('bower-vendor', () => {
     base: '/bower_components',
     filter: '**/*.{js,css,png,gif}'
   }))
-    .pipe(gulp.dest('.tmp/scripts/vendor'))
-    .pipe(gulp.dest('dist/scripts/vendor'));
+    .pipe(gulp.dest('.tmp/scripts/vendor'));
 });
 
 gulp.task('extras', () => {
@@ -124,12 +156,6 @@ gulp.task('extras', () => {
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
-});
-
-gulp.task('scripts', () => {
-  return gulp.src([
-    'app/scripts/**/*'
-  ]).pipe(gulp.dest('dist/scripts'));
 });
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
@@ -166,12 +192,13 @@ gulp.task('serve', ['styles', 'fonts', 'assemble', 'bower-vendor'], () => {
 });
 
 gulp.task('serve:dist', () => {
-  browserSync({
+  browserSync.init({
     notify: false,
     port: 9000,
     server: {
       baseDir: ['dist']
-    }
+    },
+    middleware: compression()
   });
 });
 
@@ -208,7 +235,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'scss-lint', 'bower-vendor', 'scripts', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'scss-lint', 'requirejs', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
