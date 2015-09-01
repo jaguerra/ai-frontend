@@ -1,0 +1,30 @@
+<div class="container--wide container--highlight container--padded">
+  <div class="grid">
+    <div class="col col--1/12--md not--sm"></div>
+    <div class="col col--5/6--md">
+      <div class="col__content">
+        <h3 class="h1 ltr">Buenas noticias</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    {{#each iter_4}}
+    <article class="search-item">
+      <a href="#" class="search-item__link">
+        <div class="search-item__image">
+          <div class="responsive--bg lazyload search-item__image-block" data-bgset="https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208_hi 2x"></div>
+          <noscript>
+            <img src="https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228" alt="" class="responsive__img" />
+          </noscript>
+        </div>
+        <div class="search-item__content--half">
+          <time class="search-item__date">23rd August 2014</time>
+          <h1 class="search-item__title">Ethnic cleansing in East Africa</h1>
+        </div>
+      </a>
+    </article>
+    {{/each}}
+  </div>
+</div>
+

@@ -1,0 +1,45 @@
+// Example usage on scss selector:
+
+//   .icon-icon {
+//     @extend %ai-sprite--base, %ai-sprite--facebook-black;
+//     display: inline-block;
+//     vertical-align: middle;
+//     margin-left: 6px;
+//   }
+
+
+@mixin ai-sprite {
+  //background-image: url(/images/sprite.png);
+  background-image: url(/images/sprite.svg), none;
+}
+
+%ai-sprite--base {
+  @include ai-sprite;
+  background-repeat: no-repeat;
+  background-size: 20.85714em 20em;
+  content: ' ';
+}
+
+%ai-sprite--facebook-black {
+  height: 1.42857em;
+  width: 1.42857em;
+  background-position: rem(-190) rem(-182);
+}
+
+%ai-sprite--twitter-black {
+  height: 1.42857em;
+  width: 1.42857em;
+  background-position: rem(-165) rem(-182);
+}
+
+%ai-sprite--facebook-white {
+  height: 1.42857em;
+  width: 1.42857em;
+  background-position: -8.21429em -13em;
+}
+
+%ai-sprite--twitter-white {
+  height: 1.42857em;
+  width: 1.42857em;
+  background-position: -15.35714em -13em;
+}

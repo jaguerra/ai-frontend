@@ -4,7 +4,6 @@ layout: default
 ---
 
 <!--
-Galleria
 CookieBanner
 SortElements?
 TreeMenu?
@@ -59,16 +58,10 @@ require(['jqp/interstitial'], function() {
   <img srcset="https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52_hi 2x [(min-width: 840px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72_hi 2x [(min-width: 480px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102_hi 2x" />
 
   <h2>AI image</h2>
-  <img class="lazyload" data-srcset="https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1224_42, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1039_52, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_1039_52_hi 2x [(min-width: 840px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_839_52, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_839_52_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_639_72, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_639_72_hi 2x [(min-width: 480px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_479_102, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_479_102_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_345_102, https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?preset=fixed_345_102_hi 2x" />
+  {{partial 'mock-image-1'}}
   <h2>AI picture</h2>
   <p>
-  <picture>
-  <!--[if IE 9]><video style="display: none;"><![endif]-->
-  <source data-srcset="https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_200, https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_200_hi 2x" media="(min-width: 346px)">
-  <source data-srcset="https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_150, https://www.amnesty.org/media/patternlibrary/people-on-the-move.png?preset=proportional_150_hi 2x">
-  <!--[if IE 9]></video><![endif]-->
-  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Heading 2" class="key-facts__img lazyload print-hidden">
-  </picture>
+  {{partial 'mock-picture-1'}}
   </p>
 </div>
 <div>
@@ -100,29 +93,11 @@ require(['jqp/interstitial'], function() {
   <h1>Carousel</h1>
 </div>
 
-
-	{{partial 'carousel'}}
-
+    {{partial 'carousel--carousel'}}
+    {{partial 'carousel--slide-titles'}}
+    {{partial 'carousel--featured'}}
 
   <div class="container">
     <h1>Galleria</h1>
-
-    <div rel="galleria" style="height:50vh" class="galleria-root">
-      <img
-       src="https://www.amnesty.org/media/patternlibrary/mediacentre2.jpg?preset=fixed_1472_42"
-       data-title="Biandintz eta zaldiak"
-       data-description="Horses on Bianditz mountain, in Navarre, Spain."
-       alt=" "
-       />
-
-      <img
-       src="https://www.amnesty.org/media/patternlibrary/armedconflict_2944x1224_header.jpg?anchor=topcenter&preset=fixed_1472_42_hi"
-       data-title="Title 2"
-       data-description="Description 2"
-       alt=" "
-       />
-
-
-    </div>
-
+    {{partial 'galleria'}}
   </div>

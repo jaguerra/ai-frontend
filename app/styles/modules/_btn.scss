@@ -137,7 +137,7 @@
   }
 }
 
-.btn-primary--md--fullwidth {
+%btn-primary--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -170,6 +170,27 @@
     border-color: #ffd500;
   }
 }
+
+
+.btn-primary--md--fullwidth {
+  @extend %btn-primary--md--fullwidth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn-primary--lg {
   font-weight: 400;
@@ -266,7 +287,7 @@
   }
 }
 
-.btn-secondary--sm--fullwidth {
+%btn-secondary--sm--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -301,6 +322,10 @@
   }
 }
 
+.btn-secondary--sm--fullwidth {
+  @extend %btn-secondary--sm--fullwidth;
+}
+
 .btn-secondary--md {
   font-weight: 400;
   text-transform: uppercase;
@@ -330,7 +355,7 @@
   }
 }
 
-.btn-secondary--md--fullwidth {
+%btn-secondary--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -361,6 +386,10 @@
   &:hover {
     background-color: #dadada;
   }
+}
+
+.btn-secondary--md--fullwidth {
+  @extend %btn-secondary--md--fullwidth;
 }
 
 .btn-secondary--lg {
@@ -725,7 +754,7 @@
   }
 }
 
-.btn-secondary--on-black--md--fullwidth {
+%btn-secondary--on-black--md--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -757,6 +786,10 @@
     background-color: #dadada;
     border-color: #dadada;
   }
+}
+
+.btn-secondary--on-black--md--fullwidth {
+  @extend %btn-secondary--on-black--md--fullwidth;
 }
 
 .btn-secondary--on-black--lg {

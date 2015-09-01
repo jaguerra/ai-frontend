@@ -1,0 +1,36 @@
+.ai-social-share-block {
+  background-color: $c-grey--lightest;
+  margin: rem(24px) auto;
+  padding: rem(24px);
+  text-align: center;
+
+  @include media($m-sm) {
+    max-width: rem(400px);
+  }
+
+  &__title {
+    font-family: $f-title;
+    font-size: 2rem;
+  }
+
+  &__icon-block {
+    margin-top: rem(10);
+  }
+
+  &__twitter {
+    @extend %ai-sprite--base, %ai-sprite--twitter-black;
+    @include hide-text;
+    @include ai-sprite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+
+  &__facebook {
+    @extend %ai-sprite--base, %ai-sprite--facebook-black;
+    @include hide-text;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+}

@@ -1,0 +1,61 @@
+<div class="pagination print-hidden" data-pagination>
+
+  <a class="pagination__btn--next" href="https://www.amnesty.org/about-us/style-guide/?p=6" rel="next" data-pagination-next>Next</a>
+
+  <a class="pagination__btn--prev" href="https://www.amnesty.org/about-us/style-guide/?p=4" rel="prev" data-pagination-previous>Previous</a>
+
+  <ul class="pagination__list">
+
+    <li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=1" data-pagination-page="1">1</a></li>
+    <li class="pagination__item"><span class="pagination__spacer">&hellip;</span></li>
+    <li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=4" data-pagination-page="4">4</a></li>
+    <li class="pagination__item"><span class="pagination__link is-current">5</span></li>
+    <li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=6" data-pagination-page="6">6</a></li>
+    <li class="pagination__item"><span class="pagination__spacer">&hellip;</span></li>
+    <li class="pagination__item"><a class="pagination__link" href="https://www.amnesty.org/about-us/style-guide/?p=30" data-pagination-page="30">30</a></li>
+
+  </ul>
+
+</div>
+
+<script type="text/template" data-pagination-template>
+
+		{{#hasNextPage}}
+	        <a class="pagination__btn--next" href="{{nextUrl}}" rel="next" data-pagination-next>Next</a>
+	    {{/hasNextPage}}
+	    {{^hasNextPage}}
+	        <span class="pagination__btn--next is-disabled">Next</span>
+	    {{/hasNextPage}}
+
+	    {{#hasPreviousPage}}
+	        <a class="pagination__btn--prev" href="{{previousUrl}}" rel="prev" data-pagination-previous>Previous</a>
+	    {{/hasPreviousPage}}
+	    {{^hasPreviousPage}}
+	        <span class="pagination__btn--prev is-disabled">Previous</span>
+	    {{/hasPreviousPage}}
+
+
+		<ul class="pagination__list print-hidden">
+
+			{{#pages}}
+				<li class="pagination__item">
+				{{#spacer}}
+					<span class="pagination__spacer">&hellip;</span>
+				{{/spacer}}
+
+				{{^spacer}}
+					{{#currentPage}}
+						<span class="pagination__link is-current">{{number}}</span>
+					{{/currentPage}}
+					{{^currentPage}}
+						<a class="pagination__link" href="{{url}}" data-pagination-page="{{number}}">{{number}}</a>
+					{{/currentPage}}
+				{{/spacer}}
+
+				</li>
+
+			{{/pages}}
+
+		</ul>
+
+</script>

@@ -1,0 +1,251 @@
+.ai-accion-2col {
+  @include outer-container;
+  &__col1 {
+    padding: 0 rem(11);
+    @include media($m-md) {
+      @include span-columns(7);
+      padding: 0 rem(24);
+    }
+  }
+  &__col2 {
+    // IE8..
+    margin-right: 0;
+
+    // .mas_informacion {
+    //   float: left;
+    //   width: 100%;
+    //   margin: 16px 0;
+    // }
+
+    @include media($m-md) {
+      @include span-columns(5);
+    }
+
+  }
+}
+
+.ai-accion-firma {
+  @include fill-parent;
+  background: $c-grey--lightest;
+  padding: rem(15px);
+  border-top: 1px solid $c-grey--light;
+  float: left;
+  display: block;
+
+  &__head {
+    @include outer-container;
+    margin-left: rem(-15px);
+    // IE8
+    min-height: 36px;
+  }
+
+  &__head-title {
+    @include media($m-sm) {
+      @include span-columns(6);
+    }
+  }
+
+  &__head-title-text {
+    font-family: $f-title;
+    font-size: 1.3rem;
+    background: $c-black;
+    color: $c-white;
+    height: rem(36px);
+    display: inline-block;
+    padding-left: rem(16px);
+    &:after {
+      @include triangle(rem(36px) rem(12px), $c-black, right);
+      background: $c-grey--lightest;
+      display: inline-block;
+      vertical-align: middle;
+      content: ' ';
+      margin-left: rem(20px);
+    }
+  }
+
+  &__head-target {
+    margin-left: rem(15px);
+    font-size: .9rem;
+    font-weight: bold;
+    color: $c-grey--mid;
+    padding-top: rem(11px);
+    @include media($m-sm) {
+      @include span-columns(6);
+      text-align: right;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  &__head-target-number {
+    color: $c-black;
+  }
+
+  &__bar {
+    margin-top: rem(10px);
+    width: 100%;
+    height: rem(24px);
+    background: $c-grey--light;
+    position: relative;
+  }
+
+  &__bar-progress {
+    @include linear-gradient($c-yellow, $c-yellow, #dada00);
+    @include transition(width 2s ease);
+    height: rem(24px);
+    width: 0;
+  }
+
+  &__bar-caption {
+    position: absolute;
+    bottom: rem(1px);
+    left: rem(16px);
+    font-family: $f-title;
+    font-size: 1.1rem;
+  }
+
+  &__firmantes {
+    margin-top: rem(10px);
+    font-family: $f-title;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    margin-top: rem(10px);
+    font-size: .9em;
+  }
+
+  &__importanttext {
+    margin-top: rem(10px);
+    font-weight: bold;
+  }
+
+  &__warning {
+    margin-top: rem(10px);
+    font-weight: bold;
+    color: $c-error;
+  }
+
+  &__input {
+    margin: rem(5px) 0 0;
+    box-sizing: border-box;
+    border: 1px solid $c-grey--light;
+    border-radius: 0;
+    padding: 0 rem(6px);
+    font-size: rem(11);
+    font-family: $f-default;
+    color: $c-grey--mid;
+    width: 100%;
+    height: rem(40px);
+    background: $c-white;
+
+    &[disabled] {
+      opacity: .5;
+    }
+  }
+
+  &__check {
+    margin-top: rem(10px);
+    font-size: .8rem;
+    display: block;
+  }
+
+  &__button {
+    @extend %btn-primary--md--fullwidth;
+    margin-top: rem(10px);
+  }
+
+  &__button-primera {
+    @extend %btn-secondary--md--fullwidth;
+    margin: rem(20px) 0;
+  }
+
+  &__form {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__arrow {
+    @include transform(rotate(90deg) translateX(rem(4px)));
+    display: inline-block;
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: rem(10px);
+    &:before {
+      content: "\203A";
+    }
+  }
+}
+
+%ai-accion-firma-compartir__base-boton {
+  @extend %btn-secondary--on-black--md--fullwidth;
+  @include span-columns(6);
+  color: $c-white;
+  font-size: 1.1em;
+}
+
+%ai-accion-firma-compartir__base-icon {
+  @extend %ai-sprite--base;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.ai-accion-firma-compartir {
+  @include outer-container;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  border-top: 1px solid $c-grey--light;
+
+  &__header {
+    margin: 26px 0;
+    float: left;
+    width: 100%;
+    font: normal normal normal 24px $f-title;
+  }
+
+  &__facebook {
+    @extend %ai-accion-firma-compartir__base-boton;
+    background-color: $c-facebook;
+    &:hover {
+      background-color: lighten($c-facebook, 10%);
+    }
+  }
+  &__twitter {
+    @extend %ai-accion-firma-compartir__base-boton;
+    // IE8..
+    margin-right: 0;
+    background-color: $c-twitter;
+    &:hover {
+      background-color: lighten($c-twitter, 10%);
+    }
+  }
+
+  &__twitter-icon {
+    @extend %ai-accion-firma-compartir__base-icon;
+    @extend %ai-sprite--twitter-white;
+  }
+
+  &__facebook-icon {
+    @extend %ai-accion-firma-compartir__base-icon;
+    @extend %ai-sprite--facebook-white;
+  }
+
+}
+
+.ai-accion-firma-content {
+  margin-bottom: 16px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
