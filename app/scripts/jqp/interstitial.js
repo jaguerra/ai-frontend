@@ -1,64 +1,71 @@
-define(['jquery', 'jqp/cookie'],
-       function (jQuery) {
+define(
+  ['jquery', 'jqp/cookie'],
+  function (jQuery) {
+    'use strict';
 
-         /**
-          * Opens an external URL into a Lightbox.
-          * Lightbox will only be triggered on the following constraints:
-          * - "open" action is called
-          * - it is the first page visit on the current session
-          *
-          * Usage:
-          *
-          * "init" action should be called on every page hit. "open" action should only be called on pages suitable for the
-          * lightbox to open.
-          *
-          */
-         jQuery.interstitial = function( action, options ) {
+    /**
+     * Opens an external URL into a Lightbox.
+     * Lightbox will only be triggered on the following constraints:
+     * - "open" action is called
+     * - it is the first page visit on the current session
+     *
+     * Usage:
+     *
+     * "init" action should be called on every page hit. "open" action should only be called on pages suitable for the
+     * lightbox to open.
+     *
+     */
 
-           var settings = jQuery.extend({}, jQuery.interstitial.defaults, options );
+    function setVisitCookie(settings){
+      jQuery.cookie( settings.cookieName, '1', { path: '/' });
+    }
 
-           if( action === 'init' || typeof action === 'undefined' ){
+    function isFirstVisit(settings){
+      if( jQuery.cookie( settings.cookieName ) === '1'){
+        return false;
+      } else {
+        return true;
+      }
+    }
 
-             setVisitCookie(settings);
+    function openLightbox(settings){
+      require(['domReady', 'lightbox'], function(domReady, lightbox) {
+        domReady(function(){
+          lightbox.open_iframe(settings.url);
+        });
+      });
+    }
 
-           } else if(action === 'open'){
 
-             if( isFirstVisit(settings) ){
-               openLightbox(settings);
-               setVisitCookie(settings);
-             }
-           }
 
-           return this;
 
-         };
 
-         jQuery.interstitial.defaults = {
-           cookieName: "interstitial",
-           url: "",
-           title: "",
-           width: "750",
-           height: "400"
-         };
+    jQuery.interstitial = function( action, options ) {
 
-         function setVisitCookie(settings){
-           jQuery.cookie( settings.cookieName, '1', { path: '/' });
-         }
+      var settings = jQuery.extend({}, jQuery.interstitial.defaults, options );
 
-         function isFirstVisit(settings){
-           if( jQuery.cookie( settings.cookieName ) === '1'){
-             return false;
-           } else {
-             return true;
-           }
-         }
+      if( action === 'init' || typeof action === 'undefined' ){
 
-         function openLightbox(settings){
-           require(['domReady', 'lightbox'], function(domReady, lightbox) {
-             domReady(function(){
-               lightbox.open_iframe(settings.url);
-             });
-           });
-         }
+        setVisitCookie(settings);
 
-       });
+      } else if(action === 'open'){
+
+        if( isFirstVisit(settings) ){
+          openLightbox(settings);
+          setVisitCookie(settings);
+        }
+      }
+
+      return this;
+
+    };
+
+    jQuery.interstitial.defaults = {
+      cookieName: "interstitial",
+      url: "",
+      title: "",
+      width: "750",
+      height: "400"
+    };
+  }
+);

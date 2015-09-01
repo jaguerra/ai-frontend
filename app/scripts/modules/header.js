@@ -1,4 +1,5 @@
 define(['jquery'], function($){
+  'use strict';
 
   var _header_fixed = (function() {
     var previous_scroll_top = $(document).scrollTop();
@@ -48,7 +49,7 @@ define(['jquery'], function($){
       'on_scroll': on_scroll
     };
 
-  })();
+  }());
 
   $(document).ready( function() {
     $(document).scroll( function() {

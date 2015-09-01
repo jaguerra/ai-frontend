@@ -3,6 +3,7 @@ define([
 ], function(
 	domReady
 	) {
+  'use strict';
 
 	domReady(function(){
 

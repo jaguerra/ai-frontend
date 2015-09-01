@@ -1,4 +1,5 @@
 define(['jquery'], function($){
+  'use strict';
   $(document).ready( function() {
 
     $('[data-nav-search-btn]').on('click', function() {

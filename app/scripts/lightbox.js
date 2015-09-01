@@ -1,4 +1,5 @@
 define(['jquery', 'magnific-popup'], function($){
+  'use strict';
 
   var _lightbox = (function() {
 
@@ -93,7 +94,7 @@ define(['jquery', 'magnific-popup'], function($){
       'open_iframe': open_iframe
     };
 
-  })();
+  }());
 
   $(document).ready(function() {
     _lightbox.init_data_api();
