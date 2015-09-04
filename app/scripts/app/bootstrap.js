@@ -9,7 +9,7 @@ define([
 
     require([
       'modules/nav',
-      'modules/carousel',
+      'blocks/carousel/carousel',
       'modules/header'
     ]);
 

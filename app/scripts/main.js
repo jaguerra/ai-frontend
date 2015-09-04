@@ -9,7 +9,8 @@ require.config({
     'picturefill': 'vendor/picturefill',
     'galleria': 'vendor/galleria',
     'galleria-theme': 'vendor/galleria.classic',
-    'magnific-popup': 'vendor/jquery.magnific-popup'
+    'magnific-popup': 'vendor/jquery.magnific-popup',
+    'blocks': '../blocks'
   },
   shim: {
     'lazysizes-plugins/bgset/ls.bgset':      { deps: ['lazysizes'] },

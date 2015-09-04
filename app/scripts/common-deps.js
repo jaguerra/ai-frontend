@@ -3,7 +3,7 @@ define([
   'domReady',
   'jqp/interstitial',
   'modules/nav',
-  'modules/carousel',
+  'blocks/carousel/carousel',
   'modules/header',
   'picturefill',
   'lazysizes-plugins/bgset/ls.bgset',

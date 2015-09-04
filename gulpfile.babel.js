@@ -13,8 +13,11 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('requirejs-assets', () => {
-  return gulp.src(['app/scripts/**/*'])
-  .pipe(gulp.dest('.tmp/scripts'));
+  return gulp.src(
+    ['app/scripts/**/*', 'app/blocks/**/*.js']
+    , { base: 'app/' }
+  )
+  .pipe(gulp.dest('.tmp'));
 });
 
 gulp.task("requirejs", ['requirejs-assets', 'bower-vendor'], function (done) {
@@ -54,6 +57,7 @@ gulp.task('scss-lint', () => {
 });
 
 gulp.task('assemble', () => {
+  assemble.partials('app/blocks/**/*.hbs');
   assemble.partials('app/partials/*.hbs');
   assemble.pages('app/pages/*.hbs');
   assemble.layouts('app/layouts/*.hbs');
@@ -180,11 +184,16 @@ gulp.task('serve', ['styles', 'fonts', 'assemble', 'bower-vendor'], () => {
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
-  gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch([
+    'app/styles/**/*.scss',
+    'app/blocks/**/*.scss'
+    ],
+    ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch([
     'app/layouts/*',
     'app/partials/*',
+    'app/blocks/**/*.hbs',
     'app/pages/*'
   ],
   ['assemble']);

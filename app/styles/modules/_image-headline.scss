@@ -139,6 +139,14 @@
   }
 }
 
+.image-headline__btn--primary {
+  color: $c-black;
+  background-color: $c-yellow;
+  &:hover {
+    background-color: $c-yellow-hover;
+    border-color: $c-yellow-hover;
+  }
+}
 @media screen and (min-width: 40em) {
   .image-headline__btn {
     margin: 0 rem(3px);
@@ -401,6 +409,19 @@
   .image-headline__subtitle--sm {
     font-size: rem(38px);
 //     font-size: 2.75rem;
+  }
+}
+
+.image-headline__lead--sm {
+  font-size: rem(18px);
+  margin: rem(24px) auto;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 40em) {
+  .image-headline__lead--sm {
+    font-size: rem(28px);
   }
 }
 

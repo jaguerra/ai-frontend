@@ -413,19 +413,49 @@ layout: default
             <div class="ai-social-share-block__text">
               Si llegamos a más personas conseguiremos nuestro objetivo
             </div>
-            <div class="ai-social-share-block__icon-block">
-              <a class="ai-social-share-block__twitter" href="">
-                Twitter
-              </a>
-              <a class="ai-social-share-block__facebook" href="">
-                Facebook
-              </a>
+            <div class="ai-social-share-block__share-list-container">
+              {{partial 'share-list'}}
             </div>
           </aside>
         </div>
       </div>
     </div>
 
+    <div class="grid">
+      <div class="col col--1/12--md not--sm"></div>
+      <div class="col col--5/6--md">
+        <div class="col__content">
+          <h3 class="h3 ltr">Share</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="col col--1/12--md not--sm"></div>
+      <div class="col col--5/12--md">
+        <div class="col__content">
+          {{partial 'share'}}
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="col col--1/12--md not--sm"></div>
+      <div class="col col--5/6--md">
+        <div class="col__content">
+          <h3 class="h3 ltr">Tags</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="col col--1/12--md not--sm"></div>
+      <div class="col col--5/12--md">
+        <div class="col__content">
+          {{partial 'tags'}}
+        </div>
+      </div>
+    </div>
 
     <div class="grid">
         <div class="col col--1/12--md not--sm"></div>
@@ -798,4 +828,32 @@ layout: default
         {{partial 'pagination'}}
       </div>
       <div class="col col--1/3--md not--sm"></div>
+    </div>
+
+
+    <div class="grid patternlibrary">
+
+      <div class="col col--1/12--md not--sm"></div>
+      <div class="col col--5/6--md">
+        <div class="col__content">
+          <h3 class="h3 ltr">CA List</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container--wide">
+      {{partial 'ca-list'}}
+    </div>
+
+    <div class="grid patternlibrary">
+      <div class="col col--1/12--md not--sm"></div>
+      <div class="col col--5/6--md">
+        <div class="col__content">
+          <h3 class="h3 ltr">Content panel</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container--wide">
+      {{partial 'content-panel'}}
     </div>
