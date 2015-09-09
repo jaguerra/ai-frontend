@@ -30,6 +30,7 @@
 }
 
 .ca-list__itemblock {
+  @include outer-container;
   padding: rem(24px) rem(11px) 0 rem(11px);
 //   padding: 1.71429rem .85714rem 0 .85714rem;
 }
@@ -42,32 +43,50 @@
 }
 
 .ca-list__item {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
   min-height: rem(1px);
-//   min-height: .07143rem;
   padding-left: rem(10px);
-//   padding-left: .71429rem;
   margin-bottom: rem(10px);
-//   margin-bottom: .71429rem;
   width: 100%;
   height: rem(415px);
-//   height: 29.64286rem;
   overflow: hidden;
-}
 
-@media screen and (min-width: 40em) {
-  .ca-list__item {
+  @include media($m-sm) {
     width: 50%;
   }
-}
-
-@media screen and (min-width: 65em) {
-  .ca-list__item {
+  @include media($m-md) {
     width: 25%;
   }
+
+  &--2col {
+    @include media($m-sm) {
+      width: 50%;
+    }
+  }
+
+  &--3col {
+    @include media($m-sm) {
+      width: 50%;
+    }
+    @include media($m-md) {
+      width: 33.3333%;
+    }
+  }
+
 }
+
+// @media screen and (min-width: 40em) {
+//   .ca-list__item {
+//     width: 50%;
+//   }
+// }
+
+// @media screen and (min-width: 65em) {
+//   .ca-list__item {
+//     width: 25%;
+//   }
+// }
 
 .ca-list__item__cell--bottom {
   bottom: rem(11px);

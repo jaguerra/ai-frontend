@@ -1,0 +1,30 @@
+<header class="header " data-header role="banner">
+  <div class="header__container" data-header-container>
+    {{partial 'logo'}}
+    {{partial 'nav'}}
+
+
+    <div class="lang-btn" hidden aria-hidden="true" data-lang-btn>es</div>
+    <nav class="lang" data-lang>
+      <h1 class="visually-hidden" id="language">Seleccione idioma</h1>
+      <ul class="lang-list">
+        <li class="lang-list__item"><a class="lang-list__link ltr" href="#">galego</a></li>
+        <li class="lang-list__item"><a class="lang-list__link ltr" href="#">euskera</a></li>
+        <li class="lang-list__item"><a class="lang-list__link rtl" href="#">català</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-btn" hidden aria-hidden="true" data-nav-search-btn>Buscar</div>
+
+    <form action="/en/search/" class="nav-search" data-nav-search>
+      <div class="nav-search__inner">
+        <div class="nav-search__field">
+          <input class="nav-search__input" data-nav-search-input placeholder="¿Qué estás buscando?" type="text" name="q" />
+        </div>
+        <button class="nav-search__submit" type="submit" data-nav-search-submit-btn>Buscar</button>
+      </div>
+    </form>
+
+  </div>
+</header>
+

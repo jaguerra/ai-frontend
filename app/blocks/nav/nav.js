@@ -30,5 +30,10 @@ define(['jquery'], function($){
       }
     });
 
+    $('[data-lang-btn]').on('click', function() {
+      $(this).toggleClass('is-active');
+      $('[data-lang]').toggleClass('is-active');
+    });
+
   });
 });

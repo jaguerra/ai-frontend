@@ -1,0 +1,40 @@
+.ai-nav3 {
+
+  @include clearfix;
+
+  &__item {
+    padding: 0;
+    float: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $f-title;
+    font-feature-settings: 'kern';
+    font-kerning: normal;
+    white-space: nowrap;
+    line-height: .85;
+    margin: 0 rem(10px) rem(10px) 0;
+  }
+
+  &__link {
+    display: block;
+    letter-spacing: 0;
+    padding: rem(10px);
+    text-decoration: none;
+    transition: background-color .25s;
+    background-color: $c-white;
+    color: $c-black;
+    border: 1px solid $c-black;
+    &:hover {
+      background-color: $c-grey--lighter;
+    }
+  }
+
+  &__link--current {
+    color: $c-white;
+    background-color: $c-black;
+    &:hover {
+      background-color: $c-black;
+    }
+  }
+
+}

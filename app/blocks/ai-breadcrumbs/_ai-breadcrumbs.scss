@@ -1,0 +1,23 @@
+.ai-breadcrumbs {
+
+  &__item {
+    &::after {
+      content: ' > ';
+      padding-left: rem(10px);
+    }
+
+    &--current::after {
+      content: '';
+      padding-left: 0;
+    }
+
+    display: inline-block;
+    color: $c-grey--mid;
+    padding-right: rem(10px);
+  }
+
+  &__link {
+    color: $c-grey--mid;
+  }
+
+}

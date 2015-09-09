@@ -2,9 +2,9 @@ define([
   'jquery',
   'domReady',
   'jqp/interstitial',
-  'modules/nav',
+  'blocks/nav/nav',
   'blocks/carousel/carousel',
-  'modules/header',
+  'blocks/header/header',
   'picturefill',
   'lazysizes-plugins/bgset/ls.bgset',
   'lazysizes'

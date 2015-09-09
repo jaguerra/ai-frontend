@@ -8,9 +8,9 @@ define([
 	domReady(function(){
 
     require([
-      'modules/nav',
+      'blocks/nav/nav',
       'blocks/carousel/carousel',
-      'modules/header'
+      'blocks/header/header'
     ]);
 
     require(['picturefill', 'lazysizes-plugins/bgset/ls.bgset'], function() {
