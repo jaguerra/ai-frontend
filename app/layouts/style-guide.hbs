@@ -8,22 +8,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:css styles/patternlibrary.css -->
+    <link rel="stylesheet" type="text/css" href="styles/patternlibrary.css">
     <!-- endbuild -->
     <script data-main="scripts/main.js" src="scripts/vendor/require.js"></script>
     <script>!function(){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(a){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===a}function d(){if(window.localStorage&&window.XMLHttpRequest)if(c(a))e(localStorage.font_css_cache);else{var d=new XMLHttpRequest;d.open("GET",a,!0),d.onreadystatechange=function(){4===d.readyState&&(e(d.responseText),localStorage.font_css_cache=d.responseText,localStorage.font_css_cache_file=a)},d.send()}else{var b=document.createElement("link");b.href=a,b.rel="stylesheet",b.type="text/css",document.getElementsByTagName("head")[0].appendChild(b),document.cookie="font_css_cache"}}function e(a){var b=document.createElement("style");b.setAttribute("type","text/css"),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a,document.getElementsByTagName("head")[0].appendChild(b)}var a="/styles/webfonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?d():b(window,"load",d)}();</script>
 
 </head>
 <body class="en">
-	{{partial 'g-header'}}
 	{% body %}
-	{{partial 'g-footer'}}
-
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <!-- endbower -->
-  <!-- endbuild -->
-
 </body>
 </html>

@@ -156,9 +156,11 @@ gulp.task('bower-vendor', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
+    'app/styles/*.css',
     '!app/*.html'
   ], {
-    dot: true
+    dot: true,
+    base: 'app/'
   }).pipe(gulp.dest('dist'));
 });
 

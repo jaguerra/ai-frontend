@@ -1,4 +1,7 @@
 ---
+exclude:
+  - 'app/styles/patternlibrary.scss'
+
 linters:
 
   DisableLinterReason:
