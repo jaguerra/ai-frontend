@@ -1,6 +1,16 @@
 .ai-breadcrumbs {
 
   &__item {
+
+    font-weight: 400;
+    font-family: $f-title;
+    font-feature-settings: 'kern';
+    font-kerning: normal;
+
+    display: inline-block;
+    color: $c-grey--mid;
+    padding-right: rem(10px);
+
     &::after {
       content: ' > ';
       padding-left: rem(10px);
@@ -11,13 +21,29 @@
       padding-left: 0;
     }
 
-    display: inline-block;
-    color: $c-grey--mid;
-    padding-right: rem(10px);
   }
 
   &__link {
-    color: $c-grey--mid;
+    color: $c-black;
+    text-decoration: none;
+
+    &--current {
+      color: $c-grey--mid;
+    }
   }
 
+}
+
+.ai-breadcrumbs-container {
+  max-width: $s-container-width--small;
+  margin: 0 auto;
+  padding: $s-margin--small;
+
+  @include media($m-ai-medium) {
+    padding: $s-margin--medium;
+  }
+
+  @include media($m-ai-large) {
+    padding: $s-margin--medium 0;
+  }
 }

@@ -14,6 +14,12 @@
 // @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
 // @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 // @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";

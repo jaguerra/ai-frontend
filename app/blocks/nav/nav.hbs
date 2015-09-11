@@ -1,3 +1,6 @@
+---
+iter_3: ['Ciberactúa', 'Hazte socio', 'Hazte voluntario']
+---
 <div class="nav-overlay" data-nav-overlay></div>
 <div class="nav-btn" hidden aria-hidden="true" data-nav-btn>
       <span class="nav-btn__lines"></span> Menu
@@ -16,17 +19,26 @@
     <li class="nav-list__item  has-subnav">
       <div class="nav-list__subnav-btn" data-subnav-btn></div>
       <a class="nav-list__link "  href="actua.html">Actúa</a>
-      <div class="nav-list--sub-container">
-        <ul class="nav-list--sub" data-subnav>
+
+      <div class="nav-list--sub-container nav-list--sub-container--highlights">
+        <div class="nav-list--sub nav-list--sub--highlights" data-subnav>
+          {{#each iter_3}}
+
+          <a class="nav-list__highlight-item-sub" href="#">
+            <div class="responsive--bg lazyload nav-list__highlight-item-sub-image-block" data-bgset="https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415, https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_615_415, https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_615_415_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_321_455, https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_321_455_hi 2x"></div>
+            <noscript>
+              <img src="https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415" alt="" class="responsive__img" />
+            </noscript>
+            <div class="nav-list__highlight-item-sub-bottom">
+              <span class="nav-list__highlight-item-sub-title">{{this}}</span>
+            </div>
+          </a>
+
+          {{/each}}
+        </div>
+
+        <ul class="nav-list--sub nav-list--sub--no-highlights" data-subnav>
           <li class="nav-list__item--sub">
-            <a class="nav-list__link--secondary " href="#">Ciberactúa</a>
-          </li>
-          <li class="nav-list__item--sub">
-            <a class="nav-list__link--secondary " href="#">Hazte socio</a>
-          </li>
-          <li class="nav-list__item--sub">
-            <a class="nav-list__link--secondary " href="#">Hazte voluntario</a>
-          </li><li class="nav-list__item--sub">
             <a class="nav-list__link--secondary " href="#">Haz un legado</a>
           </li><li class="nav-list__item--sub">
             <a class="nav-list__link--secondary " href="#">Haz un donativo</a>
@@ -37,11 +49,12 @@
           </li><li class="nav-list__item--sub">
             <a class="nav-list__link--secondary " href="#">Recicla tu móvil</a>
           </li>
-          <li class="nav-list__item--sub">
-            <a class="nav-list__link--secondary " href="#">Arte implicado</a>
-          </li>
+          <!-- <li class="nav-list__item--sub"> -->
+          <!--   <a class="nav-list__link--secondary " href="#">Arte implicado</a> -->
+          <!-- </li> -->
         </ul>
       </div>
+
     </li>
     <li class="nav-list__item  active-subnav">
       <a class="nav-list__link is-current"  href="#">Hazte socio</a>

@@ -21,19 +21,19 @@
     padding: rem(10px);
     text-decoration: none;
     transition: background-color .25s;
-    background-color: $c-white;
-    color: $c-black;
-    border: 1px solid $c-black;
+    background-color: $c-black;
+    color: $c-white;
+    border: 1px solid $c-white;
     &:hover {
-      background-color: $c-grey--lighter;
+      background-color: $c-grey--dark;
     }
   }
 
   &__link--current {
-    color: $c-white;
-    background-color: $c-black;
+    color: $c-black;
+    background-color: $c-white;
     &:hover {
-      background-color: $c-black;
+      background-color: $c-white;
     }
   }
 

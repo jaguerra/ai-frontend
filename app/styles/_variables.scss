@@ -12,6 +12,8 @@ $m-sm: new-breakpoint(min-width em($screen-sm-min, 16));
 $m-md: new-breakpoint(min-width em($screen-md-min, 16));
 $m-lg: new-breakpoint(min-width em($screen-lg-min, 16));
 
+$m-ai-desktop: new-breakpoint(min-width 65em);
+
 $c-yellow: #FF0;
 $c-yellow-hover: #FFD500;
 $c-black: #000;

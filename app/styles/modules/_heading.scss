@@ -332,3 +332,17 @@
   line-height: 1.6;
   padding: rem(3px) 0;
 }
+
+
+.heading-block--main {
+  @extend .heading--main, .heading--uppercase;
+  text-align: center;
+  padding-top: $s-margin--small;
+  padding-bottom: $s-margin--small;
+  margin: 0;
+
+  @include media($m-ai-medium) {
+    padding-top: $s-margin--medium;
+    padding-bottom: $s-margin--medium;
+  }
+}

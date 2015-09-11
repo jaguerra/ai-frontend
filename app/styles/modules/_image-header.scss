@@ -239,4 +239,43 @@
   }
 }
 
+.image-header-nav {
+  margin: 0 auto;
+  max-width: rem(1472px);
+  background-color: $c-black;
+  padding-top: rem(80);
+  padding-left: rem(24);
+  padding-right: rem(24);
+  padding-bottom: rem(14);
+  margin-top: rem(-80);
+
+  &__content {
+    max-width: rem(1271);
+    margin: 0 auto;
+  }
+
+}
+
+.image-header__content--thin {
+  padding-top: 52.5%;
+}
+
+@media screen and (min-width: 30em) {
+  .image-header__content--thin {
+    padding-top: 36%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .image-header__content--thin {
+    padding-top: 27%;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .image-header__content--thin {
+    padding-top: 21%;
+  }
+}
+
 
