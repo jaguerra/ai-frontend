@@ -4,16 +4,40 @@ $f-default: sans-serif;
 // Bourbon
 $em-base: 14px;
 
+
+// Sizes
+$s-container-width--small: rem(1271);
+$s-container-width--medium: rem(1472);
+$s-container-width--large: rem(1682);
+
+$s-margin--small: rem(10);
+$s-margin--medium: rem(24);
+$s-margin--large: rem(47);
+
 // Neat
-$max-width: rem(1234);
+$max-width: $s-container-width--small;
 
-// Media
-$m-sm: new-breakpoint(min-width em($screen-sm-min, 16));
-$m-md: new-breakpoint(min-width em($screen-md-min, 16));
-$m-lg: new-breakpoint(min-width em($screen-lg-min, 16));
+// Media - From Bootstrap
+$screen-sm: 30em;
+$screen-md: 40em;
+$screen-lg: 65em;
+$screen-sm-min: 30em;
+$screen-md-min: 40em;
+$screen-lg-min: 65em;
+$screen-xs-max: 29.9999em;
+$screen-sm-max: 39.9999em;
+$screen-md-max: 64.9999em;
 
-$m-ai-desktop: new-breakpoint(min-width 65em);
+$m-sm: new-breakpoint(min-width $screen-sm);
+$m-md: new-breakpoint(min-width $screen-md);
+$m-lg: new-breakpoint(min-width $screen-lg);
 
+// Media - From AI (like Zurb's)
+$m-ai-small: new-breakpoint(min-width 30em);
+$m-ai-medium: new-breakpoint(min-width 40em);
+$m-ai-large: new-breakpoint(min-width 65em);
+
+// Colours
 $c-yellow: #FF0;
 $c-yellow-hover: #FFD500;
 $c-black: #000;
