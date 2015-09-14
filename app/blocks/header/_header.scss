@@ -104,4 +104,35 @@
   }
 }
 
+.header {
+
+  &__slogan-container {
+    display: none;
+    @include media($m-ai-medium) {
+      display: table;
+      height: rem(72);
+      overflow: hidden;
+      position: absolute;
+      left: rem(180);
+      top: 0;
+      width: rem(260);
+    }
+  }
+
+  &__slogan {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $f-title;
+    font-feature-settings: 'kern';
+    font-kerning: normal;
+    line-height: 1.3;
+    color: $c-grey--mid;
+    font-size: .9rem;
+    @include media($m-ai-large) {
+      font-size: 1rem;
+    }
+  }
+}
 

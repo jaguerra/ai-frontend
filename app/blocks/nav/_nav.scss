@@ -799,7 +799,7 @@
     @include media($m-ai-large) {
       padding-left: 0;
       padding-top: 0;
-      margin-top: rem(10px);
+      margin-top: rem(24);
       text-align: right;
       width: 100%;
     }
@@ -825,6 +825,12 @@
     &:hover {
       opacity: .6;
       background: #1a1a1a;
+    }
+
+    &:last-of-type {
+      @include media($m-ai-large) {
+        margin-right: 0;
+      }
     }
 
   }
