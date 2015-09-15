@@ -8,7 +8,7 @@
 
 .featured-carousel {
   .carousel__slide:before {
-    background: rgba(0, 0, 0, 0.25);
+    // background: rgba(0, 0, 0, 0.25);
     position: absolute;
     content: '';
     left: 0;
@@ -91,7 +91,7 @@
 
 @media screen and (min-width: 65em) {
   .featured-carousel .carousel__slide:before {
-    background: rgba(0, 0, 0, 0.3);
+    // background: rgba(0, 0, 0, 0.3);
   }
 }
 
