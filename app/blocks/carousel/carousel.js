@@ -29,11 +29,12 @@ define(['jquery'], function($){
 
       function update_pagination() {
         $pagination_items.each( function(index) {
+          var selected_class = $(this).data('carousel-pagination-item-base-class') + '--selected';
           if (index === current_slide) {
-            $(this).addClass('carousel-pagination__item--selected');
+            $(this).addClass(selected_class);
             $pagination_label.html( $(this).html() );
           } else {
-            $(this).removeClass('carousel-pagination__item--selected');
+            $(this).removeClass(selected_class);
           }
         });
       }
@@ -122,6 +123,7 @@ define(['jquery'], function($){
           $(this).on('click', function() {
             click_pagination(index);
           });
+          $(this).data('carousel-pagination-item-base-class', $(this).attr('class').split()[0]);
         });
 
         update_caption();

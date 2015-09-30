@@ -1010,3 +1010,25 @@
   vertical-align: middle;
 }
 
+
+.carousel-pagination__dots {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  height: rem(30);
+  z-index: 3;
+  width: 100%;
+}
+
+.carousel-pagination__dot {
+  display: inline-block;
+  width: rem(54);
+  height: rem(10);
+  margin: 0 rem(5);
+  background-color: $c-white;
+
+  &--selected {
+    background-color: $c-yellow;
+  }
+
+}

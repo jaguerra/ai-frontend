@@ -86,6 +86,7 @@
   }
   .carousel__next--inline, .carousel__prev--inline {
     margin-bottom: 0;
+    z-index: 2;
   }
 }
 
