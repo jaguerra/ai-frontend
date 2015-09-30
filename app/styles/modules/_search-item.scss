@@ -62,7 +62,7 @@
   padding-left: rem(10px);
 //   padding-left: .71429rem;
   width: 100%;
-  height: rem(240px);
+  // height: rem(240px);
 //   height: 17.14286rem;
   &:hover {
     .search-item__content--half {
@@ -91,7 +91,7 @@
 @media screen and (min-width: 40em) {
   .search-item--1\/2 {
     width: 50%;
-    height: rem(360px);
+    // height: rem(360px);
 //     height: 25.71429rem;
   }
 }
