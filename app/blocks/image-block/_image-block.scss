@@ -214,6 +214,8 @@
 //   max-width: 87.42857rem;
   height: auto;
   padding-top: 140%;
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (min-width: 24.375em) {
