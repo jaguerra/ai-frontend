@@ -1012,12 +1012,18 @@
 
 
 .carousel-pagination__dots {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  height: rem(30);
-  z-index: 3;
-  width: 100%;
+
+  display: none;
+
+  @include media($m-ai-large) {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: rem(30);
+    z-index: 3;
+    width: 100%;
+  }
 }
 
 .carousel-pagination__dot {
