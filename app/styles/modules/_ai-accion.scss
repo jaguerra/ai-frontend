@@ -2,7 +2,7 @@
   @include outer-container;
   &__col1 {
     padding: 0 rem(11);
-    @include media($m-md) {
+    @include media($m-ai-large) {
       @include span-columns(7);
       padding: 0 rem(24);
     }
@@ -17,7 +17,7 @@
     //   margin: 16px 0;
     // }
 
-    @include media($m-md) {
+    @include media($m-ai-large) {
       @include span-columns(5);
     }
 
@@ -249,3 +249,14 @@
 
 }
 
+.ai-accion-boton-actua {
+  @extend %btn-primary--lg--fullwidth;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  @include media($m-ai-large) {
+    position: relative;
+    z-index: inherit;
+  }
+}

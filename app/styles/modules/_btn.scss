@@ -222,7 +222,7 @@
   }
 }
 
-.btn-primary--lg--fullwidth {
+%btn-primary--lg--fullwidth {
   font-weight: 400;
   text-transform: uppercase;
   font-family: $f-title;
@@ -254,6 +254,10 @@
     background-color: #ffd500;
     border-color: #ffd500;
   }
+}
+
+.btn-primary--lg--fullwidth {
+  @extend %btn-primary--lg--fullwidth;
 }
 
 .btn-secondary--sm {
