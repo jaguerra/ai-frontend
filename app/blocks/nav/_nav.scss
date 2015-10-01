@@ -898,7 +898,8 @@
 
     .nav-list__item:hover {
       .nav-list__link {
-        background-color: $c-grey--light;
+        background-color: $c-grey--darkest;
+        color: $c-white;
       }
       .nav-list__link.is-current {
         background-color: $c-grey--darkest;
@@ -933,19 +934,17 @@
     }
 
     .nav-list--sub--highlights {
-      width: 60%;
+      width: 50%;
       text-align: left;
       margin-top: 0;
     }
 
     .nav-list__highlight-item-sub {
       margin-right: 0;
-      width: rem(200);
-      height: rem(100);
     }
 
     .nav-list--sub--no-highlights {
-      width: 40%;
+      width: 50%;
       text-align: left;
     }
 
