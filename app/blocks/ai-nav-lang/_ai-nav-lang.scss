@@ -1,0 +1,53 @@
+.ai-nav-lang {
+  @include clearfix;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background-color: $c-grey--lighter;
+  @include media($m-ai-large) {
+    width: auto;
+    max-width: $s-container-width--medium;
+  }
+
+  &__container {
+    @include media($m-ai-large) {
+      float: right;
+    }
+  }
+
+  &__item {
+    display: table;
+    float: left;
+    height: rem(60);
+
+    &:hover {
+      background-color: $c-grey--darkest;
+    }
+  }
+
+  &__link {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 $s-margin--medium;
+    color: $c-black;
+    font-family: $f-title;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      color: $c-white;
+    }
+  }
+
+  &__item--current {
+    background-color: $c-grey--darkest;
+  }
+
+  &__link--current {
+    color: $c-white;
+  }
+
+}
