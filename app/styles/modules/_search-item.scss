@@ -95,7 +95,7 @@
 @media screen and (min-width: 40em) {
   .search-item--1\/2 {
     width: 50%;
-    // height: rem(360px);
+    height: rem(360px);
 //     height: 25.71429rem;
   }
 }
@@ -445,9 +445,9 @@
 
 .search-item__action-btn {
   @extend %btn-primary--md;
+  margin-top: rem(10);
 
   &--top-right {
-    margin-top: rem(10);
     display: block;
     float: right;
   }
