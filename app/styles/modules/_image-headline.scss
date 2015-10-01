@@ -4,7 +4,9 @@
 // we mute the alerts by now but no further development should be done
 // without correcting this.
 // scss-lint:disable SelectorDepth
-.image-headline, .image-headline--left, .image-headline--right {
+.image-headline,
+.image-headline--left,
+.image-headline--right {
   bottom: 0;
   position: absolute;
   text-align: center;
@@ -624,4 +626,74 @@
   }
 }
 
+.image-headline--full {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  @include media($m-ai-large) {
+    padding: $s-margin--medium;
+    text-align: left;
+  }
+}
 
+.image-headline {
+  &__cell-actua-left {
+    display: table-cell;
+    width: 100%;
+    vertical-align: bottom;
+    @include media($m-ai-large) {
+      width: 70%;
+    }
+  }
+  &__cell-actua-right {
+    display: none;
+    @include media($m-ai-large) {
+      display: table-cell;
+      width: 30%;
+      vertical-align: bottom;
+    }
+  }
+
+  &__testimonio-container {
+    background-color: $c-black;
+    padding: $s-margin--medium;
+  }
+
+  &__testimonio-title {
+    color: $c-white;
+    font-size: 2.75rem;
+    font-weight: 400;
+    font-family: $f-title;
+    line-height: 1.1;
+  }
+
+  &__testimonio-text {
+    color: $c-white;
+  }
+
+  &__testimonio-container--below {
+    padding: $s-margin--medium;
+    margin-bottom: $s-margin--medium;
+    border-bottom: 5px solid $c-black;
+    width: 100%;
+    @include media($m-ai-large) {
+      display: none;
+    }
+  }
+
+  &__testimonio-title--below {
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: $f-title;
+    line-height: 1.1;
+  }
+
+  &__testimonio-text--below {
+    color: $c-grey--dark;
+  }
+
+}
