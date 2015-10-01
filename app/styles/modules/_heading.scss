@@ -351,3 +351,26 @@
     padding-bottom: $s-margin--medium;
   }
 }
+
+
+
+.heading--tape--dark--sm {
+  font-size: rem(28px);
+  line-height: 2.15;
+  padding: rem(10px) 0;
+}
+
+@media screen and (min-width: 40em) {
+  .heading--tape--dark--sm {
+    font-size: rem(36px);
+    line-height: 1.825;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .heading--tape--dark--sm {
+    font-size: rem(40px);
+    line-height: 1.7;
+  }
+}
+

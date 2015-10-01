@@ -278,4 +278,27 @@
   }
 }
 
+.image-header__content--xthin {
+  padding-top: 27%;
+}
+
+@media screen and (min-width: 30em) {
+  .image-header__content--xthin {
+    padding-top: 18%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .image-header__content--xthin {
+    padding-top: 14%;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  .image-header__content--xthin {
+    padding-top: 11%;
+  }
+}
+
+
 
