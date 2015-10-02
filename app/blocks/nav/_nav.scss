@@ -567,8 +567,7 @@
 @media screen and (min-width: 64.9375em) {
   .nav-search.is-active {
     width: 100%;
-    padding-left: rem(241px);
-//     padding-left: 22.42857rem;
+    padding-left: rem(273px);
   }
 }
 
@@ -898,11 +897,11 @@
 
     .nav-list__item:hover {
       .nav-list__link {
-        background-color: $c-grey--darkest;
+        background-color: $c-grey--dark;
         color: $c-white;
       }
       .nav-list__link.is-current {
-        background-color: $c-grey--darkest;
+        background-color: $c-grey--dark;
       }
     }
 
@@ -921,7 +920,7 @@
 
     .nav-list--sub-container__container {
       @include clearfix;
-      background-color: $c-grey--darkest;
+      background-color: $c-grey--dark;
       padding: rem(16);
     }
 
