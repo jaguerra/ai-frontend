@@ -3,7 +3,7 @@ require.config({
   paths: {
     'jquery': 'vendor/jquery',
     'domReady': 'vendor/domReady',
-    'bootstrap': '/bower_components/bootstrap-sass/assets/javascripts/bootstrap',
+    'bootstrap': 'vendor',
     'lazysizes': 'vendor/lazysizes',
     'lazysizes-plugins/bgset/ls.bgset': 'vendor/ls.bgset',
     'picturefill': 'vendor/picturefill',

@@ -18,7 +18,7 @@
     "bootstrap-sass": {
       "main": [
         "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
+        "assets/javascripts/**/*"
       ]
     },
     "galleria": {

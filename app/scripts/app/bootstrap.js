@@ -48,6 +48,10 @@ define([
 			});
 		}
 
+		if (document.querySelector('[data-toggle="collapse"]') !== null) {
+      require(['bootstrap/collapse']);
+		}
+
 	});
 
 });

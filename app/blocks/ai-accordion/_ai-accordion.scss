@@ -1,0 +1,6 @@
+.panel-title {
+  @include f-title;
+  font-size: 1.7rem;
+}
+
+// The rest of styles are defined via BS variables on _variables.scss
