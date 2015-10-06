@@ -1,0 +1,56 @@
+.ai-como-ayudar {
+
+  @include outer-container;
+
+  &__item {
+
+    @include span-columns(12);
+
+    margin-bottom: $s-margin--small;
+    padding: 0 $s-margin--small;
+
+    @include media($m-ai-medium) {
+      @include span-columns(4);
+      @include omega(3n);
+      height: rem(130);
+      margin-bottom: $s-margin--medium;
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .1);
+      transition: background-color .25s,border-color .25s,color .25s;
+    }
+
+  }
+
+  &__item-container {
+    @include outer-container;
+  }
+
+  &__item-container-icon {
+    @include span-columns(3);
+    padding-left: $s-margin--small;
+  }
+
+  &__item-container-text {
+    @include span-columns(8);
+    @include shift(1);
+  }
+
+  // &__icon {
+  // }
+
+  &__title {
+    @include f-title;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: $s-margin--small;
+  }
+
+  &__copy {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
