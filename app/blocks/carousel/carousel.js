@@ -130,7 +130,7 @@ define(['jquery'], function($){
         update_pagination();
 
         if ($this.data('carousel-auto-scroll') !== undefined) {
-          set_autoscroll(5000);
+          set_autoscroll(10000);
         }
       }
 

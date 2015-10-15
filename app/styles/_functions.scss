@@ -1,1 +1,10 @@
-//
+// True multiline ellipsis only works in Chrome. Height is needed for
+// fallback compatibility.
+@mixin ai-multiline-ellipsis($max-lines, $height) {
+  height: $height;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $max-lines;
+  text-overflow: ellipsis;
+}
