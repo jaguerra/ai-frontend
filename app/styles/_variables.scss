@@ -49,6 +49,8 @@ $m-ai-large: new-breakpoint(min-width 65em);
 $m-ai-small-max: new-breakpoint(max-width 30em);
 $m-ai-medium-max: new-breakpoint(max-width 40em);
 $m-ai-large-max: new-breakpoint(max-width 65em);
+$m-ai-small-only: new-breakpoint(min-width 30em max-width 40em);
+$m-ai-medium-only: new-breakpoint(min-width 40em max-width 65em);
 
 // Colours
 $c-yellow: #FF0;

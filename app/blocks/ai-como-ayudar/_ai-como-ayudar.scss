@@ -9,12 +9,20 @@
     margin-bottom: $s-margin--small;
     padding: 0 $s-margin--small;
 
-    @include media($m-ai-medium) {
-      @include span-columns(4);
-      @include omega(3n);
+    @include media($m-ai-medium-only) {
       height: rem(130);
       margin-bottom: $s-margin--medium;
       padding: 0;
+    }
+
+    @include media($m-ai-medium-only) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media($m-ai-large) {
+      @include span-columns(3);
+      @include omega(4n);
     }
 
     &:hover {
