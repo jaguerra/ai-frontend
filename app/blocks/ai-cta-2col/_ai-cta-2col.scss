@@ -8,7 +8,7 @@
     border-bottom: 1px solid $c-grey--light;
     padding-bottom: $s-margin--medium;
 
-    @include media($m-ai-medium) {
+    @include media($m-ai-large) {
       @include span-columns(9);
       border-right: 1px solid $c-grey--light;
       padding-right: $s-margin--medium;
@@ -18,7 +18,7 @@
   }
 
   &__bannercontainer {
-    @include media($m-ai-medium) {
+    @include media($m-ai-large) {
       @include span-columns(3);
     }
   }
@@ -39,14 +39,14 @@
     line-height: 1.1;
     font-size: 1.5rem;
     text-transform: uppercase;
-    @include media($m-ai-medium) {
+    @include media($m-ai-large) {
       text-align: right;
       font-size: 2rem;
     }
   }
 
   &__banner-text {
-    @include media($m-ai-medium) {
+    @include media($m-ai-large) {
       text-align: right;
     }
   }

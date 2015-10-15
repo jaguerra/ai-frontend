@@ -48,34 +48,10 @@
 }
 
 .tweet__link {
-  font-weight: 400;
-  text-transform: uppercase;
-  font-family: $f-title;
-  -webkit-font-feature-settings: 'kern';
-  font-feature-settings: 'kern';
-  -webkit-font-kerning: normal;
-  font-kerning: normal;
-  line-height: 1.1;
-  -webkit-appearance: none;
-  border-radius: 0;
-  cursor: pointer;
-  display: inline-block;
-  outline: 0;
-  text-decoration: none;
-  -webkit-transition: background-color .25s,border-color .25s,color .25s;
-  transition: background-color .25s,border-color .25s,color .25s;
-  white-space: nowrap;
-  background-color: #fff;
-  border: 1px solid #000;
-  font-size: rem(16px);
-//   font-size: 1.143rem;
-  padding: rem(14px) rem(24px);
-//   padding: 1rem 1.71429rem;
+  @include btn;
+  @include btn--secondary;
+  @include btn--md;
   margin: rem(24px) 0 0 0;
-//   margin: 1.71429rem 0 0 0;
-  &:hover {
-    background-color: #dadada;
-  }
 }
 
 .tweet__quote {
