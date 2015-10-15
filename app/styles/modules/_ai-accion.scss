@@ -3,7 +3,7 @@
   &__col1 {
     padding: 0 rem(11);
     @include media($m-ai-large) {
-      @include span-columns(7);
+      @include span-columns(8);
       padding: 0 rem(24);
     }
   }
@@ -18,7 +18,7 @@
     // }
 
     @include media($m-ai-large) {
-      @include span-columns(5);
+      @include span-columns(4);
     }
 
   }
@@ -40,7 +40,7 @@
   }
 
   &__head-title {
-    @include media($m-sm) {
+    @include media($m-ai-medium-only) {
       @include span-columns(6);
     }
   }
@@ -69,7 +69,7 @@
     font-weight: bold;
     color: $c-grey--mid;
     padding-top: rem(11px);
-    @include media($m-sm) {
+    @include media($m-ai-medium-only) {
       @include span-columns(6);
       text-align: right;
       margin-right: 0;

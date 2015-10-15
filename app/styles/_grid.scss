@@ -288,20 +288,18 @@
 .container--padded-vertical, .container--padded-vertical-double {
   margin: 0 auto;
   max-width: rem(1223px);
-//   max-width: 87.42857rem;
+  padding: rem(10) 0;
 }
 
 @media screen and (min-width: 40em) {
   .container--padded-vertical {
     padding: rem(24px) 0;
-//     padding: 1.71429rem 0;
   }
 }
 
 @media screen and (min-width: 40em) {
   .container--padded-vertical-double {
     padding: rem(47px) 0;
-//     padding: 3.42857rem 0;
   }
 }
 
