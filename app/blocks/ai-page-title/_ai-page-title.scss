@@ -1,0 +1,15 @@
+.ai-page-title {
+  @include f-title;
+  max-width: $s-container-width--small;
+  margin: 0 auto;
+  padding: 0 $s-margin--small $s-margin--small;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  @include media($m-ai-medium) {
+    font-size: 2.75rem;
+    padding: 0 $s-margin--small $s-margin--medium;
+  }
+
+}
+

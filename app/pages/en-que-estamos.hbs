@@ -1,0 +1,117 @@
+---
+title: En que estamos
+layout: default
+iter_4: [1,2,3,4]
+---
+<div class="ai-breadcrumbs-container">
+  <nav class="ai-breadcrumbs">
+    <div class="ai-breadcrumbs__item">
+      <a class="ai-breadcrumbs__link" href="home.html">Inicio</a>
+    </div>
+    <div class="ai-breadcrumbs__item ai-breadcrumbs__item--current">
+      <span class="ai-breadcrumbs__link ai-breadcrumbs__link--current">En qué estamos</span>
+    </div>
+  </nav>
+</div>
+
+<h1 class="ai-page-title">En qué estamos</h1>
+
+<div class="container--wide">
+
+  <h2 class="heading-block--main heading-block--main-lined">Últimas noticias</h2>
+
+  <div class="grid">
+    {{#each iter_4}}
+    <article class="search-item--bordered search-item--1/2-height">
+      <a class="search-item__content" href="#">
+        <ul class="tags">
+          <li class="tags__item"><span class="tags__icon--news">Noticia</span></li>
+        </ul>
+        <!-- <p class="tags__item--faux">Iraq</p> -->
+        <time class="search-item__date">8 de Agosto de 2015</time>
+        <h1 class="search-item__title search-item__title--1/2-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices est nulla, a suscipit diam facilisis ac posuere.</h1>
+      </a>
+    </article>
+    {{/each}}
+  </div>
+</div>
+
+<div class="container--wide container--txt-center container--padded-vertical">
+    <a class="btn btn--secondary btn--md" href="noticias.html">Ver más noticias</a>
+</div>
+
+<div class="container--wide">
+
+  <h2 class="heading-block--main heading-block--main-lined">Campañas</h2>
+  {{partial 'content-panel'}}
+
+</div>
+
+<div class="container--wide container--txt-center container--padded-vertical">
+    <a class="btn btn--secondary btn--md" href="">Ver más campañas</a>
+</div>
+
+
+<div class="container--wide">
+
+  <h2 class="heading-block--main heading-block--main-lined">Blog</h2>
+
+  <div class="grid">
+    {{#each iter_4}}
+    <article class="search-item">
+      <a href="#" class="search-item__link">
+        <div class="search-item__image">
+          <div class="responsive--bg lazyload search-item__image-block" data-bgset="https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208_hi 2x"></div>
+          <noscript>
+            <img src="https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228" alt="" class="responsive__img" />
+          </noscript>
+          <ul class="tags--bottom">
+            <li class="tags__item--solo"><span class="tags__icon--blog">Blog</span></li>
+          </ul>
+        </div>
+        <div class="search-item__content--half">
+          <time class="search-item__date">23 de Agosto de 2015</time>
+          <h1 class="search-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices est nulla, a suscipit diam.</h1>
+        </div>
+      </a>
+    </article>
+    {{/each}}
+  </div>
+</div>
+
+<div class="container--wide container--txt-center container--padded-vertical">
+    <a class="btn btn--secondary btn--md" href="">Ver más entradas del blog</a>
+</div>
+
+
+<div class="container--wide">
+
+  <h2 class="heading-block--main heading-block--main-lined">En positivo</h2>
+
+  <div class="grid">
+    {{#each iter_4}}
+    <article class="search-item">
+      <a href="#" class="search-item__link">
+        <div class="search-item__image">
+          <div class="responsive--bg lazyload search-item__image-block" data-bgset="https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_615_208_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208, https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_321_208_hi 2x"></div>
+          <noscript>
+            <img src="https://www.amnesty.org/media/patternlibrary/air_2014_12.jpg?preset=fixed_391_228" alt="" class="responsive__img" />
+          </noscript>
+          <ul class="tags--bottom">
+            <li class="tags__item--solo"><span class="tags__icon--blog">Buena noticia</span></li>
+          </ul>
+        </div>
+        <div class="search-item__content--half">
+          <time class="search-item__date">23 de Agosto de 2015</time>
+          <h1 class="search-item__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices est nulla, a suscipit diam.</h1>
+        </div>
+      </a>
+    </article>
+    {{/each}}
+  </div>
+</div>
+
+<div class="container--wide container--txt-center container--padded-vertical">
+    <a class="btn btn--secondary btn--md" href="">Ver más buenas noticias</a>
+</div>
+

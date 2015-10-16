@@ -40,10 +40,7 @@
   padding: $s-margin--small;
 
   @include media($m-ai-medium) {
-    padding: $s-margin--medium;
+    padding: $s-margin--medium $s-margin--small;
   }
 
-  @include media($m-ai-large) {
-    padding: $s-margin--medium 0;
-  }
 }
