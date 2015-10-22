@@ -10,7 +10,7 @@
 
 @mixin ai-sprite {
   //background-image: url(/images/sprite.png);
-  background-image: url(/images/sprite.svg), none;
+  background-image: url(../images/sprite.svg), none;
 }
 
 %ai-sprite--base {
