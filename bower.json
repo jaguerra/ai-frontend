@@ -24,7 +24,7 @@
     "galleria": {
       "main": [
         "src/galleria.js",
-        "src/themes/classic/*.{js,css,png,gif}"
+        "src/themes/classic/*.{png,gif}"
       ]
     },
     "lazysizes": {
