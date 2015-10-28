@@ -7,10 +7,8 @@
   height: 100%;
   left: 0;
   position: relative;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: left .25s,-webkit-transform .25s;
-  transition: left .25s,transform .25s;
+  transition: left .8s,transform .8s;
   width: 100%;
   &:after, &:before {
     clear: both;
