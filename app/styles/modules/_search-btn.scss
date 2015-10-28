@@ -72,6 +72,12 @@
   }
 }
 
+@media screen and (max-width: 21em) {
+  .search-btn {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 64.9375em) {
   .search-btn {
     z-index: 1002;
