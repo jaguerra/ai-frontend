@@ -1,6 +1,13 @@
 ---
 menu_destacado: ['Ciberactúa', 'Hazte socio', 'Hazte voluntario']
 ---
+
+<ul class="nav-list nav-list--only-mobile">
+  <li class="nav-list__item nav-list--only-mobile__item">
+    <a class="nav-list__link nav-list--only-mobile__link"  href="#">Hazte socio/a</a>
+  </li>
+</ul>
+
 <div class="nav-overlay" data-nav-overlay></div>
 <div class="nav-btn" hidden aria-hidden="true" data-nav-btn>
       <span class="nav-btn__lines"></span> Menu
@@ -15,6 +22,7 @@ menu_destacado: ['Ciberactúa', 'Hazte socio', 'Hazte voluntario']
       Cerrar
     </div>
   </div>
+
   <ul class="nav-list">
 
     <li class="nav-list__item  has-subnav ">
@@ -48,9 +56,34 @@ menu_destacado: ['Ciberactúa', 'Hazte socio', 'Hazte voluntario']
     <li class="nav-list__item  has-subnav">
       <div class="nav-list__subnav-btn" data-subnav-btn></div>
       <a class="nav-list__link is-current"  href="en-que-estamos.html">En qué estamos</a>
-      <div class="nav-list--sub-container">
+
+      <div class="nav-list--sub-container nav-list--sub-container--highlights">
         <div class="nav-list--sub-container__container">
-          <ul class="nav-list--sub" data-subnav>
+          <div class="nav-list--sub nav-list--sub--highlights" data-subnav>
+            {{#each menu_destacado}}
+
+            <a class="nav-list__highlight-item-sub" href="#">
+              <div class="responsive--bg lazyload nav-list__highlight-item-sub-image-block" data-bgset="https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415, https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_615_415, https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_615_415_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_321_455, https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_321_455_hi 2x"></div>
+              <noscript>
+                <img src="https://www.amnesty.org/media/patternlibrary/air_2014_5.jpg?preset=fixed_391_415" alt="" class="responsive__img" />
+              </noscript>
+              <div class="nav-list__highlight-item-sub-bottom">
+                <span class="nav-list__highlight-item-sub-title">{{this}}</span>
+              </div>
+            </a>
+
+            {{/each}}
+          </div>
+
+          <ul class="nav-list--sub nav-list--sub--highlights-mobile" data-subnav>
+            {{#each menu_destacado}}
+            <li class="nav-list__item--sub">
+              <a class="nav-list__link--secondary " href="#">{{this}}</a>
+            </li>
+            {{/each}}
+          </ul>
+
+          <ul class="nav-list--sub nav-list--sub--no-highlights" data-subnav>
             <li class="nav-list__item--sub">
               <a class="nav-list__link--secondary " href="noticias.html">Noticias</a>
             </li>
@@ -75,13 +108,14 @@ menu_destacado: ['Ciberactúa', 'Hazte socio', 'Hazte voluntario']
           </ul>
         </div>
       </div>
+
     </li>
 
     <li class="nav-list__item  has-subnav">
       <div class="nav-list__subnav-btn" data-subnav-btn></div>
       <a class="nav-list__link "  href="actua.html">Actúa</a>
 
-      <div class="nav-list--sub-container nav-list--sub-container--highlights">
+      <div class="nav-list--sub-container nav-list--sub-container--highlights nav-list--sub-container--highlights-actua">
         <div class="nav-list--sub-container__container">
           <div class="nav-list--sub nav-list--sub--highlights" data-subnav>
             {{#each menu_destacado}}
@@ -98,6 +132,14 @@ menu_destacado: ['Ciberactúa', 'Hazte socio', 'Hazte voluntario']
 
             {{/each}}
           </div>
+
+          <ul class="nav-list--sub nav-list--sub--highlights-mobile" data-subnav>
+            {{#each menu_destacado}}
+            <li class="nav-list__item--sub">
+              <a class="nav-list__link--secondary " href="#">{{this}}</a>
+            </li>
+            {{/each}}
+          </ul>
 
           <ul class="nav-list--sub nav-list--sub--no-highlights" data-subnav>
             <li class="nav-list__item--sub">
@@ -116,18 +158,13 @@ menu_destacado: ['Ciberactúa', 'Hazte socio', 'Hazte voluntario']
       </div>
 
     </li>
-    <li class="nav-list__item ">
-      <a class="nav-list__link"  href="#">Hazte socio</a>
+    <li class="nav-list__item nav-list__item--highpriority">
+      <a class="nav-list__link nav-list__link--highpriority"  href="#">Hazte socio/a</a>
     </li>
 
     <li class="nav-list__item nav-list__item--lowpriority">
       <a class="nav-list__link nav-list__link--lowpriority"  href="#">Tienda</a>
     </li>
-
-    <li class="nav-list__item nav-list__item--lowpriority">
-      <a class="nav-list__link nav-list__link--lowpriority"  href="#">Suscríbete</a>
-    </li>
-
 
   </ul>
 </nav>
