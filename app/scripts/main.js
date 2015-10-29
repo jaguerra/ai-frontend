@@ -7,8 +7,8 @@ require.config({
     'lazysizes': 'vendor/lazysizes',
     'lazysizes-plugins/bgset/ls.bgset': 'vendor/ls.bgset',
     'picturefill': 'vendor/picturefill',
-    'galleria': 'vendor/galleria',
-    'galleria-theme': 'vendor/galleria.classic',
+    'galleria': 'vendor/galleria/galleria-1.4.2',
+    'galleria-theme': 'vendor/galleria/themes/classic/galleria.classic',
     'magnific-popup': 'vendor/jquery.magnific-popup',
     'blocks': '../blocks'
   },

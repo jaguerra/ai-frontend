@@ -1,0 +1,9 @@
+.galleria-root {
+  background-color: $c-black;
+
+  &--preload {
+    img {
+      visibility: hidden;
+    }
+  }
+}

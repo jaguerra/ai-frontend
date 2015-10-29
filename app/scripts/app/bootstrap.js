@@ -42,6 +42,7 @@ define([
 
 					// Initialize Galleria
 					jQuery('[rel*="galleria"]').each(function() {
+            $(this).removeClass('galleria-root--preload');
 						Galleria.run(this);
 					});
 				});

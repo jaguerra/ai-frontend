@@ -6,6 +6,7 @@
  * https://raw.github.com/aino/galleria/master/LICENSE
  *
  */
+require(['jquery'], function(jQuery){
 
 (function($) {
 
@@ -98,3 +99,4 @@ Galleria.addTheme({
 });
 
 }(jQuery));
+});
