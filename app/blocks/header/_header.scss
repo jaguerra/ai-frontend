@@ -115,7 +115,7 @@
       position: absolute;
       left: rem(192);
       top: 0;
-      width: rem(240);
+      width: rem(220);
     }
   }
 
@@ -128,10 +128,16 @@
     font-kerning: normal;
     line-height: 1.3;
     color: $c-grey--dark;
-    font-size: .9rem;
-    @include media($m-ai-large) {
-      font-size: 1rem;
+    font-size: 1rem;
+    @include media($m-ai-medium) {
+      font-size: 1.1rem;
     }
+  }
+}
+
+@media screen and (max-width:692px) {
+  .header__slogan-container {
+    width: rem(160);
   }
 }
 

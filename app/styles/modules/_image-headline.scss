@@ -608,14 +608,18 @@
 }
 
 .image-headline {
-  &__cell-actua-left {
+  &__cell-actua-top-left {
     display: table-cell;
     width: 100%;
-    vertical-align: bottom;
+    vertical-align: top;
+    position: relative;
+    padding-top: $s-margin--medium;
     @include media($m-ai-large) {
+      padding-top: 0;
       width: 70%;
     }
   }
+
   &__cell-actua-right {
     display: none;
     @include media($m-ai-large) {
@@ -661,6 +665,24 @@
 
   &__testimonio-text--below {
     color: $c-grey--dark;
+  }
+
+}
+
+
+
+.image-headline__actua-title {
+  bottom: rem(-35px);
+  margin: 0;
+  position: absolute;
+
+  text-align: center;
+  width: 100%;
+
+  @include media($m-ai-large) {
+    bottom: rem(-47px);
+    padding-left: rem(19px);
+    width: 65%;
   }
 
 }

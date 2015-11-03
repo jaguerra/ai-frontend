@@ -325,4 +325,9 @@
 }
 
 
-
+.image-header--actua {
+  margin-bottom: $s-margin--large;
+  @include media($m-ai-large) {
+    margin-bottom: $s-margin--large*2;
+  }
+}

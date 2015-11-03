@@ -89,12 +89,9 @@
 }
 
 .footer-legal {
-  font-size: rem(11px);
-//   font-size: .85714rem;
+  font-size: rem(13);
   margin: 0 0 rem(5px);
-//   margin: 0 0 .42857rem;
   padding-top: rem(24px);
-//   padding-top: 1.71429rem;
   text-align: center;
 }
 
@@ -121,8 +118,7 @@
 .footer-copyright {
   color: #b6b6b6;
   display: block;
-  font-size: rem(11px);
-//   font-size: .85714rem;
+  font-size: rem(13);
   margin-top: 0;
   text-align: center;
   text-transform: uppercase;
@@ -149,11 +145,9 @@
 .footer-list--sub {
   list-style-type: none;
   margin: 0;
-  font-size: rem(11px);
-//   font-size: .85714rem;
+  font-size: rem(13);
   font-weight: 400;
   padding: rem(24px) 0 rem(11px);
-//   padding: 1.71429rem 0 .85714rem;
   &:after, &:before {
     clear: both;
     content: ' ';
@@ -275,4 +269,22 @@
   }
 }
 
+.footer-suscripcion {
 
+  padding: $s-margin--small;
+  margin: 0 auto;
+  max-width: rem(320);
+
+  @include media($m-ai-medium) {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__input {
+    margin-bottom: $s-margin--small;
+    @include media($m-ai-medium) {
+      margin-right: $s-margin--medium;
+    }
+  }
+
+}

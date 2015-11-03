@@ -57,8 +57,7 @@ input {
     -webkit-appearance: none;
     appearance: none;
     border-radius: 0;
-    font-size: rem(16px);
-//     font-size: 1.14286rem;
+    // font-size: rem(16px);
   }
 }
 
@@ -94,4 +93,23 @@ input {
   text-shadow: 0 0 0 #000;
 }
 
+.ai-form-control {
+  display: block;
+  width: 100%;
+  height: rem(34);
+  padding: rem(6) rem(12);
+  line-height: rem(24);
+  color: $c-grey--darkest;
+  background-color: $c-white;
+  border: 1px solid $c-grey--dark;
 
+  &--stacked {
+    margin-bottom: $s-margin--small;
+  }
+
+  &--on-black {
+    color: $c-white;
+    background-color: transparent;
+    border: 1px solid $c-white;
+  }
+}
