@@ -1,12 +1,10 @@
 .search-results {
   padding: rem(24px) rem(11px) 0 rem(11px);
-//   padding: 1.71429rem .85714rem 0 .85714rem;
 }
 
 @media screen and (min-width: 79.5em) {
   .search-results {
-    padding: rem(24px) rem(100px) rem(14px) rem(100px);
-//     padding: 1.71429rem 7.14286rem 1rem 7.14286rem;
+    padding: rem(24);
   }
 }
 

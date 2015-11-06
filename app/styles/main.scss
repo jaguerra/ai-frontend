@@ -76,3 +76,7 @@ $icon-font-path: '../fonts/';
 @import "../blocks/ai-accordion/ai-accordion";
 @import "../blocks/ai-page-title/ai-page-title";
 @import "modules/galleria";
+
+.ai-inherited {
+  @import "inherited";
+}
