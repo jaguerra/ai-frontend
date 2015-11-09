@@ -459,7 +459,8 @@ time {
 }
 
 .print-shown {
-  display: none;
+  // scss-lint:disable ImportantRule
+  display: none !important;
 }
 
 @media print {
