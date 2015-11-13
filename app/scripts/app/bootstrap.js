@@ -7,11 +7,19 @@ define([
 
 	domReady(function(){
 
+    require(['jquery'], function($) {
+      $('html').removeClass('no-js');
+    });
+
     require([
       'blocks/nav/nav',
       'blocks/carousel/carousel',
       'blocks/header/header'
     ]);
+
+    if (document.querySelector('.dropdown') !== null) {
+      require(['blocks/dropdown/dropdown']);
+    }
 
     require(['picturefill', 'lazysizes-plugins/bgset/ls.bgset'], function() {
            require(['lazysizes']);

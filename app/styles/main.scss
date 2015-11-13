@@ -52,7 +52,7 @@ $icon-font-path: '../fonts/';
 @import "modules/quote";
 @import "modules/related-content";
 @import "modules/query";
-@import "modules/dropdown";
+@import "../blocks/dropdown/dropdown";
 @import "modules/filter";
 @import "modules/sort";
 @import "modules/search-results";

@@ -2,6 +2,7 @@
 title: Noticias
 layout: default
 iter_16: [1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6]
+iter_select: ['Option 1', 'Option 2', 'Option 3']
 ---
 <div class="ai-breadcrumbs-container">
   <nav class="ai-breadcrumbs">
@@ -28,22 +29,11 @@ iter_16: [1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6]
         <input type="hidden" name="contentType" value="2561">
 
         <div class="filter col col--1/2--md">
-
-
-          <div class="dropdown" data-dropdown="">
-            <p class="dropdown__title dropdown__title--topics" data-dropdown-label="Topics">
-            <span class="dropdown-title__text">Categoría</span>
-            </p>
-          </div>
+          {{partial 'dropdown'}}
         </div>
+
         <div class="filter col col--1/2--md">
-
-
-          <div class="dropdown" data-dropdown="">
-            <p class="dropdown__title dropdown__title--resourcetypes" data-dropdown-label="Resource Types">
-            <span class="dropdown-title__text">Archivo</span>
-            </p>
-          </div>
+          {{partial 'dropdown'}}
         </div>
       </div>
     </div>
