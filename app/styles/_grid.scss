@@ -390,6 +390,10 @@
     margin-bottom: $s-margin--medium;
   }
 
+  &--bg {
+    background-color: $c-grey--lighter;
+  }
+
   &--text-left {
     text-align: left;
   }
