@@ -2,47 +2,24 @@
 // commented out
 .key-facts {
   max-width: rem(1472px);
-//   max-width: 105.14286rem;
-  background-color: #fff;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto rem(24px) auto;
-//   margin: 0 auto 1.71429rem auto;
   padding: rem(24px);
-//   padding: 1.71429rem;
   text-align: center;
 }
 
 .key-facts--horizontal {
   max-width: rem(1472px);
-//   max-width: 105.14286rem;
-  background-color: #fff;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto rem(24px) auto;
-//   margin: 0 auto 1.71429rem auto;
   padding: rem(24px);
-//   padding: 1.71429rem;
   text-align: center;
-  &.has-bg {
-    background-color: #e5e5e5;
-  }
 }
 
 @media screen and (min-width: 40em) {
   .key-facts, .key-facts--horizontal {
     padding: rem(39px);
 //     padding: 2.85714rem;
-  }
-}
-
-.key-facts.has-bg {
-  background-color: #e5e5e5;
-}
-
-@media print {
-  .key-facts--horizontal.has-bg, .key-facts.has-bg {
-    background-color: transparent;
   }
 }
 
