@@ -21,6 +21,10 @@ define([
       require(['blocks/dropdown/dropdown']);
     }
 
+    if (document.querySelector('.filters') !== null) {
+      require(['blocks/filter/filter']);
+    }
+
     require(['picturefill', 'lazysizes-plugins/bgset/ls.bgset'], function() {
            require(['lazysizes']);
     });

@@ -6,6 +6,7 @@ define([
   'blocks/carousel/carousel',
   'blocks/header/header',
   'blocks/dropdown/dropdown',
+  'blocks/filter/filter',
   'picturefill',
   'lazysizes-plugins/bgset/ls.bgset',
   'lazysizes'

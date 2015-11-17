@@ -1,94 +1,19 @@
 ---
 iter_select: ['Option 1', 'Option 2', 'Option 3']
 iter_select_sub: ['Sub Option 1', 'Sub Option 2', 'Sub Option 3']
+suboptions:
+  - title: Suboptions
+    suboptions:
+      - title: Option 1-1
+      - title: Option 1-2
+  - title: Option 2
+  - title: Option 3
 ---
-
 <div class="dropdown dropdown__base">
   <p class="dropdown__title dropdown__title--topics dropdown__toggle" data-dropdown-label="Topics">
   <span class="dropdown-title__text">Categoría</span>
   </p>
-  <ul class="dropdown__list">
-    <li class="dropdown__option dropdown__option--sub dropdown__base">
-      <label class="dropdown__label dropdown__label--sub dropdown__toggle">
-        <span data-dropdown-input-label>Suboptions</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-      </label>
-
-      <ul class="dropdown__list dropdown__list--sub">
-        {{#each iter_select_sub}}
-        <li class="dropdown__option">
-          <label class="dropdown__label">
-            <input type="checkbox" class="dropdown__input" name="contentType" value="2563"  data-dropdown-input="contentType2563" />
-            <span data-dropdown-input-label>{{this}}</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-          </label>
-        </li>
-        {{/each}}
-        <li class="dropdown__option dropdown__option--sub dropdown__base">
-          <label class="dropdown__label dropdown__label--sub dropdown__toggle">
-            <span data-dropdown-input-label>Suboptions</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-          </label>
-
-          <ul class="dropdown__list dropdown__list--sub">
-            {{#each iter_select_sub}}
-            <li class="dropdown__option">
-              <label class="dropdown__label">
-                <input type="checkbox" class="dropdown__input" name="contentType" value="2563"  data-dropdown-input="contentType2563" />
-                <span data-dropdown-input-label>{{this}}</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-              </label>
-            </li>
-            {{/each}}
-          </ul>
-
-        </li>
-
-
-      </ul>
-
-    </li>
-
-
-    {{#each iter_select}}
-    <li class="dropdown__option">
-      <label class="dropdown__label">
-        <input type="checkbox" class="dropdown__input" name="contentType" value="2563"  data-dropdown-input="contentType2563" />
-        <span data-dropdown-input-label>{{this}}</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-      </label>
-    </li>
-    {{/each}}
-    <li class="dropdown__option dropdown__option--sub dropdown__base">
-      <label class="dropdown__label dropdown__label--sub dropdown__toggle">
-        <span data-dropdown-input-label>Suboptions</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-      </label>
-
-      <ul class="dropdown__list dropdown__list--sub">
-        {{#each iter_select_sub}}
-        <li class="dropdown__option">
-          <label class="dropdown__label">
-            <input type="checkbox" class="dropdown__input" name="contentType" value="2563"  data-dropdown-input="contentType2563" />
-            <span data-dropdown-input-label>{{this}}</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-          </label>
-        </li>
-        {{/each}}
-        <li class="dropdown__option dropdown__option--sub dropdown__base">
-          <label class="dropdown__label dropdown__label--sub dropdown__toggle">
-            <span data-dropdown-input-label>Suboptions</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-          </label>
-
-          <ul class="dropdown__list dropdown__list--sub">
-            {{#each iter_select_sub}}
-            <li class="dropdown__option">
-              <label class="dropdown__label">
-                <input type="checkbox" class="dropdown__input" name="contentType" value="2563"  data-dropdown-input="contentType2563" />
-                <span data-dropdown-input-label>{{this}}</span> (<span class="dropdown__count" data-dropdown-input-count>0</span>)
-              </label>
-            </li>
-            {{/each}}
-          </ul>
-
-        </li>
-
-
-      </ul>
-
-    </li>
-  </ul>
+  <div class="dropdown__list-container">
+    {{partial 'dropdown__list'}}
+  </div>
 </div>
