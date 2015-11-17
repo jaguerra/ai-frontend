@@ -1,3 +1,4 @@
+
 .dropdown {
   border: 1px solid #b6b6b6;
   position: relative;
@@ -251,11 +252,12 @@
     }
   }
 }
+// scss-lint:disable SelectorFormat
 
 // .is-active .dropdown__title {
 //   background-position: -4.85714em -17.14286em;
 // }
-
+.dropdown__title--facet-tipo_stringS:before,
 .dropdown__title--contenttypes:before {
   @include ai-sprite;
   background-repeat: no-repeat;
@@ -272,17 +274,20 @@
 }
 
 @media screen and (min-width: 40em) {
+  .dropdown__title--facet-tipo_stringS:before,
   .dropdown__title--contenttypes:before {
     margin: rem(14px) rem(4px);
   }
 }
 
 @media screen and (min-width: 65em) {
+  .dropdown__title--facet-tipo_stringS:before,
   .dropdown__title--contenttypes:before {
     margin: rem(14px) rem(11px);
   }
 }
 
+.dropdown__title--facet-categoryHierarchy:before,
 .dropdown__title--topics:before {
   @include ai-sprite;
   background-repeat: no-repeat;
@@ -299,12 +304,14 @@
 }
 
 @media screen and (min-width: 40em) {
+  .dropdown__title--facet-categoryHierarchy:before,
   .dropdown__title--topics:before {
     margin: rem(14px) rem(4px);
   }
 }
 
 @media screen and (min-width: 65em) {
+  .dropdown__title--facet-categoryHierarchy:before,
   .dropdown__title--topics:before {
     margin: rem(14px) rem(11px);
   }
@@ -337,6 +344,7 @@
   }
 }
 
+.dropdown__title--facet-age:before,
 .dropdown__title--resourcetypes:before {
   @include ai-sprite;
   background-repeat: no-repeat;
@@ -353,12 +361,14 @@
 }
 
 @media screen and (min-width: 40em) {
+  .dropdown__title--facet-age:before,
   .dropdown__title--resourcetypes:before {
     margin: rem(14px) rem(4px);
   }
 }
 
 @media screen and (min-width: 65em) {
+  .dropdown__title--facet-age:before,
   .dropdown__title--resourcetypes:before {
     margin: rem(14px) rem(11px);
   }
