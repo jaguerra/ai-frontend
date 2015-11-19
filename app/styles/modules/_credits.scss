@@ -9,6 +9,11 @@
   }
 }
 
+.credits--padded {
+  margin-top: $s-margin--small;
+  margin-bottom: $s-margin--small;
+}
+
 .credits--header {
   overflow: hidden;
   text-overflow: ellipsis;

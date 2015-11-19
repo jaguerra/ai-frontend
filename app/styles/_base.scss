@@ -504,6 +504,33 @@ time {
   height: auto;
 }
 
+.img-fullwidth {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .indent {
   padding-left: $s-margin--medium;
+}
+
+.ai-flex-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 67.5%;
+  padding-top: 1.38889rem;
+  position: relative;
+
+  > iframe,
+  > video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+}
+
+.ai-c-media {
+  margin-bottom: $s-margin--small;
 }
