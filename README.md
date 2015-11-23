@@ -1,3 +1,32 @@
+# Build instructions
+
+## Requirements
+
+Relatively recent versions of:
+
+* NodeJS <https://nodejs.org/>
+* Ruby <https://www.ruby-lang.org/>
+* Bower <http://bower.io/>
+
+## Install build dependencies
+
+    $ npm install -g bower
+    $ npm install -g gulp
+    $ gem install bundler
+    $ npm install
+    $ bower install
+    $ bundle install
+
+## Build commands
+
+    $ gulp
+
+Builds from source into the "dist" folder.
+
+    $ gulp serve
+
+Launches a live webserver on port 9000 for development. Any change made to source files is recompiled on the fly allowing a fast development cycle.
+
 # Code architecture
 
 We aim for a BEM style architecture for all the frontend code but with these additional constraints:
