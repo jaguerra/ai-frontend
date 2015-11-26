@@ -14,7 +14,12 @@ define([
     require([
       'blocks/nav/nav',
       'blocks/carousel/carousel',
-      'blocks/header/header'
+      'blocks/header/header',
+      'lib/ai-acciones/progressbar',
+      'lib/ai-acciones/share',
+      'lib/ai-acciones/form',
+      'lib/ai-acciones/boton_actua',
+      'lightbox'
     ]);
 
     if (document.querySelector('.dropdown') !== null) {
@@ -39,10 +44,6 @@ define([
 			require(['jquery', 'jqp/treemenu'], function($) {
 				$('[data-ai-toggle="treemenu"]').treemenu();
 			});
-		}
-
-		if (document.querySelector('[rel*="lightbox"]') !== null) {
-      require(['lightbox']);
 		}
 
 		if (document.querySelector('[rel*="galleria"]') !== null) {

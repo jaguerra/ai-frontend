@@ -9,7 +9,12 @@ define([
   'blocks/filter/filter',
   'picturefill',
   'lazysizes-plugins/bgset/ls.bgset',
-  'lazysizes'
+  'lazysizes',
+  'lib/ai-acciones/progressbar',
+  'lib/ai-acciones/share',
+  'lib/ai-acciones/form',
+  'lib/ai-acciones/boton_actua',
+  'lightbox'
 ], function() {
   'use strict';
 });

@@ -41,6 +41,17 @@ header:
       Nam id sollicitudin urna. Morbi imperdiet purus id elit sagittis accumsan. Mauris quis metus in metus lobortis euismod. Praesent nec metus mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tortor mauris, pellentesque non tristique sit amet, dictum eget mi. Integer quis ligula vel risus dignissim fringilla. Nam imperdiet luctus adipiscing. Suspendisse potenti. Nam at odio eu ante accumsan dapibus eu id velit. Nunc interdum magna sem, a scelerisque est viverra quis. Nam ornare gravida tristique. Nullam convallis sapien et facilisis hendrerit. Donec tristique mi eu orci vehicula, vel porta augue porta.
       </p>
 
+
+      <div class="ai-accion-firma-interstitial-actions">
+        <a href="" class="ai-accion-firma-interstitial-actions__mas-info">
+          Ver más información...
+        </a>
+        <a href="javascript:" class="ai-accion-firma-interstitial-actions__cerrar">
+          Cerrar y ver la web
+        </a>
+      </div>
+
+
     </div>
     <div class="ai-accion-2col__col2">
 
@@ -62,50 +73,45 @@ header:
 document.getElementsByClassName('ai-accion-firma__bar-progress')[0].style.width = '80%';
         </script>
         <div class="ai-accion-firma__text">
-          Firma y enviaremos esta petición en tu nombre a los líderes de los grupos parlamentarios del Parlamento Europeo.
+          Firma y enviaremos <a href="#carta0" class="ai-lightbox--inline">esta petición</a> en tu nombre a los líderes de los grupos parlamentarios del Parlamento Europeo.
         </div>
         <form class="ai-accion-firma__formrapido ai-accion-firma__form">
           <div class="ai-accion-firma__importanttext">
             Si ya has firmado alguna acción antes, rellena sólo tu email:
           </div>
-          <input class="ai-accion-firma__input" placeholder="Email *" />
-          <input type="submit" class="ai-accion-firma__button" value="Firma" />
-          <a class="ai-accion-firma__button-primera" href="javascript:tmp_show_formcompleto()">
+          <input class="ai-accion-firma__input ai-accion-firma__input--email" placeholder="Email *" />
+          <input type="submit" class="ai-accion-firma__button" value="Envía tu firma" />
+          <a class="ai-accion-firma__button-primera" href="javascript:">
             Es la primera vez que actúo
             <i class="ai-accion-firma__arrow"></i>
           </a>
-          <script>
-function tmp_show_formcompleto() {
-  document.getElementsByClassName('ai-accion-firma__formrapido')[0].style.display = 'none';
-  document.getElementsByClassName('ai-accion-firma__formcompleto')[0].style.display = 'block';
-}
-          </script>
         </form>
-        <form class="ai-accion-firma__formcompleto ai-accion-firma__form">
+        <form class="ai-accion-firma__formcompleto ai-accion-firma__form" style="display:none">
           <div class="ai-accion-firma__importanttext">
             ¿Es la primera vez que firmas? Completa el siguiente formulario:
           </div>
           <div class="ai-accion-firma__warning">
             ¡Ups! No te encontramos en nuestra base de datos. Completa el formulario y deja marcada la casilla de recibir información para que tus datos queden guardados para la próxima vez.
           </div>
-          <input class="ai-accion-firma__input" placeholder="Nombre *" />
-          <input class="ai-accion-firma__input" placeholder="Apellidos *" />
-          <input class="ai-accion-firma__input" placeholder="Email *" />
-          <input class="ai-accion-firma__input" placeholder="Teléfono (sólo españa)" />
-          <select class="ai-accion-firma__input">
-            <option>España</option>
+          <input class="ai-accion-firma__input ai-accion-firma__input--nombre" placeholder="Nombre *" id="nombre"/>
+          <input class="ai-accion-firma__input ai-accion-firma__input--apellido1" placeholder="Apellidos *" />
+          <input class="ai-accion-firma__input ai-accion-firma__input--email" placeholder="Email *" />
+          <input class="ai-accion-firma__input ai-accion-firma__input--telefono" placeholder="Teléfono (sólo españa)" />
+          <select class="ai-accion-firma__input ai-accion-firma__input--pais">
+            <option value="0">---</option>
+            <option value="ESP">España</option>
+            <option value="XXX">Otro</option>
+          </select>
+          <select class="ai-accion-firma__input ai-accion-firma__input--provincia" disabled>
+            <option value="0">Provincia (sólo España)</option>
             <option>---</option>
           </select>
-          <select class="ai-accion-firma__input" disabled>
-            <option>Provincia (sólo España)</option>
-            <option>---</option>
-          </select>
-          <input class="ai-accion-firma__input" placeholder="Número de documento de identidad" / disabled>
+          <input class="ai-accion-firma__input ai-accion-firma__input--dni" placeholder="Número de documento de identidad" / disabled>
           <label class="ai-accion-firma__check">
-            <input type="checkbox" />
+            <input type="checkbox" class=" ai-accion-firma__input--acepto" />
             Deseo recibir más información de Amnistía Internacional
           </label>
-          <input type="submit" class="ai-accion-firma__button" value="Firma" />
+          <input type="submit" class="ai-accion-firma__button" value="Envía tu firma" />
         </form>
         <div class="ai-accion-firma__text">
           Al participar en esta acción aceptas la <a href="">política de privacidad</a>
@@ -119,7 +125,10 @@ function tmp_show_formcompleto() {
         </div>
       </div>
 
+
+
     </div>
+
   </div>
 
   <hr />
@@ -132,13 +141,17 @@ function tmp_show_formcompleto() {
 
       <div class="ai-accion-firma-compartir">
         <h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más firmas?</h4>
-        <a class="ai-accion-firma-compartir__facebook" href="">
+        <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Acabo de realizar una acción para Amnistía Internacional. ¿Quieres unirte y luchar por esta causa?" data-ai-share-summary-html="#text_facebook">
           Compartir en <span class="ai-accion-firma-compartir__facebook-icon"></span>
         </a>
-        <a class="ai-accion-firma-compartir__twitter" href="">
+        <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="#text_twitter">
           Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span>
         </a>
       </div>
+
+      <script type="ai/text" id="text_twitter">{accion.parentPage.user_aiogimage_twitter} vía @amnistiaespana</script>
+      <script type="ai/text" id="text_facebook">{accion.parentPage.user_aiogimage_title} {accion.parentPage.user_aiogimage_description}</script>
+
     </div>
     <div class="ai-accion-2col__col2">
 
@@ -214,5 +227,14 @@ function tmp_show_formcompleto() {
 
 
 
+</div>
+
+<div id="carta0" class="ai-popup ai-popup--bg-white mfp-hide">
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat nisi ut laoreet commodo. Praesent dui purus, porta ut ex ultrices, finibus accumsan lectus. Nulla facilisi. Proin sed metus eget nunc mattis porta. Vestibulum placerat laoreet suscipit. Curabitur eu ligula quis felis tristique lacinia vel eget neque. Pellentesque consectetur, magna at varius tincidunt, lectus turpis convallis dolor, quis dapibus sem ex laoreet felis.
+  </p>
+  <p>
+  Nullam tincidunt mauris faucibus lectus efficitur condimentum. Praesent ultrices, ante nec dapibus tempus, urna nulla malesuada risus, vel lacinia leo enim nec diam. Donec quis sagittis metus. Etiam eu diam non orci congue imperdiet. In feugiat, nisi vitae consectetur convallis, elit quam mattis ante, vel dictum ipsum est at neque. Maecenas bibendum ligula elementum faucibus sagittis. Fusce rhoncus tristique feugiat.
+  </p>
 </div>
 

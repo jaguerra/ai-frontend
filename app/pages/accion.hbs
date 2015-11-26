@@ -66,7 +66,7 @@ header:
       </div>
 
 
-      <a class="ai-accion-boton-actua" href="#ai-accion-firma">¡Actúa!</a>
+      <a class="ai-accion-boton-actua" href="#ai-accion-firma" data-ai-accion-boton-actua-ref="#ai-accion-firma">¡Actúa!</a>
 
     </div>
     <div class="ai-accion-2col__col2">
@@ -82,12 +82,9 @@ header:
         </div>
 
         <div class="ai-accion-firma__bar">
-          <div class="ai-accion-firma__bar-progress"></div>
+          <div class="ai-accion-firma__bar-progress" data-ai-firmas="45695" data-ai-max-firmas="100000"></div>
           <div class="ai-accion-firma__bar-caption">45.695 firmas</div>
         </div>
-        <script>
-document.getElementsByClassName('ai-accion-firma__bar-progress')[0].style.width = '80%';
-        </script>
         <div class="ai-accion-firma__text">
           Firma y enviaremos esta petición en tu nombre a los líderes de los grupos parlamentarios del Parlamento Europeo.
         </div>
@@ -95,18 +92,12 @@ document.getElementsByClassName('ai-accion-firma__bar-progress')[0].style.width 
           <div class="ai-accion-firma__importanttext">
             Si ya has firmado alguna acción antes, rellena sólo tu email:
           </div>
-          <input class="ai-accion-firma__input" placeholder="Email *" />
+          <input class="ai-accion-firma__input ai-accion-firma__input--email" placeholder="Email *" />
           <input type="submit" class="ai-accion-firma__button" value="Envía tu firma" />
-          <a class="ai-accion-firma__button-primera" href="javascript:tmp_show_formcompleto()">
+          <a class="ai-accion-firma__button-primera" href="javascript:">
             Es la primera vez que actúo
             <i class="ai-accion-firma__arrow"></i>
           </a>
-          <script>
-function tmp_show_formcompleto() {
-  document.getElementsByClassName('ai-accion-firma__formrapido')[0].style.display = 'none';
-  document.getElementsByClassName('ai-accion-firma__formcompleto')[0].style.display = 'block';
-}
-          </script>
         </form>
         <form class="ai-accion-firma__formcompleto ai-accion-firma__form" style="display:none">
           <div class="ai-accion-firma__importanttext">
@@ -115,21 +106,22 @@ function tmp_show_formcompleto() {
           <div class="ai-accion-firma__warning">
             ¡Ups! No te encontramos en nuestra base de datos. Completa el formulario y deja marcada la casilla de recibir información para que tus datos queden guardados para la próxima vez.
           </div>
-          <input class="ai-accion-firma__input" placeholder="Nombre *" />
-          <input class="ai-accion-firma__input" placeholder="Apellidos *" />
-          <input class="ai-accion-firma__input" placeholder="Email *" />
-          <input class="ai-accion-firma__input" placeholder="Teléfono (sólo españa)" />
-          <select class="ai-accion-firma__input">
-            <option>España</option>
+          <input class="ai-accion-firma__input ai-accion-firma__input--nombre" placeholder="Nombre *" id="nombre"/>
+          <input class="ai-accion-firma__input ai-accion-firma__input--apellido1" placeholder="Apellidos *" />
+          <input class="ai-accion-firma__input ai-accion-firma__input--email" placeholder="Email *" />
+          <input class="ai-accion-firma__input ai-accion-firma__input--telefono" placeholder="Teléfono (sólo españa)" />
+          <select class="ai-accion-firma__input ai-accion-firma__input--pais">
+            <option value="0">---</option>
+            <option value="ESP">España</option>
+            <option value="XXX">Otro</option>
+          </select>
+          <select class="ai-accion-firma__input ai-accion-firma__input--provincia" disabled>
+            <option value="0">Provincia (sólo España)</option>
             <option>---</option>
           </select>
-          <select class="ai-accion-firma__input" disabled>
-            <option>Provincia (sólo España)</option>
-            <option>---</option>
-          </select>
-          <input class="ai-accion-firma__input" placeholder="Número de documento de identidad" / disabled>
+          <input class="ai-accion-firma__input ai-accion-firma__input--dni" placeholder="Número de documento de identidad" / disabled>
           <label class="ai-accion-firma__check">
-            <input type="checkbox" />
+            <input type="checkbox" class=" ai-accion-firma__input--acepto" />
             Deseo recibir más información de Amnistía Internacional
           </label>
           <input type="submit" class="ai-accion-firma__button" value="Envía tu firma" />

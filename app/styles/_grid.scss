@@ -431,3 +431,13 @@
   }
 
 }
+
+.ai-popup {
+  position: relative;
+  margin: $s-margin--medium auto;
+  padding: $s-margin--medium;
+  max-width: rem(800);
+  &--bg-white {
+    background-color: $c-white;
+  }
+}

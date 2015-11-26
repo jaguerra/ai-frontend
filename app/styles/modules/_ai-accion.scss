@@ -156,8 +156,14 @@
   }
 
   &__button-primera {
-    @extend %btn-secondary--md--fullwidth;
+    @include btn;
+    @include btn--secondary;
+    @include btn--fullwidth;
+    @include btn--sm;
     margin: rem(20px) 0;
+    @include media($m-ai-small) {
+      @include btn--md;
+    }
   }
 
   &__form {
@@ -252,6 +258,7 @@
 .ai-accion-boton-actua {
   @include media($m-ai-large-max) {
     @include btn-primary--lg--fullwidth;
+    @include transition(all .25s ease);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -261,4 +268,43 @@
     @include f-title;
     font-size: 2rem;
   }
+
+  &--hidden {
+    @include media($m-ai-large-max) {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.ai-accion-firma-interstitial-actions {
+  // @include outer-container;
+  @include clearfix;
+  margin-top: 24px;
+  margin-bottom: 16px;
+
+  &__mas-info {
+    @include btn;
+    @include btn--md;
+    @include btn--primary;
+    @include media($m-ai-medium-max) {
+      @include btn--fullwidth;
+      margin-bottom: $s-margin--small;
+    }
+  }
+
+  &__cerrar {
+    @include btn;
+    @include btn--md;
+    @include btn--secondary;
+    @include media($m-ai-medium-max) {
+      @include btn--fullwidth;
+    }
+    @include media($m-ai-medium) {
+      float: right;
+    }
+  }
+
 }

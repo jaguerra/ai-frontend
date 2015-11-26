@@ -8,6 +8,11 @@ define(['jquery', 'magnific-popup'], function($){
       type: 'iframe'
     };
 
+    var base_options_inline = {
+      type: 'inline',
+      preloader: false
+    };
+
     var base_options_image = {
       type: 'image',
       mainClass: 'ai-lightbox-popup ai-lightbox-popup--image',
@@ -54,6 +59,7 @@ define(['jquery', 'magnific-popup'], function($){
         galleries_visited = {},
         $lightbox_elements = $('[rel^=lightbox]'),
         $lightbox_elements_html = $('.ai-lightbox--html'),
+        $lightbox_elements_inline = $('.ai-lightbox--inline'),
         i = 0;
 
       function filter_gallery_id () {
@@ -87,6 +93,9 @@ define(['jquery', 'magnific-popup'], function($){
 
       // DOM elements with class "ai-lightbox--html" get an iframe lightbox
       $lightbox_elements_html.magnificPopup(base_options_iframe);
+
+      // DOM elements with class "ai-lightbox--inline" get an inline lightbox
+      $lightbox_elements_inline.magnificPopup(base_options_inline);
     }
 
     return {

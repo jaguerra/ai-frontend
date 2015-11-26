@@ -8,8 +8,8 @@ $icon-font-path: '../fonts/';
 // scss-lint:enable ImportPath
 @import "variables";
 @import "bootstrap";
-@import "bower_components/magnific-popup/src/css/main";
 @import "functions";
+@import "magnific-popup";
 @import "sprites";
 @import "grid";
 @import "base";
