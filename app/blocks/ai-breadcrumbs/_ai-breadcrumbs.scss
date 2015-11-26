@@ -38,9 +38,10 @@
   max-width: $s-container-width--small;
   margin: 0 auto;
   padding: $s-margin--small;
+  box-sizing: content-box;
 
-  @include media($m-ai-medium) {
-    padding: $s-margin--medium $s-margin--small;
+  @include media($m-ai-large) {
+    padding: $s-margin--medium;
   }
 
 }

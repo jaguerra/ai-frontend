@@ -343,12 +343,13 @@
 .ai-c {
 
   margin: 0 auto;
-  max-width: $s-container-width--small;
+  max-width: $s-container-width--small + $s-margin--small*2;
   padding-left: $s-margin--small;
   padding-right: $s-margin--small;
   box-sizing: border-box;
 
   @include media($m-ai-large) {
+    max-width: $s-container-width--small + $s-margin--medium*2;
     padding-left: $s-margin--medium;
     padding-right: $s-margin--medium;
   }
@@ -359,7 +360,10 @@
   }
 
   &--wide {
-    max-width: $s-container-width--medium;
+    max-width: $s-container-width--medium + $s-margin--small*2;
+    @include media($m-ai-large) {
+      max-width: $s-container-width--medium + $s-margin--medium*2;
+    }
   }
 
   &--padded-vertical {
