@@ -42,6 +42,18 @@
   }
 }
 
+.locations {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.no-js .locations {
+  display: block;
+}
+
 .locations__title {
   font-size: rem(49px);
 //   font-size: 3.5rem;
