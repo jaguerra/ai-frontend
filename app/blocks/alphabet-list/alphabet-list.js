@@ -39,7 +39,7 @@ define(['jquery'], function($){
 
     };
 
-    $('[data-locations-link').each( function() {
+    $('[data-locations-link]').each( function() {
       var current_location;
 
       current_location = _alphabet_location($(this));
