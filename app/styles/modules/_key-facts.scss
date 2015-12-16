@@ -1,34 +1,27 @@
 // Rules with selector depth and dependant on underlying column sets have been
 // commented out
 .key-facts {
-  max-width: rem(1472px);
+  // max-width: rem(1472px);
   box-sizing: border-box;
   margin: 0 auto rem(24px) auto;
-  padding: rem(24px);
+  padding-top: rem(24px);
+  padding-bottom: rem(24px);
   text-align: center;
 }
 
 .key-facts--horizontal {
-  max-width: rem(1472px);
+  // max-width: rem(1472px);
   box-sizing: border-box;
   margin: 0 auto rem(24px) auto;
-  padding: rem(24px);
+  padding-top: rem(24px);
+  padding-bottom: rem(24px);
   text-align: center;
 }
 
 @media screen and (min-width: 40em) {
   .key-facts, .key-facts--horizontal {
-    padding: rem(39px);
-//     padding: 2.85714rem;
-  }
-}
-
-@media screen and (min-width: 65em) {
-  .key-facts--horizontal {
-    padding-left: rem(123px);
-//     padding-left: 8.85714rem;
-    padding-right: rem(123px);
-//     padding-right: 8.85714rem;
+    padding-top: rem(39px);
+    padding-bottom: rem(39px);
   }
 }
 
@@ -782,6 +775,10 @@
   font-kerning: normal;
   line-height: 1.1;
   margin: 0;
+  padding-bottom: $s-margin--small;
+  @include media($m-ai-large) {
+    padding-bottom: $s-margin--medium;
+  }
 }
 
 @media screen and (min-width: 40em) {

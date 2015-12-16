@@ -507,10 +507,8 @@
 
 @media screen and (min-width: 40em) {
   .image-headline__title {
-    font-size: rem(21px);
-//     font-size: 1.5rem;
+    font-size: rem(24);
     margin: 0 0 rem(4px) 0;
-//     margin: 0 0 .35714rem 0;
   }
 }
 
@@ -603,7 +601,6 @@
   text-align: center;
   @include media($m-ai-large) {
     padding: $s-margin--medium;
-    text-align: left;
   }
 }
 
@@ -644,10 +641,14 @@
 
   &__testimonio-text {
     color: $c-white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: $f-title;
+    line-height: 1.2;
   }
 
   &__testimonio-container--below {
-    padding: $s-margin--medium;
+    padding: $s-margin--small $s-margin--medium $s-margin--medium;
     margin-bottom: $s-margin--medium;
     border-bottom: 5px solid $c-black;
     width: 100%;
@@ -664,7 +665,10 @@
   }
 
   &__testimonio-text--below {
-    color: $c-grey--dark;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: $f-title;
+    line-height: 1.1;
   }
 
 }

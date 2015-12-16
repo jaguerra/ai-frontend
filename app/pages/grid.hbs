@@ -1,7 +1,12 @@
 ---
 title: Grid
 layout: default
-grids: ['', 'ai-c--wide', 'ai-c--padded-vertical', 'ai-c--padded-vertical-double', 'ai-c--bordered-top', 'ai-c--bordered-bottom']
+grids: ['', 'ai-c--wide', 'ai-c--padded-vertical', 'ai-c--padded-vertical-double', 'ai-c--bordered-top', 'ai-c--bordered-bottom', 'ai-c--bg']
+iter_3: [1,2,3]
+composite_grids:
+  bg:
+    outer: ai-c--bleed-wide ai-c--bg
+    inner: ai-c--wide ai-c--padded
 ---
 <div class="ai-breadcrumbs-container">
   <nav class="ai-breadcrumbs">
@@ -44,6 +49,43 @@ grids: ['', 'ai-c--wide', 'ai-c--padded-vertical', 'ai-c--padded-vertical-double
       <div class="ai-c {{grid}} ai-c--bg ai-c--padded">
         <pre>ai-c {{grid}}</pre>
         {{partial 'grid-test'}}
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+
+{{#each composite_grids as |grid|}}
+<div class="ai-c {{grid.outer}}">
+  <div class="ai-c {{grid.inner}}">
+    <pre>ai-c {{grid.outer}}</pre>
+
+    {{partial 'grid-test'}}
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="ai-c {{grid.outer}}">
+          <div class="ai-c {{grid.inner}}">
+            <pre>ai-c {{grid.outer}}</pre>
+            {{partial 'grid-test'}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="ai-c {{grid.outer}}">
+          <div class="ai-c {{grid.inner}}">
+            <pre>ai-c {{grid.outer}}</pre>
+            {{partial 'grid-test'}}
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="ai-c {{grid.outer}}">
+          <div class="ai-c {{grid.inner}}">
+            <pre>ai-c {{grid.outer}}</pre>
+            {{partial 'grid-test'}}
+          </div>
+        </div>
       </div>
     </div>
   </div>
