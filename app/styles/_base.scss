@@ -342,6 +342,12 @@ time {
   transition: opacity .25s;
 }
 
+.no-js {
+  .lazyload, .lazyloading {
+    opacity: 1;
+  }
+}
+
 .lazyloaded {
   opacity: 1;
   -webkit-transition: opacity .25s;
