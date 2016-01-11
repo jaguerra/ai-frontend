@@ -3,3 +3,5 @@ app/scripts/cookiebanner.js
 app/scripts/jqp/placeholder.js
 app/scripts/jqp/cookie.js
 app/scripts/vendor/**
+app/scripts/text.js
+app/scripts/handlebars.js
