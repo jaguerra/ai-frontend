@@ -895,7 +895,7 @@
     left: rem(11px);
     position: absolute;
     right: rem(11px);
-    text-align: left;
+    text-align: center;
   }
 
   &__highlight-item-sub-title {
@@ -903,15 +903,15 @@
     position: relative;
     top: rem(1px);
 
-    font-size: rem(14px);
+    font-size: rem(16px);
     font-weight: 400;
     font-family: $f-title;
     font-feature-settings: 'kern';
     font-kerning: normal;
-    background-color: $c-white;
+    background-color: $c-yellow;
     color: $c-black;
     box-decoration-break: clone;
-    box-shadow: rem(8px) 0 0 $c-white, rem(-8px) 0 0 $c-white;
+    box-shadow: rem(8px) 0 0 $c-yellow, rem(-8px) 0 0 $c-yellow;
     display: inline;
     line-height: 1.6;
     padding: rem(3px) 0;
