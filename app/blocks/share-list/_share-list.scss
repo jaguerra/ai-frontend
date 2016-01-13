@@ -96,4 +96,25 @@
   }
 }
 
+.share-list__link--whatsapp {
+  display: block;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  &:before {
+    @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
+    background-position: -19.4em -18.55em;
+    height: 1.42857em;
+    width: 1.42857em;
+    display: block;
+    margin: rem(18px) auto;
+    padding: rem(1px);
+  }
+}
+
 

@@ -36,18 +36,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1639"
-     inkscape:window-height="999"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
      id="namedview3851"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="3.3892857"
-     inkscape:cx="174.24303"
-     inkscape:cy="196.7528"
-     inkscape:window-x="365"
-     inkscape:window-y="82"
-     inkscape:window-maximized="0"
+     inkscape:zoom="4.7931738"
+     inkscape:cx="235.33153"
+     inkscape:cy="57.154924"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
        position="157.85037,271.14858"
@@ -73,6 +73,14 @@
        position="200.04215,220.40042"
        orientation="0,1"
        id="guide4679" />
+    <sodipodi:guide
+       position="161.27101,98.473375"
+       orientation="0,1"
+       id="guide3771" />
+    <sodipodi:guide
+       position="170.24211,77.819002"
+       orientation="0,1"
+       id="guide3773" />
   </sodipodi:namedview>
   <g
      inkscape:groupmode="layer"
@@ -85,6 +93,25 @@
        height="77.315628"
        x="116.45494"
        y="1.9112097" />
+    <g
+       id="g3713"
+       transform="matrix(0.10519594,0,0,0.10519594,259.0504,258.26489)">
+      <path
+         d="m 112.956,205.125 c 5.281,-17.05 11.402,-33.26 16.998,-49.994 -37.095,-64.878 8.812,-137.915 70.991,-143.982 58.707,-5.729 106.841,36.439 106.987,93.988 0.153,60.723 -58.74,111.713 -124.985,90.988 -4.997,-1.563 -11.18,-6.657 -16.998,-6.999 -8.131,-0.479 -18.787,5.359 -26.997,7.999 -8.999,2.895 -16.824,5.796 -25.996,8 z m 54.993,-33.996 c 53.495,32.466 117.551,-3.949 122.985,-56.993 4.918,-48.019 -33.424,-90.745 -84.99,-86.989 -58.87,4.287 -94.232,74.559 -57.993,125.984 -3.208,8.791 -6.21,17.788 -8.999,26.997 9.822,-2.844 18.876,-6.455 28.997,-8.999 z"
+         id="path3715"
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd;fill-rule:evenodd" />
+      <path
+         d="m 138.953,180.128 c 2.789,-9.209 5.791,-18.206 8.999,-26.997 -36.24,-51.425 -0.877,-121.697 57.993,-125.984 51.566,-3.756 89.908,38.97 84.99,86.989 -5.434,53.043 -69.49,89.458 -122.985,56.993 -10.122,2.544 -19.176,6.155 -28.997,8.999 z M 165.95,95.139 c 8.578,24.126 44.126,56.803 69.991,57.993 12.26,0.564 26.755,-5.796 25.996,-22.997 -7.382,-5.283 -15.892,-9.438 -24.996,-12.998 -4.358,4.307 -7.783,9.548 -12.999,12.998 -15.685,-6.979 -27.717,-17.61 -34.995,-32.996 14.331,-7.816 5.627,-25.226 0,-36.996 -22.233,-6.699 -28.087,20.681 -22.997,34.996 z"
+         id="path3717"
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd" />
+      <path
+         d="m 188.947,60.143 c 5.627,11.77 14.331,29.179 0,36.996 7.278,15.386 19.311,26.017 34.995,32.996 5.216,-3.45 8.641,-8.691 12.999,-12.998 9.104,3.561 17.614,7.715 24.996,12.998 0.759,17.201 -13.736,23.562 -25.996,22.997 -25.865,-1.19 -61.414,-33.867 -69.991,-57.993 -5.09,-14.315 0.764,-41.695 22.997,-34.996 z"
+         id="path3719"
+         inkscape:connector-curvature="0"
+         style="clip-rule:evenodd;fill-rule:evenodd" />
+    </g>
   </g>
   <svg
      height="72"

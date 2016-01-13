@@ -8,6 +8,7 @@ define([
   'blocks/dropdown/dropdown',
   'blocks/filter/filter',
   'blocks/alphabet-list/alphabet-list',
+  'blocks/share-list/share-list',
   'picturefill',
   'lazysizes-plugins/bgset/ls.bgset',
   'lazysizes',
