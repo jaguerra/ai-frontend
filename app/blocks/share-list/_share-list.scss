@@ -117,4 +117,14 @@
   }
 }
 
-
+@media screen and ((max-width: 640px) {
+  .share-list__item {
+    width: 2.8em;
+    height: 2.8rem;
+  }
+  .share-list__item a {
+    &:before {
+      margin: 0.8rem auto !important;
+    }
+  }
+}
