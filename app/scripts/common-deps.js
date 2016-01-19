@@ -5,6 +5,7 @@ define([
   'blocks/nav/nav',
   'blocks/carousel/carousel',
   'blocks/header/header',
+  'blocks/footer/footer',
   'blocks/dropdown/dropdown',
   'blocks/filter/filter',
   'blocks/alphabet-list/alphabet-list',

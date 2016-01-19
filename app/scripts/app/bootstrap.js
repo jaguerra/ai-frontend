@@ -15,6 +15,7 @@ define([
       'blocks/nav/nav',
       'blocks/carousel/carousel',
       'blocks/header/header',
+      'blocks/footer/footer',
       'blocks/alphabet-list/alphabet-list',
       'blocks/share-list/share-list',
       'lib/ai-acciones/progressbar',
