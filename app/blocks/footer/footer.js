@@ -13,6 +13,6 @@ define(['jquery'], function($) {
     }
 
     $(document).ready(function(){
-        $('.footer-list__link').on('click', click_list);
+        $('.footer-list__link--title').on('click', click_list);
     })
 });
