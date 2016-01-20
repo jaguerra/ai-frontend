@@ -1,26 +1,34 @@
-.ai-accion-2col {
-  @include outer-container;
-  &__col1 {
-    padding: 0 rem(11);
-    @include media($m-ai-large) {
-      @include span-columns(8);
+$ai-accion--is-widget: false !default;
+
+@if $ai-accion--is-widget == true {
+  .ai-accion-2col {
+    @include outer-container;
+    &__col1 {
+      @include span-columns(7);
       padding: 0 rem(24);
     }
-  }
-  &__col2 {
-    // IE8..
-    margin-right: 0;
-
-    // .mas_informacion {
-    //   float: left;
-    //   width: 100%;
-    //   margin: 16px 0;
-    // }
-
-    @include media($m-ai-large) {
-      @include span-columns(4);
+    &__col2 {
+      margin-right: 0;
+      @include span-columns(5);
     }
-
+  }
+} @else {
+  .ai-accion-2col {
+    @include outer-container;
+    &__col1 {
+      padding: 0 rem(11);
+      @include media($m-ai-large) {
+        @include span-columns(8);
+        padding: 0 rem(24);
+      }
+    }
+    &__col2 {
+      // IE8..
+      margin-right: 0;
+      @include media($m-ai-large) {
+        @include span-columns(4);
+      }
+    }
   }
 }
 
@@ -40,8 +48,10 @@
   }
 
   &__head-title {
-    @include media($m-ai-medium-only) {
-      @include span-columns(6);
+    @if $ai-accion--is-widget == false {
+      @include media($m-ai-medium-only) {
+        @include span-columns(6);
+      }
     }
   }
 
@@ -69,11 +79,13 @@
     font-weight: bold;
     color: $c-grey--mid;
     padding-top: rem(11px);
-    @include media($m-ai-medium-only) {
-      @include span-columns(6);
-      text-align: right;
-      margin-right: 0;
-      margin-left: 0;
+    @if $ai-accion--is-widget == false {
+      @include media($m-ai-medium-only) {
+        @include span-columns(6);
+        text-align: right;
+        margin-right: 0;
+        margin-left: 0;
+      }
     }
   }
 
@@ -161,8 +173,10 @@
     @include btn--fullwidth;
     @include btn--sm;
     margin: rem(20px) 0;
-    @include media($m-ai-small) {
-      @include btn--md;
+    @if $ai-accion--is-widget == false {
+      @include media($m-ai-small) {
+        @include btn--md;
+      }
     }
   }
 
@@ -248,9 +262,20 @@
 .ai-accion-firma-content {
   margin-bottom: 16px;
 
+  .image-wrap,
   img {
-    max-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
+  }
+
+  figure {
+    margin-top: 0;
+  }
+
+  > .ai-c {
+    padding-left: 0;
+    padding-right: 0;
   }
 
 }
