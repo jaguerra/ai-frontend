@@ -8,8 +8,8 @@ $ai-accion--is-widget: false !default;
       padding: 0 rem(24);
     }
     &__col2 {
-      margin-right: 0;
       @include span-columns(5);
+      margin-right: 0;
     }
   }
 } @else {
