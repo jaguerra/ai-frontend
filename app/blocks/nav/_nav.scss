@@ -3,7 +3,6 @@
   backface-visibility: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
-  right: 0;
   background-color: #f7f7f7;
   // scss-lint:disable DuplicateProperty
   height: 100%;
@@ -18,8 +17,9 @@
 //   width: 21.42857rem;
   z-index: 1001;
   overflow-y: auto;
+  right: rem(-299px);
   &.is-active {
-    right: rem(-299px);
+    right: 0;
   }
 }
 
@@ -31,8 +31,6 @@
 //     height: 5.14286rem;
     overflow: visible;
     position: absolute;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
     width: auto;
   }
 }
@@ -46,6 +44,9 @@
 //     right: 10.28571rem;
     padding-left: rem(169px);
 //     padding-left: 12.07143rem;
+    &.is-active {
+      right: rem(72px);
+    }
   }
 }
 
