@@ -556,36 +556,14 @@
     content: ' ';
     display: table;
   }
-}
-
-@media screen and (min-width: 65em) {
-  .nav-search {
-    z-index: 1001;
-  }
-}
-
-@media screen and (min-width: 64.9375em) {
-  .nav-search {
-    width: 0;
-    overflow: hidden;
-    -webkit-transition: all .75s;
-    transition: all .75s;
-    top: auto;
-    right: rem(72px);
-//     right: 10.28571rem;
+  &.is-active {
+    right: 0;
   }
 }
 
 .no-js .nav-search:focus {
   left: 0;
   opacity: 1;
-}
-
-@media screen and (min-width: 64.9375em) {
-  .nav-search.is-active {
-    width: 100%;
-    padding-left: rem(253);
-  }
 }
 
 .nav-search__cancel {
