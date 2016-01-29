@@ -16,10 +16,8 @@ $ai-accion--is-widget: false !default;
   .ai-accion-2col {
     @include outer-container;
     &__col1 {
-      padding: 0 rem(11);
       @include media($m-ai-large) {
         @include span-columns(8);
-        padding: 0 rem(24);
       }
     }
     &__col2 {

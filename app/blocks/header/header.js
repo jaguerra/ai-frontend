@@ -53,19 +53,6 @@ define(['jquery'], function($){
 
   var _search = function() {
 
-    var q;
-
-    function get_query_variable(variable) {
-      var query = window.location.search.substring(1);
-      var vars = query.split("&");
-      var i, pair;
-      for (i=0;i<vars.length;i++) {
-        pair = vars[i].split("=");
-        if(pair[0] === variable){return pair[1];}
-      }
-      return(false);
-    }
-
     function search_toggle() {
       $('[data-nav-search-btn]').toggleClass('is-active');
       $('[data-nav-search]').toggleClass('is-active');
@@ -74,12 +61,6 @@ define(['jquery'], function($){
     $('[data-nav-search-btn]').on('click', function() {
       search_toggle();
     });
-
-    q = get_query_variable('q');
-    if (q) {
-      search_toggle();
-      $('[data-nav-search-input]').attr('value', decodeURIComponent(q));
-    }
 
   };
 
