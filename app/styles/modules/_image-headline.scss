@@ -110,9 +110,13 @@
 
 .image-headline__btn {
   @include btn;
-  @include btn--md;
+  @include btn--sm;
   @include btn--transparent;
   margin: 0 rem(3px) rem(24px) rem(3px);
+
+  @include media($m-ai-medium) {
+    @include btn--md;
+  }
 
   @include media($m-ai-large) {
     margin: 0 rem(3px);

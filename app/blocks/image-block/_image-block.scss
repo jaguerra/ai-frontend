@@ -342,13 +342,11 @@
 //   padding: 1.71429rem 1.71429rem 0 1.71429rem;
 }
 
-@media screen and (min-width: 40em) {
-  .image-block__text {
-    bottom: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+.image-block__text {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 40em) {
