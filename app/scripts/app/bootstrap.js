@@ -18,6 +18,7 @@ define([
       'blocks/footer/footer',
       'blocks/alphabet-list/alphabet-list',
       'blocks/share-list/share-list',
+      'blocks/tweet/tweet',
       'lib/ai-acciones/progressbar',
       'lib/ai-acciones/share',
       'lib/ai-acciones/form',

@@ -118,7 +118,7 @@ $icon-font-path: '../fonts/';
 
 @import "base";
 @import "headings";
-@import "modules/tweet";
+@import "../blocks/tweet/tweet";
 @import "modules/quote";
 @import "modules/counter";
 @import "modules/key-facts";
