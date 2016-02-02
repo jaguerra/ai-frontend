@@ -1,6 +1,10 @@
 .related-content {
   margin: 0 auto;
   overflow: hidden;
+
+  &__grids {
+    margin-left: rem(-10px);
+  }
 }
 
 @media screen and (min-width: 40em) {
