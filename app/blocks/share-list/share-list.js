@@ -15,9 +15,8 @@ define(['jquery'], function ($) {
 
         function share(title, summary, url, image) {
             window.open(
-                'http://www.facebook.com/sharer.php?s=100&p[title]=' + encodeURIComponent(title)
-                + '&p[summary]=' + encodeURIComponent(summary) + '&p[url]=' + encodeURIComponent(url)
-                + '&p[images][0]=' + encodeURIComponent(image),
+                'https://m.facebook.com/sharer.php?u=' + encodeURIComponent(url)
+                + '&t=' + encodeURIComponent(title),
                 'accionafacebook',
                 'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
             );

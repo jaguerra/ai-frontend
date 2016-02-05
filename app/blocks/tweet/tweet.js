@@ -12,7 +12,7 @@ define(['jquery'], function($) {
         $('.tweet').each( function() {
             var $this = $(this),
                 $trigger = $this.find('.tweet__link'),
-                url = $this.data('ai-share-url') || urlActualTWFirma,
+                url = $this.data('ai-share-url') || urlActualTW,
                 subtitular = $this.find('.tweet__quote').text();
 
             $trigger.click( function() {
