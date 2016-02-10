@@ -329,9 +329,9 @@
   font-family: $f-title;
   font-feature-settings: 'kern';
   font-kerning: normal;
-  background-color: #fff;
+  background-color: $c-white--translucid;
   box-decoration-break: clone;
-  box-shadow: rem(8px) 0 0 #fff, rem(-8px) 0 0 #fff;
+  box-shadow: rem(8px) 0 0 $c-white--translucid, rem(-8px) 0 0 $c-white--translucid;
   display: inline;
   line-height: 1.6;
   padding: rem(3px) 0;
