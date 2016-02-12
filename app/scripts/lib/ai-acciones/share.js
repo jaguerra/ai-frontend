@@ -29,7 +29,7 @@ define(['jquery'], function($) {
   function _share_twitter() {
 
     function share(summary, url) {
-      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(summary) + '&url=' + encodeURIComponent(url) ,'accionatwitter','width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes');
+      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(summary) + '&url=' + encodeURIComponent(url) + '&via=amnistiaespana','accionatwitter','width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes');
     }
 
     $('.ai-accion-firma-compartir__twitter').each( function() {
