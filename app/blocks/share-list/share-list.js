@@ -42,7 +42,8 @@ define(['jquery'], function ($) {
         function share(summary, url) {
             window.open(
                 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(summary)
-                + '&url=' + encodeURIComponent(url),
+                + '&url=' + encodeURIComponent(url)
+                + '&via=amnistiaespana',
                 'accionatwitter',
                 'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
             );
