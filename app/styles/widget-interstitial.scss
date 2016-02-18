@@ -24,3 +24,16 @@ $ai-accion--is-widget: true;
 @import "modules/cookies";
 @import "modules/ai-accion";
 @import "typo3";
+
+.ai-accion-2col {
+  @include outer-container;
+  &__col1 {
+    @include span-columns(7);
+    padding: 0 rem(24);
+  }
+  &__col2 {
+    @include span-columns(5);
+    // IE8..
+    margin-right: 0;
+  }
+}
