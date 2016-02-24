@@ -9,9 +9,6 @@
   text-align: center;
   &:before {
     @include ai-sprite;
-    background-repeat: no-repeat;
-    background-size: 20.85714em 20em;
-    content: ' ';
     background-position: -15.35714em -13em;
     height: 1.42857em;
     width: 1.42857em;
@@ -103,9 +100,6 @@
   }
   .tweet__icon:before {
     @include ai-sprite;
-    background-repeat: no-repeat;
-    background-size: 20.85714em 20em;
-    content: ' ';
     display: block;
     background-position: -14.85714em -15em;
     height: 1.42857em;
