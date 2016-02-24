@@ -137,9 +137,6 @@
     position: relative;
     top: rem(2px);
 //     top: .14286rem;
-    background-repeat: no-repeat;
-    background-size: 20.85714em 20em;
-    content: ' ';
     display: block;
     background-position: -12.78571em -15em;
     height: 1.71429em;
@@ -511,9 +508,6 @@
   background: #f7f7f7;
   &:before {
     @include ai-sprite;
-    background-repeat: no-repeat;
-    background-size: 20.85714em 20em;
-    content: ' ';
     display: inline-block;
     background-position: -19.35714em -1.85714em;
     height: 1.14286em;

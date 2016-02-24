@@ -7,9 +7,6 @@
   position: relative;
   &:after {
     @include ai-sprite;
-    background-repeat: no-repeat;
-    background-size: 20.85714em 20em;
-    content: ' ';
     display: inline-block;
     background-position: -19.35714em -1.85714em;
     height: 1.14286em;
