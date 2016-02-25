@@ -31,6 +31,9 @@
   z-index: 1;
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     background-position: -.35714em -17.14286em;
     height: 1.14286em;
     width: 1.14286em;

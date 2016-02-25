@@ -73,6 +73,9 @@
   }
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -12.35714em -11.35714em;
     height: 1.14286em;
@@ -121,6 +124,9 @@
   }
   &:after {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -12.35714em -17.14286em;
     height: 1.14286em;

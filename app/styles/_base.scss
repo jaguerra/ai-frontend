@@ -220,6 +220,9 @@ time {
 //   padding-bottom: 1.71429rem;
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -4.42857em -18.64286em;
     height: .5em;
@@ -303,6 +306,9 @@ time {
 //   margin: 1.71429rem 0;
   &:after {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -19.35714em -17.78571em;
     height: .5em;

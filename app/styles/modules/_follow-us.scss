@@ -135,6 +135,9 @@
 
 .follow-us-social__facebook:before {
   @include ai-sprite;
+  background-repeat: no-repeat;
+  background-size: 20.85714em 20em;
+  content: ' ';
   display: inline-block;
   background-position: -13.57143em -13em;
   height: 1.42857em;
@@ -143,6 +146,9 @@
 
 .follow-us-social__twitter:before {
   @include ai-sprite;
+  background-repeat: no-repeat;
+  background-size: 20.85714em 20em;
+  content: ' ';
   display: inline-block;
   background-position: -11.78571em -13em;
   height: 1.42857em;
@@ -151,6 +157,9 @@
 
 .follow-us-social__instagram:before {
   @include ai-sprite;
+  background-repeat: no-repeat;
+  background-size: 20.85714em 20em;
+  content: ' ';
   display: inline-block;
   background-position: -10em -13em;
   height: 1.42857em;

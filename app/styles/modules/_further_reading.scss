@@ -26,6 +26,9 @@
     transition: background .25s ease-in-out,color .25s ease-in-out;
     &:before {
       @include ai-sprite;
+      background-repeat: no-repeat;
+      background-size: 20.85714em 20em;
+      content: ' ';
       display: inline-block;
       background-position: -1.71429em -18.64286em;
       height: 1em;

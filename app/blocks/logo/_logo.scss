@@ -34,6 +34,9 @@
   width: 100%;
   &:after {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -8.35714em -5.85714em;
     height: 5.14286em;
@@ -41,6 +44,9 @@
   }
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     // en - background-position: -.35714em -5.85714em;
     background-position: -8.29em -.35714em;
@@ -55,16 +61,6 @@
   }
   &:before {
     display: none;
-  }
-}
-
-.logo__link--cat {
-  &:before {
-    @include ai-sprite;
-    display: inline-block;
-    background-position: -21.5714em -.35714em;
-    height: 5.14286em;
-    width: 9em;
   }
 }
 

@@ -158,6 +158,9 @@
 .btn--header-video {
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -17.57143em -15.21429em;
     height: 1.14286em;

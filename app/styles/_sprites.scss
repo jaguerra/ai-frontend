@@ -10,14 +10,14 @@
 
 @mixin ai-sprite {
   //background-image: url(/images/sprite.png);
-  background-image: url(../images/sprite-v2.svg), none;
-  background-repeat: no-repeat;
-  background-size: 40em 20em;
-  content: ' ';
+  background-image: url(../images/sprite.svg), none;
 }
 
 %ai-sprite--base {
   @include ai-sprite;
+  background-repeat: no-repeat;
+  background-size: 20.85714em 20em;
+  content: ' ';
 }
 
 %ai-sprite--facebook-black {

@@ -656,6 +656,9 @@
   width: 100%;
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -.35714em -11.35714em;
     height: 3.28571em;

@@ -73,6 +73,9 @@
   transition: background-color .25s;
   &:after {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     display: inline-block;
     background-position: -19.35714em -17.78571em;
     height: .5em;

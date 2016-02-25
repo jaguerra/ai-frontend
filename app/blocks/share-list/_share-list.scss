@@ -36,6 +36,9 @@
   width: 100%;
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     background-position: -13.57143em -13em;
     height: 1.42857em;
     width: 1.42857em;
@@ -56,6 +59,9 @@
   width: 100%;
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     background-position: -11.78571em -13em;
     height: 1.42857em;
     width: 1.42857em;
@@ -76,6 +82,9 @@
   width: 100%;
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     background-position: -17.57143em -2.14286em;
     height: 1.42857em;
     width: 1.42857em;
@@ -96,6 +105,9 @@
   width: 100%;
   &:before {
     @include ai-sprite;
+    background-repeat: no-repeat;
+    background-size: 20.85714em 20em;
+    content: ' ';
     background-position: -19.4em -18.55em;
     height: 1.42857em;
     width: 1.42857em;
