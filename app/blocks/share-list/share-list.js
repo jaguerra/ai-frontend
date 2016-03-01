@@ -3,7 +3,7 @@ define(['jquery'], function ($) {
 
     var urlActual = window.urlActual || document.location.href,
         urlActualFB = window.urlActualFB || urlActual,
-        urlActualTW = window.urlActualFB || urlActual,
+        urlActualTW = window.urlActualTW || urlActual,
         urlActualWHA = window.urlActualFB || urlActual,
         tituloActual = window.tituloActual || '',
         tituloActualFB = window.tituloActualFB || tituloActual,

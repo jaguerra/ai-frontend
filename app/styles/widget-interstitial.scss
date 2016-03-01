@@ -1,0 +1,45 @@
+$icon-font-path: '../fonts/';
+
+// scss-lint:disable ImportPath
+// bower:scss
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "bower_components/neat/app/assets/stylesheets/_neat.scss";
+// endbower
+// scss-lint:enable ImportPath
+@import "variables";
+$ai-accion--is-widget: true;
+
+@import "bootstrap";
+@import "functions";
+@import "magnific-popup";
+@import "sprites";
+@import "grid";
+@import "base";
+@import "headings";
+@import "forms";
+@import "modules/heading";
+@import "modules/overlay";
+@import "../blocks/btn/btn";
+@import "../blocks/ai-page-title/ai-page-title";
+@import "modules/cookies";
+@import "modules/ai-accion";
+@import "typo3";
+
+.ai-page-title {
+  font-size: 2.25rem;
+}
+
+.ai-accion-2col {
+  @include outer-container;
+  &__col1 {
+    //@include span-columns(7);
+    @include span-columns(12);
+    padding: 0 rem(24);
+  }
+  &__col2 {
+    @include span-columns(5);
+    // IE8..
+    margin-right: 0;
+    display: none;
+  }
+}

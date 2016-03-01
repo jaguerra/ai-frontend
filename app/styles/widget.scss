@@ -1,0 +1,26 @@
+$icon-font-path: '../fonts/';
+
+// scss-lint:disable ImportPath
+// bower:scss
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "bower_components/neat/app/assets/stylesheets/_neat.scss";
+// endbower
+// scss-lint:enable ImportPath
+@import "variables";
+$ai-accion--is-widget: true;
+
+@import "bootstrap";
+@import "functions";
+@import "magnific-popup";
+@import "sprites";
+@import "grid";
+@import "base";
+@import "headings";
+@import "forms";
+@import "modules/heading";
+@import "modules/overlay";
+@import "../blocks/btn/btn";
+@import "../blocks/ai-page-title/ai-page-title";
+@import "modules/cookies";
+@import "modules/ai-accion";
+@import "typo3";
