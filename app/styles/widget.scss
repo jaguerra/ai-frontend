@@ -25,3 +25,14 @@ $ai-accion--is-widget: true;
 @import "modules/ai-accion";
 @import "../blocks/ai-people-acted/ai-people-acted";
 @import "typo3";
+
+.ai-accion-2col {
+  @include outer-container;
+  &__col1 {
+    display: none;
+  }
+  &__col2 {
+    @include span-columns(12);
+    margin-right: 0;
+  }
+}
