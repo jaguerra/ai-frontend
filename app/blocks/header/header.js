@@ -60,6 +60,7 @@ define(['jquery'], function($){
 
     $('[data-nav-search-btn]').on('click', function() {
       search_toggle();
+      $('#ai-nav-search-input').focus();
     });
 
   };

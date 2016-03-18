@@ -1,0 +1,22 @@
+.site-search {
+  &__input {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $f-title;
+    background-color: transparent;
+    line-height: normal;
+    border: 1px solid $c-grey--mid;
+    font-size: rem(24);
+    padding: rem(14px) rem(24px);
+    box-sizing: border-box;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__submit {
+    @include btn;
+    @include btn--primary;
+    @include btn--md;
+  }
+}
