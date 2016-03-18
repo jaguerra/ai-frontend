@@ -1,5 +1,6 @@
 $f-title: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, 'Franklin Gothic Medium', sans-serif;
 $f-default: sans-serif;
+$ai-ie8: false !default;
 
 @mixin f-title {
   font-weight: 400;
@@ -67,9 +68,14 @@ $c-white: #FFF;
 $c-twitter: #55ACEE;
 $c-facebook: #22599D;
 $c-error: #CB5757;
+@if $ai-ie8 == true {
+  $c-white--translucid: $c-white;
+  $c-black--translucid: $c-black;
 
-$c-white--translucid: rgba(255, 255, 255, 0.8);
-$c-black--translucid: rgba(0, 0, 0, 0.8);
+} @else {
+  $c-white--translucid: rgba(255, 255, 255, 0.8);
+  $c-black--translucid: rgba(0, 0, 0, 0.8);
+}
 
 // BS Panels
 $panel-border-radius: 0;

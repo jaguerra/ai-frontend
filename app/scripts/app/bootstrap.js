@@ -34,9 +34,13 @@ define([
       require(['blocks/filter/filter']);
     }
 
-    require(['picturefill', 'lazysizes-plugins/bgset/ls.bgset'], function() {
-           require(['lazysizes']);
-    });
+    if (document.getElementsByClassName === undefined) {
+        require(['lib/lazysizes-ie8']);
+    } else {
+        require(['picturefill', 'lazysizes-plugins/bgset/ls.bgset'], function () {
+            require(['lazysizes']);
+        });
+    }
 
 		if (!('placeholder' in document.createElement('input') && 'placeholder' in document.createElement('textarea'))) {
 			require(['jquery', 'jqp/placeholder'], function($) {

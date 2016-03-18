@@ -21,10 +21,12 @@ $ai-accion--is-widget: false !default;
       }
     }
     &__col2 {
-      // IE8..
-      margin-right: 0;
       @include media($m-ai-large) {
         @include span-columns(4);
+      }
+      @if $ai-ie8 == true {
+        // scss-lint:disable ImportantRule
+        margin-right: 0 !important;
       }
     }
   }
@@ -40,8 +42,9 @@ $ai-accion--is-widget: false !default;
   &__head {
     @include outer-container;
     margin-left: rem(-15px);
-    // IE8
-    min-height: 36px;
+    @if $ai-ie8 == true {
+      min-height: 36px;
+    }
   }
 
   &__head-title {
