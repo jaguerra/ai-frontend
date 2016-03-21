@@ -1,13 +1,19 @@
 .site-search {
+  @include outer-container;
   &__input {
+    @include span-columns(12);
+    @include media($m-ai-small) {
+      @include span-columns(9);
+    }
+
     font-weight: 400;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     font-family: $f-title;
+    font-size: rem(18);
     background-color: transparent;
     line-height: normal;
     border: 1px solid $c-grey--mid;
-    font-size: rem(24);
-    padding: rem(14px) rem(24px);
+    padding: rem(10px) rem(17px);
     box-sizing: border-box;
     &:focus {
       outline: 0;
@@ -15,8 +21,12 @@
   }
 
   &__submit {
+    @include span-columns(12);
+    @include media($m-ai-small) {
+      @include span-columns(3);
+    }
     @include btn;
     @include btn--primary;
-    @include btn--md;
+    @include btn--sm;
   }
 }
