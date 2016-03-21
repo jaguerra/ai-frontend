@@ -40,15 +40,10 @@ define(['jquery'], function($){
       }
 
       function set_slide(num) {
-        var translate;
-
         if (num < 0 || num >= num_slides) {
           return;
         }
-
-        translate = num * (100 / num_slides) * -1;
-
-        $slider.css('transform', 'translate3d(' + translate + '%,0px,0px)');
+        $slider.css('left', num * 100 * -1 + '%');
         current_slide = num;
         update_caption();
         update_pagination();
@@ -114,7 +109,7 @@ define(['jquery'], function($){
         });
 
         $slider.css('width', (100 * num_slides) + '%');
-        $slider.css('transform', 'translate3d(0%,0px,0px)');
+        $slider.css('left', '0');
 
         $next.on('click', click_next);
         $prev.on('click', click_prev);

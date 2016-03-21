@@ -7,9 +7,9 @@
 //     margin-left: 6px;
 //   }
 
-
 @mixin ai-sprite {
-  //background-image: url(/images/sprite.png);
+  // scss-lint:disable DuplicateProperty
+  background-image: url(../images/sprite-v2.png);
   background-image: url(../images/sprite-v2.svg), none;
   background-repeat: no-repeat;
   background-size: 40em 20em;
