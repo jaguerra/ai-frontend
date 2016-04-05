@@ -75,7 +75,7 @@ define(['jquery', 'lib/ai-acciones/validarnif'], function($, validarNIF) {
         mensaje += '* El correo electrónico\n';
       }
 
-      if(email.val().trim() !== '' && /^[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}$/.test(email.val().trim()) === false){
+      if(email.val().trim() !== '' && /^[a-zA-Z0-9._+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}$/.test(email.val().trim()) === false){
         mensaje += '* El formato del correo electrónico\n';
       }
 
@@ -137,7 +137,7 @@ define(['jquery', 'lib/ai-acciones/validarnif'], function($, validarNIF) {
         mensaje += '* El correo electrónico\n';
       }
 
-      if(email.val().trim()!=='' && /^[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}$/.test(email.val().trim())===false){
+      if(email.val().trim()!=='' && /^[a-zA-Z0-9._+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}$/.test(email.val().trim())===false){
         mensaje += '* El formato del correo electrónico\n';
       }
 
