@@ -19,6 +19,7 @@ define([
       'blocks/alphabet-list/alphabet-list',
       'blocks/share-list/share-list',
       'blocks/tweet/tweet',
+      'blocks/cookies/cookies',
       'lib/ai-acciones/progressbar',
       'lib/ai-acciones/share',
       'lib/ai-acciones/form',

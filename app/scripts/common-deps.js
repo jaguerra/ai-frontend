@@ -11,6 +11,7 @@ define([
   'blocks/alphabet-list/alphabet-list',
   'blocks/share-list/share-list',
   'blocks/tweet/tweet',
+  'blocks/cookies/cookies',
   'picturefill',
   'lazysizes-plugins/bgset/ls.bgset',
   'lazysizes',

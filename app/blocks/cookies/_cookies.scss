@@ -1,19 +1,18 @@
 .cookies {
   background: #e5e5e5;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 999;
   &:after, &:before {
     clear: both;
     content: ' ';
     display: table;
   }
-}
 
-@media screen and (max-width: 65em) {
-  .cookies {
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    z-index: 999;
+  &--hidden {
+    display: none;
   }
 }
 
@@ -44,7 +43,6 @@
   display: inline-block;
   outline: 0;
   padding: rem(10px) rem(17px);
-//   padding: .71429rem 1.28571rem;
   text-decoration: none;
   -webkit-transition: background-color .25s,border-color .25s,color .25s;
   transition: background-color .25s,border-color .25s,color .25s;
@@ -52,18 +50,10 @@
   background-color: #fff;
   border: 1px solid #000;
   font-size: rem(14px);
-//   font-size: 1rem;
   letter-spacing: 0;
-//   letter-spacing: .02rem;
   float: right;
   &:hover {
     background-color: #dadada;
-  }
-}
-
-@media screen and (min-width: 40em) {
-  .cookies__btn {
-    float: none;
   }
 }
 
@@ -89,9 +79,7 @@
 .cookies__container {
   margin: 0 auto;
   max-width: rem(1223px);
-//   max-width: 87.42857rem;
   padding: rem(24px);
-//   padding: 1.71429rem;
   &:after, &:before {
     clear: both;
     content: ' ';
@@ -107,7 +95,6 @@
 
 .cookies__message {
   margin: 0 0 rem(11px) 0;
-//   margin: 0 0 .85714rem 0;
   padding: 0;
 }
 
@@ -115,7 +102,6 @@
   .cookies__message {
     float: left;
     margin: rem(8px) 0 0 0;
-//     margin: .57143rem 0 0 0;
     text-align: left;
   }
 }
